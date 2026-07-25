@@ -37,7 +37,8 @@
     "mbtool.structure.water_condenser_tier_2": "Water Condenser Tier 2",
     "mbtool.structure.water_condenser_tier_3": "Water Condenser Tier 3",
     "mbtool.structure.loot_fabrication_plant": "Loot Fabrication Plant",
-    "mbtool.structure.prediction_chamber": "Prediction Chamber",
+    "mbtool.structure.prediction_chamber": "Prediction Chamber Tier 1",
+    "mbtool.structure.prediction_chamber_2": "Prediction Chamber Tier 2",
     "mbtool.structure.accelerator_part": "Accelerator Part",
     "mbtool.structure.voidminer_tier1_rubetine": "VoidMiner Tier 1 Rubetine",
     "mbtool.structure.voidminer_tier2_aurantium": "VoidMiner Tier 2 Aurantium",
@@ -80,5 +81,6 @@
     "mbtool.structure.tank_encapsulator": "Tank Encapsulator",
     "mbtool.structure.blood_altar_tier_card_3_block_structure": "Blood Altar Tier Card 3 Block Structure",
     "mbtool.structure.blood_altar_tier_card_4_block_structure": "Blood Altar Tier Card 4 Block Structure",
-    "mbtool.structure.blood_altar_tier_card_5_block_structure": "Blood Altar Tier Card 5 Block Structure"
+    "mbtool.structure.blood_altar_tier_card_5_block_structure": "Blood Altar Tier Card 5 Block Structure",
+    "mbtool.structure.blood_magic_altar_6": "Blood Magic Tier 6"
 }

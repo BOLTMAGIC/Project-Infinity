@@ -83,7 +83,16 @@
 			y: 0.0d
 		}
 		{
-			description: ["This is a great first step! Only a couple hundred thousand more to go..."]
+			description: [
+				"This is a great first step! Only a couple hundred thousand more to go..."
+				""
+				"And now is the time you can disable the Enchantment Limiter Mod"
+				""
+				"&4This is SERVER WIDE&r"
+				""
+				"need OP"
+				"/enchantlimiter disable"
+			]
 			id: "3F546D112F96CB64"
 			rewards: [{
 				id: "7F6B3802EB682418"

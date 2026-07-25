@@ -1,0 +1,573 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "functional_storage"
+	group: "5255C8D5C49409ED"
+	id: "638D292438C9FAE8"
+	images: [
+		{
+			height: 11.0d
+			image: "functionalstorage:block/simple_compacting_drawer_front"
+			rotation: 0.0d
+			width: 11.0d
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			height: 12.0d
+			image: "cyclic:block/_unused/plate_vector"
+			order: -1
+			rotation: 0.0d
+			width: 12.0d
+			x: 4.5d
+			y: 3.5d
+		}
+	]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "functionalstorage:oak_1"
+			id: "44585421ED625DAF"
+			rewards: [{
+				id: "75188D24B459AF3B"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24D486C7C2018291"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:oak_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:spruce_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:birch_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:jungle_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:acacia_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:dark_oak_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:warped_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:mangrove_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:cherry_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "1x1 Drawers"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			icon: "functionalstorage:oak_2"
+			id: "7EE6EE130340B0F5"
+			rewards: [{
+				id: "287E086A3BCA4FC1"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18F3AEDF643EAF70"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:mangrove_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:warped_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:dark_oak_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:acacia_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:jungle_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:birch_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:spruce_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:oak_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:cherry_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_2"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "1x2 Drawers"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			icon: "functionalstorage:oak_4"
+			id: "4258424A4D66E294"
+			rewards: [{
+				id: "7E401CBA0C72F3A3"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72362AFA31C6DEF3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:mangrove_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:warped_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:dark_oak_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:acacia_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:jungle_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:birch_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:spruce_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:oak_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:cherry_4"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "2x2 Drawers"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "15176CF455B21CE6"
+			rewards: [{
+				id: "483D2A7DDB40B75F"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B4D6B6EA467C2B6"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "2C97083BD6001E12"
+			rewards: [{
+				id: "12442F01E7B04DD3"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A03662234EA70FF"
+				item: "functionalstorage:fluid_2"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "1670BC83664CE438"
+			rewards: [{
+				id: "53E0F662786FD737"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C21665D22296C80"
+				item: "functionalstorage:fluid_4"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "4545C91FF3871B61"
+			rewards: [{
+				id: "2D739D26142D727B"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D1F0EC85D4CEBFC"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			id: "67A80EF67431E324"
+			rewards: [{
+				id: "2C13BA592D8A7ECB"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52741913FE66D33B"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["67A80EF67431E324"]
+			id: "0A8C9FC1C159BCF2"
+			rewards: [{
+				id: "74440561D3F5B445"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40647E19A32F5AA2"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A8C9FC1C159BCF2"]
+			id: "28612FDBB4527BD6"
+			rewards: [{
+				id: "05392106CBC183FF"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4332DA61A72C4A5D"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["28612FDBB4527BD6"]
+			id: "77B969D857ED3ABD"
+			rewards: [{
+				id: "24712A4312198F75"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11956849565E8F95"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["77B969D857ED3ABD"]
+			id: "2073E85441D9AA96"
+			rewards: [{
+				id: "0E9741D5DB052A76"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A65C5C873C83AED"
+				item: "functionalstorage:max_storage_upgrade"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"44585421ED625DAF"
+				"7EE6EE130340B0F5"
+				"4258424A4D66E294"
+				"15176CF455B21CE6"
+				"2C97083BD6001E12"
+				"1670BC83664CE438"
+				"6FFD5ABA7AC975F5"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "0D29E9D8BE2BCA34"
+			rewards: [{
+				id: "4CEB7EAA6138FC8B"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75C0396376184A85"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0D29E9D8BE2BCA34"]
+			id: "6878318C9CDF1DB9"
+			rewards: [{
+				id: "20812DEA70D80498"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6550166C8BE9E982"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2073E85441D9AA96"]
+			id: "50287CB5D6B5678D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25D38075104FC471"
+					table_id: 5196609362437981520L
+					type: "random"
+				}
+				{
+					id: "1A140516EEB48CC1"
+					item: "kubejs:ascended_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5AB2FA190252D82B"
+					table_id: 5196609362437981520L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "54DAB5B91CABEDB7"
+				item: "functionalstorage:creative_vending_upgrade"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			id: "57FE2F37230E6253"
+			rewards: [{
+				id: "79AC4C85C0EB94FF"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C89064CF7E52C4C"
+				item: "functionalstorage:pusher_upgrade"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			id: "66CF9498987AA4C0"
+			tasks: [{
+				id: "00930AAB63A90B66"
+				item: "functionalstorage:pusher_upgrade"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			id: "31AAC3970D47FCAE"
+			rewards: [{
+				id: "56BC7921C235C9BC"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DE0E159D811D559"
+				item: "functionalstorage:collector_upgrade"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			id: "62F4BE8C71C1A426"
+			rewards: [{
+				id: "5D919C2A628D2A8C"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "328E8CB2BD2F0FFD"
+				item: {
+					Count: 1
+					id: "functionalstorage:redstone_upgrade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			id: "3BBE44979F88941F"
+			rewards: [{
+				id: "6187BD05F9A526CE"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BCE433B05235E5C"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			id: "6FFD5ABA7AC975F5"
+			rewards: [{
+				id: "56B45686FF6AA497"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F19D8BD6B3A116D"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0D29E9D8BE2BCA34"]
+			hide_dependency_lines: true
+			id: "2D8E63A51FEC4D23"
+			rewards: [{
+				id: "16B6965B94C6F4AB"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01432635E08F46D6"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0D29E9D8BE2BCA34"]
+			hide_dependency_lines: true
+			id: "315A420D1B79A840"
+			rewards: [{
+				id: "1C804D73F1E1153E"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5111F1EA864D9576"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			id: "07C990C0D5F95781"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1310782AD60715DF"
+				title: "Created by Solardaisy"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+	]
+	title: "Functional storage"
+}

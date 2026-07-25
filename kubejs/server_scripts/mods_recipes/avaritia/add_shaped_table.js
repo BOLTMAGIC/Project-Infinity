@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
     tier: 4,
   });
 
-  //densest_neutron_collector
+  //blaze_cube
   event.custom({
     type: 'avaritia:shaped_table',
     category: 'misc',

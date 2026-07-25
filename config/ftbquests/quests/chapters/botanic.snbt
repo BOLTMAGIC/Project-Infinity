@@ -712,10 +712,15 @@
 		}
 		{
 			dependencies: [
-				"75DA5766FB37CFC5"
 				"71ADDF5D511A0E00"
+				"3A4CC39B7B92B133"
 			]
 			id: "6BE86486A6A3D8E8"
+			rewards: [{
+				id: "4975B70E539A9698"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "353B7FDDC8B61C1B"
 				item: "botanicalextramachinery:catalyst_mana_infinity"
@@ -727,6 +732,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "4230BFF357AE6937"
+			rewards: [{
+				id: "70343799D9BA6185"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "65AEBED560B472AF"
 				item: "botanicalextramachinery:catalyst_living_rock_infinity"
@@ -738,6 +748,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "6CE9A4B0C581F302"
+			rewards: [{
+				id: "271A5418C4FA3BFB"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "28B06893A6DBEA23"
 				item: "botanicalextramachinery:catalyst_water_infinity"
@@ -749,6 +764,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "02540A1B2AB09CD1"
+			rewards: [{
+				id: "4B7EE46DB2691E8D"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33B10313369802A7"
 				item: "botanicalextramachinery:catalyst_seed_infinity"
@@ -760,6 +780,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "2278A7038975BFBC"
+			rewards: [{
+				id: "2F0E95D62AA8A2CE"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "425ADFC5D195A26A"
 				item: "botanicalextramachinery:catalyst_stone_infinity"
@@ -771,6 +796,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "3165FAC9AB3D4E9A"
+			rewards: [{
+				id: "5573240CB35917BA"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "705670F41B2247DE"
 				item: "botanicalextramachinery:catalyst_wood_infinity"
@@ -782,6 +812,11 @@
 		{
 			hide_dependent_lines: true
 			id: "71ADDF5D511A0E00"
+			rewards: [{
+				id: "2F858DDA815E1985"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "64E1819C974D74DA"
 				item: "botanicalextramachinery:upgrade_pattern"
@@ -793,6 +828,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "4FA981F728058865"
+			rewards: [{
+				id: "40563552EF10C3DD"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BC6BCB32A0B3FFA"
 				item: "botanicalextramachinery:upgrade_cost_energy"
@@ -804,6 +844,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "36898CA2B61731AC"
+			rewards: [{
+				id: "006841B0B760F0D6"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33428CDB25A0C93F"
 				item: "botanicalextramachinery:upgrade_storage_energy_1"
@@ -815,6 +860,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "2214E41D2CA9A666"
+			rewards: [{
+				id: "7B089A183D34C4FD"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4C9610FA6298A202"
 				item: "botanicalextramachinery:upgrade_storage_energy_2"
@@ -826,6 +876,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "60674B2189B58257"
+			rewards: [{
+				id: "5D526C9F7CF5EFE3"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1563E29E117BD093"
 				item: "botanicalextramachinery:upgrade_storage_energy_3"
@@ -837,6 +892,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "749652F907475B65"
+			rewards: [{
+				id: "7C2EB2167D2786F8"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D829CEBB5C62610"
 				item: "botanicalextramachinery:upgrade_storage_mana_1"
@@ -848,6 +908,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "2E2FC7ACEAD3F7CD"
+			rewards: [{
+				id: "5B866548C2151DF5"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E2A75DF9740FE79"
 				item: "botanicalextramachinery:upgrade_storage_mana_2"
@@ -859,6 +924,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "1CEE4403CA314C66"
+			rewards: [{
+				id: "266014FB9351F9D0"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "589F69AB7ED36AA4"
 				item: "botanicalextramachinery:upgrade_storage_mana_3"
@@ -870,6 +940,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "1C50CC17F9C07C8B"
+			rewards: [{
+				id: "6FBD63FB3E533AB1"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "00402AF673D632C2"
 				item: "botanicalextramachinery:upgrade_gen_mana"
@@ -881,6 +956,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "4D0F54F378417203"
+			rewards: [{
+				id: "35D1C3AED34FB0FC"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E263290553384BB"
 				item: "botanicalextramachinery:upgrade_flower_4x"
@@ -892,6 +972,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "1005A4433127EFBC"
+			rewards: [{
+				id: "0922638F82CF39A9"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7EE627138B9D92E9"
 				item: "botanicalextramachinery:upgrade_flower_16x"
@@ -903,6 +988,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "02D11656353CA524"
+			rewards: [{
+				id: "4F2E6BECFB7C07F3"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0EA1B234BEBCCCEF"
 				item: "botanicalextramachinery:upgrade_flower_32x"
@@ -914,6 +1004,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "42CD2007C8E745A2"
+			rewards: [{
+				id: "76F8F5D3521E7038"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "55F18FC5EF201399"
 				item: "botanicalextramachinery:upgrade_flower_64x"
@@ -925,6 +1020,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "6ED8882FE8F58155"
+			rewards: [{
+				id: "078C47F84EB161C7"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3D93462FE4C45738"
 				item: "botanicalextramachinery:catalyst_speed"
@@ -936,6 +1036,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "259464AB350F4C76"
+			rewards: [{
+				id: "2A5C24F44C220907"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "79D0BA75BFEFB224"
 				item: "botanicalextramachinery:upgrade_tick_gen_mana_1"
@@ -947,6 +1052,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "67BEFAA8F9124DEC"
+			rewards: [{
+				id: "539B710E23DD2EA1"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BDFBF89B584BA80"
 				item: "botanicalextramachinery:upgrade_tick_gen_mana_2"
@@ -958,6 +1068,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "35C4E4BAE7CAF4D8"
+			rewards: [{
+				id: "1BAA99A9C58E1D2C"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E36CBEB03075E0B"
 				item: "botanicalextramachinery:upgrade_heat_greenhouse"
@@ -969,6 +1084,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "16356EC7C73F5250"
+			rewards: [{
+				id: "3BD2308CEDBD8184"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "71A822A3F7D30D3C"
 				item: "botanicalextramachinery:catalyst_petal"
@@ -980,6 +1100,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "37FBA69144C0A107"
+			rewards: [{
+				id: "7234136017F380FC"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27CBC7C590AE927B"
 				item: "botanicalextramachinery:catalyst_petal_block"
@@ -991,6 +1116,11 @@
 		{
 			dependencies: ["71ADDF5D511A0E00"]
 			id: "2C335BAB9A293337"
+			rewards: [{
+				id: "6CEB477ACC525751"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B39B300B1DBC690"
 				item: "botanicalextramachinery:upgrade_slot_add"
@@ -1000,13 +1130,114 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["095318F39E34982B"]
 			id: "75DA5766FB37CFC5"
+			rewards: [{
+				id: "61A31F10B86E938B"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2500EFFBF3596034"
 				item: "botanicalextramachinery:crimson_spark"
 				type: "item"
 			}]
+			x: 17.5d
+			y: -3.5d
+		}
+		{
+			id: "535C25C76FC0FB4E"
+			rewards: [{
+				id: "16A75A0B031C14FF"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50AB8C6B1B3F9BA3"
+				item: "botanicalextramachinery:base_spark"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["535C25C76FC0FB4E"]
+			id: "05250D042CF3EFF7"
+			rewards: [{
+				id: "522F13DE0B08A027"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F96FBAEB353F5C6"
+				item: "botanicalextramachinery:malachite_spark"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["05250D042CF3EFF7"]
+			id: "1E212B3A2FEC23F0"
+			rewards: [{
+				id: "2C476527CBCF0526"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "13F1D7403E40950B"
+				item: "botanicalextramachinery:saffron_spark"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1E212B3A2FEC23F0"]
+			id: "095318F39E34982B"
+			rewards: [{
+				id: "5E9AA54C3D10E341"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27977FB8F9222EAA"
+				item: "botanicalextramachinery:shadow_spark"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75DA5766FB37CFC5"]
+			id: "211BB624AA2EE161"
+			rewards: [{
+				id: "032CB5C8ED7155C2"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "744B1CF4C5A308BB"
+				item: "botanicalextramachinery:aureate_spark"
+				type: "item"
+			}]
 			x: 18.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["211BB624AA2EE161"]
+			id: "3A4CC39B7B92B133"
+			rewards: [{
+				id: "2B07DD2179ADCDF9"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02690BAF2B0B7140"
+				item: "botanicalextramachinery:mazarine_spark"
+				type: "item"
+			}]
+			x: 19.5d
 			y: -3.5d
 		}
 	]

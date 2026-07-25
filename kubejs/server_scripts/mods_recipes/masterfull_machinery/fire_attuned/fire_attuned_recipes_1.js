@@ -97,7 +97,7 @@ MMEvents.createProcesses((event) => {
 
   //ether gas
   event
-    .create('mm:ether_gas_recipe1')
+    .create('mm:ether_gas_recipe3')
     .structureId('mm:fire_attuned_structure1')
     .ticks(8)
     .input({
@@ -138,6 +138,52 @@ MMEvents.createProcesses((event) => {
         type: 'mm:fluid',
         fluid: 'industrialforegoing:ether_gas',
         amount: 2000,
+      },
+    });
+
+  //ether gas
+  event
+    .create('mm:ether_gas_recipe2')
+    .structureId('mm:fire_attuned_structure1')
+    .ticks(8)
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'extendedcrafting:nether_star_block',
+        count: 2,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'kubejs:infinity_4',
+        count: 1,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'industrialforegoing:machine_frame_supreme',
+        count: 1,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 2000000000,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'industrialforegoing:ether_gas',
+        amount: 10000,
       },
     });
 

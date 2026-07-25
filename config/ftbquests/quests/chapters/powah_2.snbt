@@ -6,7 +6,7 @@
 	group: "5255C8D5C49409ED"
 	icon: "powah:player_transmitter_nitro"
 	id: "1949CB4E404895CA"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

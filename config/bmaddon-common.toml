@@ -42,11 +42,11 @@
 	lifeEssenceMultiplier = 1.0
 	#How many crafts the Blood Altar Assembler can run without parallel cards.
 	#Range: 1 ~ 64
-	baseParallelCrafts = 1
-	#How many additional parallel crafts each Blood Altar Parallel Card adds.
+	baseParallelCrafts = 2
+	#How many active crafts each Blood Altar Parallel Card allows.
 	#Range: 0 ~ 64
 	parallelCraftsPerCard = 1
 	#Hard cap for active crafts in one Blood Altar Assembler.
 	#Range: 1 ~ 64
-	maxParallelCrafts = 4
+	maxParallelCrafts = 8
 

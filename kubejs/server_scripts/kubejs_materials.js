@@ -246,6 +246,9 @@ ServerEvents.recipes((event) => {
   create3x3same(event, 'kubejs:blackstone_6', ['9x kubejs:blackstone_5']);
   shapeless(event, '9x kubejs:blackstone_5', ['kubejs:blackstone_6']);
 
+  create3x3same(event, 'kubejs:compressed_awakened_draconium_block', ['9x draconicevolution:awakened_draconium_block']);
+  shapeless(event, '9x draconicevolution:awakened_draconium_block', ['kubejs:compressed_awakened_draconium_block']);
+
   create3x3same(event, 'kubejs:compressed_hellforgedparts', [
     'bloodmagic:hellforgedparts',
   ]);

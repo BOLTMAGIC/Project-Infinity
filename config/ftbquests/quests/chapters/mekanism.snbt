@@ -5,7 +5,7 @@
 	group: "5255C8D5C49409ED"
 	icon: "mekanism:steel_casing"
 	id: "23983F4DC524B14B"
-	order_index: 5
+	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [

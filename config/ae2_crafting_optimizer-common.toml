@@ -50,7 +50,8 @@
 	#Time-to-live for completed crafting plan cache entries, in server ticks. Storage or crafting topology invalidation clears this earlier.
 	#Range: 1 ~ 1200
 	completedCraftingPlanCacheTtlTicks = 40
-	#For REPORT_MISSING_ITEMS requests, return an immediate missing-only plan only when the optimizer can prove the craft is impossible through a strict deterministic preflight. Item, fluid, and chemical keys use the same proof path. Successful or ambiguous crafts still use AE2's normal solver.
+	#Experimental opt-in: for REPORT_MISSING_ITEMS requests, return an immediate missing-only plan when a strict deterministic preflight proves the craft is impossible.
+	#This deliberately ends AE2's full calculation after the first proven blocker, so it is disabled by default. Item, fluid, and chemical keys use the same proof path.
 	fastFailMissingCrafts = true
 	#Do not run deterministic missing preflight below this requested amount.
 	#Range: 1 ~ 9223372036854775807
@@ -108,6 +109,17 @@
 		#Neo ECO's own normal, batch, and aggressive fast paths remain authoritative; ACO only bounds their per-tick execution window.
 		#Supported target: Neo ECO AE Extension 20.3.x.
 		throttleNeoEcoAeExecution = true
+
+	[compatibility.appliedE]
+		#Enable conservative compatibility for AppliedE and AppliedE TPS Fix.
+		#ACO does not replace EMC accounting or AppliedE's temporary-pattern lifecycle.
+		enableAppliedECompatibility = true
+		#Keep AppliedE TransmutationPattern routes on AE2's original planner.
+		#AppliedE creates request-sized temporary patterns inside AE2's crafting tree, so compiling them as fixed recipes would bypass required lifecycle hooks.
+		forceAe2PlannerForTransmutationPatterns = true
+		#Treat AppliedE's EMC Module as a dynamic crafting provider.
+		#Repeated same-tick notifications are still coalesced, but ACO does not enumerate every EMC pattern merely to decide whether the final refresh may be discarded.
+		treatAppliedEProviderAsDynamic = true
 
 [gridTickBudget]
 	#Enable server-side budget controls for selected AE2 grid tickables such as IO ports, import/export buses, and ExtendedAE circuit cutters. Disabled by default because AE2 buses are correctness-sensitive and must be opt-in tested per pack.
@@ -373,7 +385,7 @@
 	#This is deliberately false. The implementation can be built and tested without changing live AE2 behavior.
 	enableExperimentalCraftingEngine = false
 	#Compare the compiled long planner with completed AE2 plans without replacing or modifying AE2's result.
-	#Requires enableExperimentalCraftingEngine. Shadow mismatches only update diagnostics.
+	#Requires the AQE profile or enableExperimentalCraftingEngine. Shadow mismatches only update diagnostics.
 	enableShadowMode = false
 	#Log the first bounded set of Shadow Mode differences. Disabled engine means no comparison or logging.
 	logShadowMismatches = true
@@ -424,8 +436,8 @@
 	#False until phase-9 live testing. Capacity display and ordinary long jobs continue to work while this is false.
 	enableBigIntegerGameplayExecution = false
 	#Maximum magnitude stored by the BigInteger backend, in binary bits. 256 bits is about 77 decimal digits.
-	#The hard implementation range is 64..1048576 bits; larger values are rejected before NBT or packet allocation.
-	#Range: 64 ~ 1048576
+	#The hard implementation maximum is 16384 decimal digits (currently 54427 bits). Values above 10^16384-1 are rejected exactly before NBT or packet allocation.
+	#Range: 64 ~ 54427
 	bigIntegerMaximumBits = 256
 	#Maximum pattern executions exposed to a long/int machine adapter in one BigInteger execution window.
 	#Larger jobs remain BigInteger counters and are resumed through additional windows.
@@ -445,6 +457,25 @@
 	#New jobs or output reservations fall back before exceeding this bound.
 	#Range: 32 ~ 4096
 	bigIntegerRuntimeCountBudgetMiB = 256
+	#Enable only the AQE BigInteger calculation and execution path when Advanced AE and Advanced Quantum Engineering are installed.
+	#This does not enable Native Batch, bus rewrites, terminal rewrites, or normal-AE2 authoritative replacement.
+	enableAqeBigCraftingProfile = true
+	#Allow the AE2 craft-amount screen to submit root amounts from Integer.MAX_VALUE + 1 through Long.MAX_VALUE.
+	#Amounts at or below Integer.MAX_VALUE keep AE2's original packet and menu path. Disable this to restore the original int-only screen.
+	enableLongRootCraftAmounts = true
+	#Required matching AE2 Shadow comparisons for the same generation-keyed root program before it may become authoritative.
+	#Set to 0 only to explicitly bypass qualification. One mismatch rejects that root until its Pattern or recipe generation changes.
+	#Range: 0 ~ 1048576
+	authoritativeMinimumShadowMatches = 64
+	#Require prior matching AE2 Shadow calculations before accepting an otherwise strictly proven AQE BigInteger plan.
+	#Disabled by default because a true long-overflow request cannot itself complete in AE2 for comparison.
+	requireAqeBigPlanShadowQualification = false
+	#Capture exact per-key BigInteger stock from supported storage add-ons while exposing a saturated long facade to AE2.
+	#This prevents KeyCounter overflow and allows ACO planning to use ExtendedAE Plus Infinity BigInteger Cell amounts above Long.MAX_VALUE.
+	enableExactBigIntegerInventorySnapshots = true
+	#Safely calculate plans whose individual or aggregate AEKey counts, Pattern counts, or exact CPU-byte cost exceed Long.MAX_VALUE.
+	#Counts above signed long require an exact supported inventory snapshot and an integrated AQE BigInteger host; unsupported paths fall back without approximation.
+	enableAtomicBigCapacityPlans = true
 
 [diagnostics]
 	#Log AE2 crafting calculations that take longer than slowCraftCalculationMillis.

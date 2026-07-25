@@ -4,40 +4,46 @@ StartupEvents.registry('block', (event) => {
     .create('blood_altar_tier_card_2_block')
     .displayName('Blood Altar Tier Card 2 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/blood_altar_tier_card_2_block');
 
   event
     .create('blood_altar_tier_card_3_block')
     .displayName('Blood Altar Tier Card 3 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/blood_altar_tier_card_3_block');
 
   event
     .create('blood_altar_tier_card_4_block')
     .displayName('Blood Altar Tier Card 4 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/blood_altar_tier_card_4_block');
 
   event
     .create('blood_altar_tier_card_5_block')
     .displayName('Blood Altar Tier Card 5 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/blood_altar_tier_card_5_block');
 
   event
     .create('blood_infused_blood_altar_tier_card_2_block')
     .displayName('Blood Infused Blood Altar Tier Card 2 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll(
       'kubejs:block/blood_magic/blood_infused_blood_altar_tier_card_2_block'
     );
@@ -46,8 +52,9 @@ StartupEvents.registry('block', (event) => {
     .create('blood_infused_blood_altar_tier_card_3_block')
     .displayName('Blood Infused Blood Altar Tier Card 3 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll(
       'kubejs:block/blood_magic/blood_infused_blood_altar_tier_card_3_block'
     );
@@ -56,8 +63,9 @@ StartupEvents.registry('block', (event) => {
     .create('blood_infused_blood_altar_tier_card_4_block')
     .displayName('Blood Infused Blood Altar Tier Card 4 Block')
     .soundType('stone')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll(
       'kubejs:block/blood_magic/blood_infused_blood_altar_tier_card_4_block'
     );
@@ -67,6 +75,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/compressed_slate');
 
   event
@@ -75,6 +84,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/double_compressed_slate');
 
   event
@@ -83,6 +93,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/blood_magic/compressed_hellforgedparts');
 
   //#region industrial_foregoing
@@ -92,6 +103,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/industrial_foregoing/pink_slime_block');
 
   //#region infinity
@@ -99,56 +111,63 @@ StartupEvents.registry('block', (event) => {
     .create('infinity_6_block')
     .displayName('Infinity 6 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.7)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_6_block');
 
   event
     .create('infinity_8_block')
     .displayName('Infinity 8 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.7)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_8_block');
 
   event
     .create('infinity_9_block')
     .displayName('Infinity 9 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.7)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_9_block');
 
   event
     .create('infinity_10_block')
     .displayName('Infinity 10 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.7)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_10_block');
 
   event
     .create('infinity_10_1_block')
     .displayName('Infinity 10.1 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_10_1_block');
 
   event
     .create('infinity_10_2_block')
     .displayName('Infinity 10.2 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/infinity_10_2_block');
 
   event
     .create('unfiltered_infinity_11_block')
     .displayName('Infinity 11 Block')
     .soundType('metal')
-    .hardness(1.2)
-    .resistance(2.0)
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/infinity/unfiltered_infinity_11_block');
 
   //#region mekanism
@@ -158,6 +177,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/mekanism/radiance_alloy_block');
 
   event
@@ -166,6 +186,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/mekanism/thermonuclear_alloy_block');
 
   event
@@ -174,6 +195,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/mekanism/shining_alloy_block');
 
   event
@@ -182,6 +204,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/mekanism/spectrum_alloy_block');
 
   //#region misc
@@ -194,6 +217,15 @@ StartupEvents.registry('block', (event) => {
     .textureAll('kubejs:block/misc/compressed_block_of_gunpowder');
 
   event
+    .create('compressed_awakened_draconium_block')
+    .displayName('Compressed Awakened Draconium Block')
+    .soundType('metal')
+    .hardness(0.8)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
+    .textureAll('kubejs:block/misc/compressed_awakened_draconium_block');
+
+  event
     .create('compressed_glass')
     .displayName('Compressed Glass')
     .soundType('glass')
@@ -201,6 +233,7 @@ StartupEvents.registry('block', (event) => {
     .hardness(0.5)
     .resistance(0.7)
     .defaultCutout()
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/compressed_glass');
 
   event
@@ -237,30 +270,35 @@ StartupEvents.registry('block', (event) => {
     .create('blackstone_2')
     .displayName('Compressed Blackstone (x2)')
     .soundType('stone')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/blackstone_2');
 
   event
     .create('blackstone_3')
     .displayName('Compressed Blackstone (x3)')
     .soundType('stone')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/blackstone_3');
 
   event
     .create('blackstone_4')
     .displayName('Compressed Blackstone (x4)')
     .soundType('stone')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/blackstone_4');
 
   event
     .create('blackstone_5')
     .displayName('Compressed Blackstone (x5)')
     .soundType('stone')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/blackstone_5');
 
   event
     .create('blackstone_6')
     .displayName('Compressed Blackstone (x6)')
     .soundType('stone')
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/blackstone_6');
 
   event
@@ -268,7 +306,8 @@ StartupEvents.registry('block', (event) => {
     .displayName('§5Chaotic Essence Block')
     .soundType('metal')
     .hardness(1.5)
-    .resistance(3.0)
+    .resistance(2.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/chaotic_essence_block')
     .tag('kubejs:chaotic_essence_block');
 
@@ -277,7 +316,8 @@ StartupEvents.registry('block', (event) => {
     .displayName('§1Starmetal Block')
     .soundType('metal')
     .hardness(1.0)
-    .resistance(1.5)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/starmetal_block')
     .tag('kubejs:starmetal_block');
 
@@ -286,7 +326,8 @@ StartupEvents.registry('block', (event) => {
     .displayName('§dEmpowered Super Block')
     .soundType('metal')
     .hardness(1.0)
-    .resistance(1.5)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/empowered_super_block')
     .tag('kubejs:empowered_super_block');
 
@@ -295,7 +336,8 @@ StartupEvents.registry('block', (event) => {
     .displayName('Auto Mechanical Sieve')
     .soundType('metal')
     .hardness(1.0)
-    .resistance(1.5)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/auto_mechanical_sieve')
     .tag('kubejs:auto_mechanical_sieve');
 
@@ -305,6 +347,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/fake_mob_masher');
 
   //#region armor_plus
@@ -314,6 +357,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/armor_plus/block_of_en_iron');
 
   event
@@ -322,6 +366,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/armor_plus/block_of_en_gold');
 
   event
@@ -330,6 +375,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/armor_plus/block_of_en_diamond');
 
   event
@@ -338,6 +384,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(1.0)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/armor_plus/block_of_en_netherite');
 
   //#region pneumaticraft_repressurized
@@ -347,6 +394,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/double_compressed_iron_block');
 
   event
@@ -355,6 +403,7 @@ StartupEvents.registry('block', (event) => {
     .soundType('metal')
     .hardness(0.8)
     .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
     .textureAll('kubejs:block/misc/triple_compressed_iron_block');
 });
 
@@ -368,8 +417,8 @@ StartupEvents.registry('block', (e) => {
       .tag('c:storage_blocks')
       .tagBlock('mineable/pickaxe')
       .soundType('metal')
-      .resistance(6)
-      .hardness(5)
+      .resistance(2)
+      .hardness(1)
       .requiresTool(true)
       .textureAll('kubejs:block/silent_gear/' + input1);
   }

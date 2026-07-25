@@ -1014,8 +1014,8 @@
 			icon: "bloodmagic:dungeon_metal"
 			id: "53E7A09F3F3B6272"
 			rewards: [{
-				id: "29A5CDAC99E24376"
-				item: "kubejs:ascended_coin"
+				id: "1CA6A6B3A762435A"
+				item: "kubejs:infused_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -1200,10 +1200,24 @@
 				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description14}"
 				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description15}"
 				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description16}"
+				""
 				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description17}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description18}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description19}"
+				""
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description20}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description21}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description22}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description23}"
+				"{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.description24}"
 			]
 			id: "0DAFD6CCA0F30DE1"
 			min_width: 300
+			rewards: [{
+				id: "1FC5CAFA85475EDA"
+				type: "xp"
+				xp: 1
+			}]
 			tasks: [{
 				id: "2F8A4467B09FE08E"
 				title: "{ftbquests.chapter.blood_magic.questDAFD6CCA0F30DE1.task.3425625678704271502.title}"
@@ -1231,8 +1245,8 @@
 				item: "bmaddon:blood_generator"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["53E7A09F3F3B6272"]
@@ -1248,7 +1262,7 @@
 				item: "bmaddon:blood_altar_assembler"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -1333,8 +1347,8 @@
 				item: "bmaddon:blood_altar_tier_card_5"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.0d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["22899D5B9A1D407E"]
@@ -1369,6 +1383,81 @@
 			}]
 			x: -4.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["53E7A09F3F3B6272"]
+			icon: "avaritia:infinity"
+			id: "36E8C71637541797"
+			rewards: [{
+				id: "2BDB64DECBB1578B"
+				item: "kubejs:ascended_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "51876697B4CCA7B4"
+					item: "avaritia:infinity"
+					type: "item"
+				}
+				{
+					count: 76L
+					id: "7D2FA1BCD96B22A1"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "bloodmagic:blankrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:speedrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:sacrificerune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:selfsacrificerune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:dislocationrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:altarcapacityrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:bettercapacityrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:orbcapacityrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:accelerationrune"
+								}
+								{
+									Count: 1b
+									id: "bloodmagic:chargingrune"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.blood_magic.quest53E7A09F3F3B6272.task.1584693650998761559.title}"
+					type: "item"
+				}
+			]
+			title: "Blood Altar VI"
+			x: -3.0d
+			y: 3.0d
 		}
 	]
 	title: "{ftbquests.chapter.blood_magic.title}"

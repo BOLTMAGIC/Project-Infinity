@@ -53,6 +53,7 @@ const dataModelsBossArray = [
   'bomd/obsidilith',
   'allthemodium/piglich',
   'twilightforest/snow_queen',
+  'twilightforest/ur_ghast',
   'cataclysm/harbinger',
   'bomd/void_blossom',
   'warden',
@@ -135,4 +136,59 @@ MMEvents.createProcesses((event) => {
   createPredictionChamberRecipes(event, dataModelsVanillaArray);
   createPredictionChamberRecipes(event, dataModelsBossArray);
   createPredictionChamberRecipes(event, dataModelsMiscArray);
+});
+
+
+function createPredictionChamberRecipes2 (event, mobs) {
+  mobs.forEach((mob) => {
+    const mobHNN = `hostilenetworks:${mob}`;
+    const rid = `mm:prediction_chamber_recipe_2_${safeIdPart(mob)}`;
+
+    event
+      .create(rid)
+      .structureId('mm:prediction_chamber_structure2')
+      .ticks(1)
+      .input({
+        type: 'mm:input/consume',
+        ingredient: {
+          type: 'mm:item',
+          item: 'extrahnn:extra_data_model',
+          count: 1,
+          nbt_snbt: `{data_model:{data:22375,ids:["${mobHNN}","${mobHNN}","${mobHNN}","${mobHNN}"]}}`,
+        },
+        chance: 0.0,
+      })
+      .input({
+        type: 'mm:input/consume',
+        ingredient: {
+          type: 'mm:item',
+          item: 'hostilenetworks:prediction_matrix',
+          count: 2048,
+        },
+        chance: 0.25,
+      })
+      .input({
+        type: 'mm:input/consume',
+        ingredient: {
+          type: 'mm:energy',
+          amount: 2147483647,
+        },
+      })
+      .output({
+        type: 'mm:output/simple',
+        ingredient: {
+          type: 'mm:item',
+          item: 'hostilenetworks:prediction',
+          count: 8192,
+          nbt_snbt: `{data_model:{id:"${mobHNN}"}}`,
+        },
+        perTick: true,
+      });
+  });
+}
+
+MMEvents.createProcesses((event) => {
+  createPredictionChamberRecipes2(event, dataModelsVanillaArray);
+  createPredictionChamberRecipes2(event, dataModelsBossArray);
+  createPredictionChamberRecipes2(event, dataModelsMiscArray);
 });

@@ -27,6 +27,12 @@ ServerEvents.recipes((event) => {
 
   //#region avaritia
   create3x3same(event, 'avaritia:blaze_cube', ['avaritia_expand:blaze_nugget']);
+  event
+    .shapeless('avaritia:soul_farmland', [
+      'minecraft:soul_sand',
+      'justdirethings:blazegold_hoe',
+    ])
+    .damageIngredient('justdirethings:blazegold_hoe', 1);
 
   //#region born_in_chaos_v1
   event.smelting(
@@ -280,6 +286,28 @@ ServerEvents.recipes((event) => {
     'projecte:high_covalence_dust',
     'projecte:medium_covalence_dust',
     'projecte:low_covalence_dust',
+  ]);
+
+  //#region NeoEco
+  create3x3(event, Item.of('neoecoae:eco_infinite_cell_component', 64), [
+    'ae2omnicells:creative_ae_cell_long',
+    [
+      Item.of(
+        'kubejs:fluid_tank_token',
+        '{fluid_id:"kubejs:cryotheum_coolant",tank_level:"ultimate"}'
+      ).weakNBT(),
+      Item.of(
+        'mekanism:ultimate_fluid_tank',
+        '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:256000,FluidName:"kubejs:cryotheum_coolant"}}]}}'
+      ).weakNBT(),
+    ],
+    'minecraft:air',
+    'minecraft:air',
+    'minecraft:air',
+    'minecraft:air',
+    'minecraft:air',
+    'minecraft:air',
+    'minecraft:air',
   ]);
 
   //#region refinedstorage

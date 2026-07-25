@@ -65,14 +65,6 @@ MMEvents.createProcesses((event) => {
           item: 'ae2omnicells:quantum_omni_cell_component_256m',
           count: 3,
         },
-      })
-      .input({
-        type: 'mm:input/consume',
-        ingredient: {
-          type: 'mm:item',
-          item: 'kubejs:ascended_coin',
-          count: 64,
-        },
       });
 
     if (Array.isArray(extraInputs)) {

@@ -141,6 +141,52 @@ MMEvents.createProcesses((event) => {
       },
     });
 
+  //ether gas
+  event
+    .create('mm:ether_gas_recipe4')
+    .structureId('mm:fire_attuned_structure2')
+    .ticks(2)
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'extendedcrafting:nether_star_block',
+        count: 16,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'kubejs:infinity_4',
+        count: 8,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'industrialforegoing:machine_frame_supreme',
+        count: 10,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 2000000000,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'industrialforegoing:ether_gas',
+        amount: 125000,
+      },
+    });
+
   //liquid sculk matter
   event
     .create('mm:liquid_sculk_matter_recipe2')

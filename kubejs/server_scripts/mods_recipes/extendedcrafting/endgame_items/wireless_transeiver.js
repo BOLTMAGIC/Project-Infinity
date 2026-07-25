@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
           item: 'ae2omnicells:spent_nuclear_waste_singularity',
         },
         F: {
-          item: 'extendedcrafting:the_ultimate_ingot',
+          item: 'kubejs:infinity_1',
         },
         G: {
           item: 'ae2:singularity',

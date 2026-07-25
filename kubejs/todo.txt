@@ -96,8 +96,14 @@ Recipe changes and fixes:
 - reworked EssenceForge recipes and cost (thx to hi_5979)
     - T1 EF will no longer work with T5 seeds.
     - T2 EF will no longer work with T6 seeds.
-    - T4 EF will use fewer eather gas for lower tier seeds
+    - T4 EF will use fewer ether gas for lower tier seeds
 - added a Compressed Yellow Cake Uranium item
+- added a new cryotheum coolant fuild
+- changed wireless transeiver recipe (thx to ofek) (its easier)
+- added a new recipe for ether gas in the fire attuned multiblock (thx to Lightreaper45) (its a endgame recipe with inf 4)
+- added a tier 2 prediction chamber (lategame) (thx to edwardeau)
+- added a new Blood Magic Multiblock Tier 6 (thx to KYO)
+- added a new meteor ritual (5M LP and a compressed Awakened Draconium Block)
 - 
 ----------
 Mod changes and fixes:

@@ -32,7 +32,7 @@
 			#Range: 2 ~ 32
 			shovel_break_range = 8
 			#config.avaritia.singularity_time_required.tooltip
-			#Range: > 0
+			#Range: > 1
 			singularity_time_required = 240
 			#config.avaritia.growth_soul_farmland.tooltip
 			#Range: 0.0 ~ 1.0
@@ -60,6 +60,8 @@
 			#config.avaritia.blaze_cube_emc.tooltip
 			#Range: > 0
 			blaze_cube_emc = 30568
+			#config.avaritia.enable_projecte_singularity_count_boost.tooltip
+			enable_projecte_singularity_count_boost = true
 
 [channel]
 

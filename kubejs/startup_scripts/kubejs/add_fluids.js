@@ -1,5 +1,4 @@
 StartupEvents.registry('fluid', (event) => {
-  // Basic "thick" (looks like lava) fluid with red tint
   event
     .create('molten_basalz')
     .thickTexture(0x800000)
@@ -15,4 +14,10 @@ StartupEvents.registry('fluid', (event) => {
     .thickTexture(0xedfdff)
     .bucketColor(0xedfdff)
     .displayName('Molten Blitz');
+
+  event
+    .create('cryotheum_coolant')
+    .thickTexture(0xa1fff7)
+    .bucketColor(0xa1fff7)
+    .displayName('Cryotheum Coolant');
 });

@@ -1,0 +1,48 @@
+{
+  "type": "bloodmagic:meteor",
+  "explosion": 6.0,
+  "input": {
+    "item": "kubejs:compressed_awakened_draconium_block"
+  },
+  "layers": [
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "draconicevolution:overworld_draconium_ore"
+      },
+      "minWeight": 0,
+      "radius": 13
+    },
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "draconicevolution:deepslate_draconium_ore"
+      },
+      "minWeight": 750,
+      "radius": 7,
+      "weightMap": [
+        {
+          "block": "draconicevolution:overworld_draconium_ore",
+          "weight": 150
+        },
+        {
+          "block": "draconicevolution:nether_draconium_ore",
+          "weight": 50
+        },
+        {
+          "block": "draconicevolution:end_draconium_ore",
+          "weight": 50
+        },
+        {
+          "block": "draconicevolution:draconium_block",
+          "weight": 20
+        },
+        {
+          "block": "draconicevolution:awakened_draconium_block",
+          "weight": 7
+        }
+      ]
+    }
+  ],
+  "syphon": 5000000
+}
