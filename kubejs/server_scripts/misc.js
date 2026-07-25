@@ -263,12 +263,11 @@ ServerEvents.recipes((event) => {
       ['ABA', 'ACA', 'ADA'],
       {
         A: 'minecraft:glowstone',
-        B: 'projecte:collector_mk3',
+        B: 'projecte:collector_mk2',
         C: 'projecte:aeternalis_fuel_block',
-        D: 'projecte:transmutation_table',
+        D: 'kubejs:fake_transmutation_tablet',
       }
-    )
-    .keepIngredient('projecte:transmutation_table');
+    );
 
   create3x3(event, 'projectexpansion:basic_emc_link', [
     'projecte:low_covalence_dust',
@@ -281,6 +280,8 @@ ServerEvents.recipes((event) => {
     'projecte:medium_covalence_dust',
     'projecte:low_covalence_dust',
   ]);
+
+  event.shapeless('kubejs:fake_transmutation_tablet', 'projecte:transmutation_table');
 
   //#region refinedstorage
   shapeless(event, 'refinedstorage:creative_storage_block', [

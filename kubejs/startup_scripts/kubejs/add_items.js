@@ -238,6 +238,9 @@ StartupEvents.registry('item', (e) => {
   createraw(e, 'raw_voidmetal');
   createraw(e, 'raw_plasteel');
 
+  e.create('soul_gem')
+    .texture('kubejs:item/silent/soul_gem');
+
   //#region starmetal ingot
   e.create('starmetal_ingot')
     .tag('forge:ingots/starmetal_ingot')
@@ -535,4 +538,8 @@ StartupEvents.registry('item', (e) => {
   e.create('chemical_tank_token')
     .displayName('Chemical Tank Token')
     .texture('kubejs:item/chemical_tank_token');
+
+  e.create('fake_transmutation_tablet')
+    .displayName('Fake Transmutation Tablet')
+    .texture('kubejs:item/fake_transmutation_tablet');
 });

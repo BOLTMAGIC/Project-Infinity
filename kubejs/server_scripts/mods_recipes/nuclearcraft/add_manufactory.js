@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-  function manufactoring(
+  function manufactoring (
     event,
     input_item,
     output_count,

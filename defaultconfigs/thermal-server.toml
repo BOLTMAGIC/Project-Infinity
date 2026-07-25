@@ -1,0 +1,4 @@
+[Recipes]
+	[Recipes.Bottler]
+		#If TRUE, Florb filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Florb Recipes" = false

@@ -277,5 +277,5 @@
 
 [forge_tag_priority]
 	#Priority of mods to resolve forge tags to itemstack and fluidstack.
-	mods_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering"]
+	mods_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering", "kubejs"]
 

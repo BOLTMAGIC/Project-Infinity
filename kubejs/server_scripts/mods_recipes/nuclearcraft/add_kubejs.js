@@ -22,5 +22,9 @@ ServerEvents.recipes((event) => {
   create3x3same(event, 'kubejs:hard_carbon_block', [
     'nuclearcraft:hard_carbon_ingot',
   ]);
-  event.smelting('nuclearcraft:manganese_oxide_dust', 'nuclearcraft:rhodochrosite_dust');
+
+  event.smelting(
+    'nuclearcraft:manganese_oxide_dust',
+    'nuclearcraft:rhodochrosite_dust'
+  );
 });
