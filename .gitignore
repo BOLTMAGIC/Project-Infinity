@@ -40,3 +40,6 @@ kubejs/jsconfig.json
 config/fancymenu/user_variables.db
 /options.txt
 config/AppliedeE/emc_cache.tsv
+kubejs/client_scripts/jsconfig.json
+kubejs/server_scripts/jsconfig.json
+kubejs/startup_scripts/jsconfig.json

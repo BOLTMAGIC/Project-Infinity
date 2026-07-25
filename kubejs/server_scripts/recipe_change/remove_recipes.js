@@ -177,6 +177,7 @@ const removeItemsbyOutput = [
   'industrialforegoing:conveyor_extraction_upgrade',
   'industrialforegoing:conveyor_splitting_upgrade',
   'thermal:florb',
+  'silentgems:soul_gem'
 ];
 
 //#region ID removal

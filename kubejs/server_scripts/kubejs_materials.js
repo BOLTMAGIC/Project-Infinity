@@ -51,6 +51,18 @@ ServerEvents.recipes((event) => {
     'mysticalagradditions:creative_essence',
   ]);
 
+  create3x3(event, 'kubejs:soul_gem', [
+    'minecraft:air',
+    '#silentgems:gems',
+    'minecraft:air',
+    'thermal:silver_ingot',
+    'minecraft:diamond',
+    'thermal:silver_ingot',
+    'minecraft:air',
+    'minecraft:chorus_fruit',
+    'minecraft:air',
+  ]);
+
   //Ultimate Infinty Essence Crafts
   create3x3(event, 'kubejs:ultimate_gem', [
     'mysticalagriculture:ultimate_infinity_essence',

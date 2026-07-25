@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
         'redstone_arsenal:flux_gem',
         'cyclic:gem_amber',
         'cyclic:gem_obsidian',
-        'silentgems:soul_gem',
+        'kubejs:soul_gem',
         'dimensionalpocketsii:dimensional_gem',
         'mysticalagriculture:prosperity_gemstone',
         'mysticalagriculture:soulium_gemstone',

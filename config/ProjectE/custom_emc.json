@@ -456,7 +456,7 @@
       "item": "functionalstorage:armory_cabinet",
       "emc": 0
     },
-        {
+    {
       "item": "sophisticatedstorage:barrel",
       "emc": 0
     },
@@ -508,7 +508,7 @@
       "item": "sophisticatedstorage:copper_shulker_box",
       "emc": 0
     },
-        {
+    {
       "item": "minecraft:shulker_box",
       "emc": 0
     },
@@ -576,7 +576,7 @@
       "item": "minecraft:pink_shulker_box",
       "emc": 0
     },
-        {
+    {
       "item": "sophisticatedbackpacks:copper_backpack",
       "emc": 0
     },
@@ -611,6 +611,10 @@
     {
       "item": "projecte:philosophers_stone",
       "emc": 1000000001
+    },
+    {
+      "item": "kubejs:fake_transmutation_tablet",
+      "emc": 2000000001
     }
   ]
 }
