@@ -86,7 +86,7 @@
 				}
 				type: "item"
 			}]
-			title: "1x1 Drawers"
+			title: "{ftbquests.chapter.functional_storage.quest44585421ED625DAF.title}"
 			x: 1.5d
 			y: 0.5d
 		}
@@ -150,7 +150,7 @@
 				}
 				type: "item"
 			}]
-			title: "1x2 Drawers"
+			title: "{ftbquests.chapter.functional_storage.quest7EE6EE130340B0F5.title}"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -214,7 +214,7 @@
 				}
 				type: "item"
 			}]
-			title: "2x2 Drawers"
+			title: "{ftbquests.chapter.functional_storage.quest4258424A4D66E294.title}"
 			x: 4.5d
 			y: 0.5d
 		}
@@ -562,12 +562,12 @@
 			optional: true
 			tasks: [{
 				id: "1310782AD60715DF"
-				title: "Created by Solardaisy"
+				title: "{ftbquests.chapter.functional_storage.quest7C990C0D5F95781.task.1373730011722749407.title}"
 				type: "checkmark"
 			}]
 			x: 4.5d
 			y: -2.5d
 		}
 	]
-	title: "Functional storage"
+	title: "{ftbquests.chapter.functional_storage.title}"
 }

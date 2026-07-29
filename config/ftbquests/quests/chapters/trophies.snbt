@@ -106,7 +106,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Ocean Biome. Sunken City Structure Boss"
+			subtitle: "{ftbquests.chapter.trophies.questC17286BEE764C15.subtitle}"
 			tasks: [{
 				entity: "cataclysm:the_leviathan"
 				icon: {
@@ -195,7 +195,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "End Dimension. Ruined Citadel Structure. MiniBoss"
+			subtitle: "{ftbquests.chapter.trophies.quest90B353D06371C2F.subtitle}"
 			tasks: [{
 				entity: "cataclysm:ender_golem"
 				icon: {
@@ -339,7 +339,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Lost Cities Dimension. Desert Biome. Cursed Pyramid Structure Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest19AD469AA10F626B.subtitle}"
 			tasks: [{
 				entity: "cataclysm:ancient_remnant"
 				icon: {
@@ -475,7 +475,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Underground. Ancient Factory Sturcute. Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest421704684A878A50.subtitle}"
 			tasks: [{
 				entity: "cataclysm:the_harbinger"
 				icon: {
@@ -738,7 +738,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Underground. Ancient Factory Sturcute. MiniBoss"
+			subtitle: "{ftbquests.chapter.trophies.quest4F8621DAF45C01F3.subtitle}"
 			tasks: [{
 				entity: "cataclysm:the_prowler"
 				icon: {
@@ -873,7 +873,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Nether Dimension. Soul Forge Structure. Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest176A32477392BF5B.subtitle}"
 			tasks: [{
 				entity: "cataclysm:netherite_monstrosity"
 				icon: {
@@ -943,10 +943,10 @@
 		{
 			can_repeat: false
 			description: [
-				"Use the cake or build the portal."
-				"Throw a diamond in the water to activate the portal."
-				"{image:kubejs:block/screen/twilight_forest_portal1 width:100 height:100 align:center}"
-				"{image:kubejs:block/screen/twilight_forest_portal2 width:100 height:100 align:center}"
+				"{ftbquests.chapter.trophies.quest28C4A252B3C43FC0.description1}"
+				"{ftbquests.chapter.trophies.quest28C4A252B3C43FC0.description2}"
+				"{ftbquests.chapter.trophies.quest28C4A252B3C43FC0.image0}"
+				"{ftbquests.chapter.trophies.quest28C4A252B3C43FC0.image2}"
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
@@ -1014,7 +1014,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "The Other Dimension. Ancient Pyramid Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest7DDCE408BFBB339E.subtitle}"
 			tasks: [{
 				entity: "allthemodium:piglich"
 				icon: {
@@ -1244,7 +1244,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Nether Dimension. Nether Wastes Biome. Burning Arena Structure. Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest505592DEC9244341.subtitle}"
 			tasks: [{
 				entity: "cataclysm:ignis"
 				icon: {
@@ -1292,7 +1292,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "End Dimension. Ruined Citadel Structure. Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest16E7B387F7A40600.subtitle}"
 			tasks: [{
 				entity: "cataclysm:ender_guardian"
 				icon: {
@@ -1313,7 +1313,7 @@
 		}
 		{
 			can_repeat: false
-			description: ["You monster!"]
+			description: ["{ftbquests.chapter.trophies.quest34AB3D77F5DF0E1D.description1}"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_visible: false
@@ -1436,7 +1436,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Lost Cities Dimension. Snowy Biomes. Frosted Prison Structure. MiniBoss"
+			subtitle: "{ftbquests.chapter.trophies.quest154C21F7275D391F.subtitle}"
 			tasks: [{
 				entity: "cataclysm:aptrgangr"
 				icon: {
@@ -1484,7 +1484,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Lost Cities Dimension. Snowy Biomes. Frosted Prison Structure. Boss"
+			subtitle: "{ftbquests.chapter.trophies.quest62443022DB2BE6C2.subtitle}"
 			tasks: [{
 				entity: "cataclysm:maledictus"
 				icon: {
@@ -1532,7 +1532,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Ocean Biome. Acropolis Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest3B8FE81C2871316C.subtitle}"
 			tasks: [{
 				entity: "cataclysm:scylla"
 				icon: {
@@ -1580,7 +1580,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Ocean Biome. Sunken City Structure MiniBoss"
+			subtitle: "{ftbquests.chapter.trophies.quest4E55A44AB629DFDE.subtitle}"
 			tasks: [{
 				entity: "cataclysm:clawdian"
 				icon: {
@@ -1601,7 +1601,7 @@
 		}
 		{
 			can_repeat: false
-			description: ["Feed me all the wool colors to get the trophy."]
+			description: ["{ftbquests.chapter.trophies.quest29E0B732F98A6A58.description1}"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_visible: false
@@ -1640,7 +1640,6 @@
 			y: 16.5d
 		}
 		{
-			description: ["{ftbquests.chapter.bounty_board.quest239FCC26EECF4DE2.description1}"]
 			id: "3A182E53E0E2359A"
 			rewards: [{
 				id: "3B8310480BD70111"
@@ -1692,7 +1691,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Nether Dimension. The Gauntlet Arena Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest71E9B29134583208.subtitle}"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:gauntlet"
 				icon: {
@@ -1740,7 +1739,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Cold biomes. Lich Tower Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest32283FA5987E5EC4.subtitle}"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:lich"
 				icon: {
@@ -1788,7 +1787,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "The End Dimension. Obsidilith Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest61B3A493C23B7511.subtitle}"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:obsidilith"
 				icon: {
@@ -1836,7 +1835,7 @@
 			]
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "Hunting Dimension. Void Blossom Structure"
+			subtitle: "{ftbquests.chapter.trophies.quest74C3F78D8D75A801.subtitle}"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:void_blossom"
 				icon: {
@@ -1856,5 +1855,5 @@
 			y: -1.0d
 		}
 	]
-	title: "Kill Throphies"
+	title: "{ftbquests.chapter.trophies.title}"
 }

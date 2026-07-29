@@ -10,8 +10,8 @@ ServerEvents.recipes((event) => {
         'JKLMBNOPQ',
         'RSTUBVWXY',
         'Z   8   1',
-        '2   B   3',
-        '4   B   5',
+        '2   8   3',
+        '4   8   5',
         '6   B   7',
       ],
       key: {

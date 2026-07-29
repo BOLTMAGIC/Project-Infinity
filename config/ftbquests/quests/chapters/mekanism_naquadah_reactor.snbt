@@ -18,7 +18,7 @@
 				""
 				"{ftbquests.chapter.mekanism_naquadah_reactor.questE5CD46C5A26BEC0.description5}"
 				"{ftbquests.chapter.mekanism_naquadah_reactor.questE5CD46C5A26BEC0.description6}"
-				"{image:kubejs:block/screen/naquadah_reactor_multiblock width:482 height:348 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.questE5CD46C5A26BEC0.image0}"
 			]
 			id: "0E5CD46C5A26BEC0"
 			rewards: [{
@@ -39,7 +39,7 @@
 			description: [
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest7A822E0A7F810F44.description1}"
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest7A822E0A7F810F44.description2}"
-				"{image:kubejs:block/screen/naquadah_order width:964 height:626 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest7A822E0A7F810F44.image0}"
 			]
 			id: "7A822E0A7F810F44"
 			rewards: [
@@ -113,7 +113,7 @@
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest2BD5A053D512F22C.description1}"
 				""
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest2BD5A053D512F22C.description2}"
-				"{image:kubejs:block/screen/naq_water_change_to_6 width:416 height:331 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest2BD5A053D512F22C.image0}"
 			]
 			id: "2BD5A053D512F22C"
 			rewards: [{
@@ -194,7 +194,7 @@
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest32F36187798AB590.description1}"
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest32F36187798AB590.description2}"
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest32F36187798AB590.description3}"
-				"{image:kubejs:block/screen/naq_laser_amplifiers width:704 height:693 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest32F36187798AB590.image0}"
 			]
 			id: "32F36187798AB590"
 			rewards: [{
@@ -219,7 +219,7 @@
 		}
 		{
 			dependencies: ["32F36187798AB590"]
-			description: ["{image:kubejs:block/screen/polonium_containing_steam_naq width:691 height:132 align:center fit:true}"]
+			description: ["{ftbquests.chapter.mekanism_naquadah_reactor.quest2DD0D68709655E3B.image0}"]
 			id: "2DD0D68709655E3B"
 			min_width: 320
 			rewards: [{
@@ -239,7 +239,7 @@
 			dependencies: ["2DD0D68709655E3B"]
 			description: [
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest62CC0735905641A4.description1}"
-				"{image:kubejs:block/screen/naq_rotary width:673 height:156 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest62CC0735905641A4.image0}"
 			]
 			id: "62CC0735905641A4"
 			rewards: [{
@@ -259,7 +259,7 @@
 			dependencies: ["62CC0735905641A4"]
 			description: [
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest5BD9B76E0EE563B2.description1}"
-				"{image:kubejs:block/screen/naq_thermal_evap_plant width:548 height:160 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest5BD9B76E0EE563B2.image0}"
 			]
 			id: "5BD9B76E0EE563B2"
 			min_width: 250
@@ -281,7 +281,7 @@
 			description: [
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest2EA93C8B1D7CC617.description1}"
 				""
-				"{image:kubejs:block/screen/naq_rotary2 width:431 height:164 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest2EA93C8B1D7CC617.image0}"
 			]
 			id: "2EA93C8B1D7CC617"
 			rewards: [
@@ -309,7 +309,7 @@
 			description: [
 				"{ftbquests.chapter.mekanism_naquadah_reactor.quest781EC762FE076D96.description1}"
 				""
-				"{image:kubejs:block/screen/naq_solar_neutron_activator width:349 height:160 align:center fit:true}"
+				"{ftbquests.chapter.mekanism_naquadah_reactor.quest781EC762FE076D96.image0}"
 			]
 			id: "781EC762FE076D96"
 			rewards: [{

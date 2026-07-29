@@ -355,7 +355,7 @@
 		}
 		{
 			dependencies: ["3856A800287BD8F6"]
-			description: ["There are a lot of Furnaces. Check the Smelters Quest Tab"]
+			description: ["{ftbquests.chapter.welcome.quest231765C07B4A12B7.description1}"]
 			id: "231765C07B4A12B7"
 			rewards: [{
 				id: "4FC6D1192E322DCB"
@@ -983,7 +983,7 @@
 		}
 		{
 			dependencies: ["349588784C2748E2"]
-			description: ["{image:kubejs:block/screen/dynamic_dungeon_portal width:240 height:135 align:center}"]
+			description: ["{ftbquests.chapter.welcome.quest2BD5A176D1FF28AB.image0}"]
 			id: "2BD5A176D1FF28AB"
 			rewards: [{
 				id: "2A648285011CC925"
@@ -1041,7 +1041,7 @@
 				}
 				type: "item"
 			}]
-			title: "Shears"
+			title: "{ftbquests.chapter.welcome.quest7717A3BEE456FEEE.title}"
 			x: 0.0d
 			y: -2.2d
 		}
@@ -1175,7 +1175,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			title: "Animals"
+			title: "{ftbquests.chapter.welcome.quest11CE13AE71F2633C.title}"
 			x: 1.0d
 			y: -8.5d
 		}

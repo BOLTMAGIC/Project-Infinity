@@ -4676,11 +4676,11 @@
 		}
 		{
 			description: [
-				"&7While the mutant enderman is dying, you can actually collect &dendersoul fragments&7 by right-clicking them before they explode."
+				"{ftbquests.chapter.mystical_agriculture.quest76729738389C5C5F.description1}"
 				""
-				"&7Now with some &dendersoul fragments&7 following you, all you have to do is drop (&enot right-click&7) an &5eye of ender&7."
+				"{ftbquests.chapter.mystical_agriculture.quest76729738389C5C5F.description2}"
 				""
-				"&7Also, if your &dendersoul hand&7 is running out of uses and you have some spare &dendersoul fragments&7, just toss out your &dendersoul hand&7 while the fragments are following you and it'll recharge the hand again (&fwith 60 uses each fragment&7)."
+				"{ftbquests.chapter.mystical_agriculture.quest76729738389C5C5F.description3}"
 			]
 			id: "76729738389C5C5F"
 			min_width: 350

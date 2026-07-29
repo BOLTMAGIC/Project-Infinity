@@ -188,7 +188,7 @@
 						value: "gateways"
 					}
 				}
-				title: "Any Gateway"
+				title: "{ftbquests.chapter.tips_and_tricks.quest70E66957E98D944D.task.2334289861083748258.title}"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.tips_and_tricks.quest70E66957E98D944D.title}"
@@ -1145,7 +1145,7 @@
 			size: 2.5d
 			tasks: [{
 				id: "4DA39D64821AA2C1"
-				title: "Hey :)"
+				title: "{ftbquests.chapter.tips_and_tricks.quest518405876B7FEB5A.task.5594488217129362113.title}"
 				type: "checkmark"
 			}]
 			x: -0.9761904761904674d
@@ -1194,8 +1194,8 @@
 		}
 		{
 			description: [
-				"You can view the status of all ME devices at once (online/offline, channels, connections, etc.)."
-				"Use it to spot missing channels, disconnected cables, or overloaded parts of the network."
+				"{ftbquests.chapter.tips_and_tricks.quest7226C281B781ADF.description1}"
+				"{ftbquests.chapter.tips_and_tricks.quest7226C281B781ADF.description2}"
 			]
 			id: "07226C281B781ADF"
 			rewards: [{

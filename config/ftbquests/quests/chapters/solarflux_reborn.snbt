@@ -28,7 +28,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Welcome to the questline where you'll discover how to harness the power of the &esun&r to generate &cenergy&r by mod Solar Flux Reborn!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest6D200C64228552DD.description1}"]
 			id: "6D200C64228552DD"
 			rewards: [{
 				id: "3703C649A36A0170"
@@ -39,19 +39,19 @@
 			size: 1.0d
 			tasks: [{
 				id: "660EDD993775F521"
-				title: "Push to start!"
+				title: "{ftbquests.chapter.solarflux_reborn.quest6D200C64228552DD.task.7354058891672810785.title}"
 				type: "checkmark"
 			}]
-			title: "Solar Flux Reborn - Introduction"
+			title: "{ftbquests.chapter.solarflux_reborn.quest6D200C64228552DD.title}"
 			x: -1.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["07695BF95821104C"]
 			description: [
-				"This is your first &eSolar Panel&r in this mod. It doesn't generate much &cpower&r, but it's a great start!"
+				"{ftbquests.chapter.solarflux_reborn.quest6B7CC05482168BAD.description1}"
 				""
-				"Generates &c1 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest6B7CC05482168BAD.description2}"
 			]
 			id: "6B7CC05482168BAD"
 			min_required_dependencies: 2
@@ -78,11 +78,11 @@
 		{
 			dependencies: ["6D200C64228552DD"]
 			description: [
-				"This is mirror, and the foundation for every photovoltaic to come!"
+				"{ftbquests.chapter.solarflux_reborn.quest7695BF95821104C.description1}"
 				""
-				"Mirrors are required to craft photovoltaics and &9upgrades&r. "
+				"{ftbquests.chapter.solarflux_reborn.quest7695BF95821104C.description2}"
 				""
-				"The more advanced the &eSolar Panel&r, the more expensive its photovoltaic become to craft."
+				"{ftbquests.chapter.solarflux_reborn.quest7695BF95821104C.description3}"
 			]
 			id: "07695BF95821104C"
 			rewards: [
@@ -103,13 +103,13 @@
 				item: "solarflux:mirror"
 				type: "item"
 			}]
-			title: "This is mirror!"
+			title: "{ftbquests.chapter.solarflux_reborn.quest7695BF95821104C.title}"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["07695BF95821104C"]
-			description: ["There are also various &9upgrades&r available for your &eSolar Panels&r!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest4588F09890728436.description1}"]
 			id: "4588F09890728436"
 			rewards: [{
 				id: "3AADC5F472AF3076"
@@ -118,10 +118,10 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "Let's upgrade!"
+			subtitle: "{ftbquests.chapter.solarflux_reborn.quest4588F09890728436.subtitle}"
 			tasks: [{
 				id: "77D6336DBA090447"
-				title: "Upgrades for our Solar Panels!"
+				title: "{ftbquests.chapter.solarflux_reborn.quest4588F09890728436.task.8635145881895109703.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -129,7 +129,7 @@
 		}
 		{
 			dependencies: ["4588F09890728436"]
-			description: ["&9Blank upgrade&r need for all our upgrades, so make them much!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest21C9CACEC28D9380.description1}"]
 			id: "21C9CACEC28D9380"
 			rewards: [
 				{
@@ -161,9 +161,9 @@
 			dependencies: ["6B7CC05482168BAD"]
 			dependency_requirement: "one_completed"
 			description: [
-				"This is your second &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest45F3E857897AF9E8.description1}"
 				""
-				"Generates &c8 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest45F3E857897AF9E8.description2}"
 			]
 			id: "45F3E857897AF9E8"
 			rewards: [
@@ -188,7 +188,7 @@
 		}
 		{
 			dependencies: ["07695BF95821104C"]
-			description: ["This photovoltaic cell need for craft tier III &eSolar Panel&r and now you can do the efficiency &9upgrade&r!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest2B5C940E1B4AE183.description1}"]
 			id: "2B5C940E1B4AE183"
 			rewards: [
 				{
@@ -217,9 +217,9 @@
 				"2B5C940E1B4AE183"
 			]
 			description: [
-				"The most essential and useful upgrade for your &eSolar Panels&r! "
+				"{ftbquests.chapter.solarflux_reborn.quest5F9945DB00930E83.description1}"
 				""
-				"Each of this upgrade increase &cpower&r generation by &n5%&r. A single &eSolar Panel&r can hold up to &n20&r of these &9upgrades&r, providing a total bonus of up to &n100%&r extra &cpower&r generation!"
+				"{ftbquests.chapter.solarflux_reborn.quest5F9945DB00930E83.description2}"
 			]
 			hide_dependency_lines: false
 			id: "5F9945DB00930E83"
@@ -235,19 +235,19 @@
 					xp: 100
 				}
 			]
-			subtitle: "Most useful!"
+			subtitle: "{ftbquests.chapter.solarflux_reborn.quest5F9945DB00930E83.subtitle}"
 			tasks: [{
 				id: "087EA910B23DD647"
 				item: "solarflux:efficiency_upgrade"
 				type: "item"
 			}]
-			title: "Power generation upgrade"
+			title: "{ftbquests.chapter.solarflux_reborn.quest5F9945DB00930E83.title}"
 			x: -4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["21C9CACEC28D9380"]
-			description: ["Each of this &9upgrade&r increase &cpower&r transfer rate by &n15%&r. A single &eSolar Panel&r can hold up to &n10&r of these &9upgrades&r, providing a total bonus of up to &n150%&r extra &cpower&r transfer rate!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest10F30F8C3F6717E8.description1}"]
 			id: "10F30F8C3F6717E8"
 			rewards: [
 				{
@@ -271,7 +271,7 @@
 		}
 		{
 			dependencies: ["21C9CACEC28D9380"]
-			description: ["Each of this &9upgrade&r increase &cpower&r capacity by &n10%&r. A single &eSolar Panel&r can hold up to &n10&r of these &9upgrades&r, providing a total bonus of up to &n100%&r extra &cpower&r capacity!"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest7020099B296A585A.description1}"]
 			id: "7020099B296A585A"
 			rewards: [
 				{
@@ -295,7 +295,7 @@
 		}
 		{
 			dependencies: ["61795A749706FF83"]
-			description: ["Allows you to &cpower&r your ME Network by connecting an ME cable directly to the &eSolar Panel&r with this upgrade installed (Does not input FE into ME FE Cells)"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest491F1991E43271B8.description1}"]
 			id: "491F1991E43271B8"
 			optional: true
 			rewards: [
@@ -320,7 +320,7 @@
 		}
 		{
 			dependencies: ["61795A749706FF83"]
-			description: ["When a &eSolar Panel&r with this &9upgrade&r is placed on a machine that uses &cFE&r, it can also transfer &cFE&r through a chain of connected machines within a 5-block range"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest7324D496127FC13E.description1}"]
 			id: "7324D496127FC13E"
 			optional: true
 			rewards: [
@@ -348,7 +348,7 @@
 				"61795A749706FF83"
 				"661D7ED8182EDE3E"
 			]
-			description: ["This &9Upgrade&r allows your &eSolar Panel&r to wirelessly charge all compatible items in the nearest player's inventory within a 16-block range"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest7EB5F0ABF6875189.description1}"]
 			id: "7EB5F0ABF6875189"
 			optional: true
 			rewards: [
@@ -373,7 +373,7 @@
 		}
 		{
 			dependencies: ["61795A749706FF83"]
-			description: ["This &9Upgrade&r allows your &eSolar Panel&r to wirelessly charge one machine with FE storage within a 16-block range"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest661D7ED8182EDE3E.description1}"]
 			id: "661D7ED8182EDE3E"
 			optional: true
 			rewards: [
@@ -401,7 +401,7 @@
 				"1DBC769D11787A26"
 				"61795A749706FF83"
 			]
-			description: ["Allows your &eSolar Panel&r to &cpower&r the furnace directly beneath it, eliminating the need for fuel"]
+			description: ["{ftbquests.chapter.solarflux_reborn.questD28A9BB313B6447.description1}"]
 			id: "0D28A9BB313B6447"
 			optional: true
 			rewards: [
@@ -426,7 +426,7 @@
 		}
 		{
 			dependencies: ["21C9CACEC28D9380"]
-			description: ["These &9upgrades&r are optional, but they can be useful in certain situations."]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest61795A749706FF83.description1}"]
 			id: "61795A749706FF83"
 			optional: true
 			rewards: [{
@@ -438,7 +438,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "4FA7E55830792183"
-				title: "Semi-useful upgrades"
+				title: "{ftbquests.chapter.solarflux_reborn.quest61795A749706FF83.task.5739808417040114051.title}"
 				type: "checkmark"
 			}]
 			x: -6.5d
@@ -450,9 +450,9 @@
 				"2B5C940E1B4AE183"
 			]
 			description: [
-				"This is your third &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest753E298B65E8CEF5.description1}"
 				""
-				"Generates &c32 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest753E298B65E8CEF5.description2}"
 			]
 			id: "753E298B65E8CEF5"
 			rewards: [
@@ -481,9 +481,9 @@
 				"7911D72245D86A30"
 			]
 			description: [
-				"This is your fourth &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest40D3FC3C6709B990.description1}"
 				""
-				"Generates &c128 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest40D3FC3C6709B990.description2}"
 			]
 			id: "40D3FC3C6709B990"
 			rewards: [
@@ -508,7 +508,7 @@
 		}
 		{
 			dependencies: ["2B5C940E1B4AE183"]
-			description: ["This photovoltaic cell need for craft tier IV &eSolar Panel&r"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest7911D72245D86A30.description1}"]
 			id: "7911D72245D86A30"
 			rewards: [
 				{
@@ -537,9 +537,9 @@
 				"40D3FC3C6709B990"
 			]
 			description: [
-				"This is your fifth &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest336BA1D3A227968D.description1}"
 				""
-				"Generates &c512 FE&r/Tick"
+				"{ftbquests.chapter.solarflux_reborn.quest336BA1D3A227968D.description2}"
 			]
 			id: "336BA1D3A227968D"
 			tasks: [{
@@ -556,9 +556,9 @@
 				"40D3FC3C6709B990"
 			]
 			description: [
-				"This is your sixth &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest48218FC36BBFCBF4.description1}"
 				""
-				"Generates &c2,048 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest48218FC36BBFCBF4.description2}"
 			]
 			id: "48218FC36BBFCBF4"
 			rewards: [
@@ -587,9 +587,9 @@
 				"40D3FC3C6709B990"
 			]
 			description: [
-				"This is your seventh &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.quest68386786A6999AFF.description1}"
 				""
-				"Generates &c8,192 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest68386786A6999AFF.description2}"
 			]
 			id: "68386786A6999AFF"
 			rewards: [
@@ -618,9 +618,9 @@
 				"336BA1D3A227968D"
 			]
 			description: [
-				"This is your eighth &eSolar Panel&r"
+				"{ftbquests.chapter.solarflux_reborn.questAE073C20A3BCD20.description1}"
 				""
-				"Generates &c32,768 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.questAE073C20A3BCD20.description2}"
 			]
 			id: "0AE073C20A3BCD20"
 			rewards: [
@@ -646,9 +646,9 @@
 		{
 			dependencies: ["0AE073C20A3BCD20"]
 			description: [
-				"This is your ninth &eSolar Panel&r added by Draconic Evolution mod."
+				"{ftbquests.chapter.solarflux_reborn.quest2CE635EACAEE41AD.description1}"
 				""
-				"Generates &c65,536 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest2CE635EACAEE41AD.description2}"
 			]
 			id: "2CE635EACAEE41AD"
 			rewards: [
@@ -674,9 +674,9 @@
 		{
 			dependencies: ["2CE635EACAEE41AD"]
 			description: [
-				"This is your tenth &eSolar Panel&r added by Draconic Evolution mod."
+				"{ftbquests.chapter.solarflux_reborn.quest78B02BEC238F2133.description1}"
 				""
-				"Generates &c262,144 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest78B02BEC238F2133.description2}"
 			]
 			id: "78B02BEC238F2133"
 			rewards: [
@@ -702,9 +702,9 @@
 		{
 			dependencies: ["78B02BEC238F2133"]
 			description: [
-				"This is your eleventh &eSolar Panel&r added by Draconic Evolution mod."
+				"{ftbquests.chapter.solarflux_reborn.quest5ADE08D373D363A2.description1}"
 				""
-				"Generates &c524,228 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest5ADE08D373D363A2.description2}"
 			]
 			id: "5ADE08D373D363A2"
 			rewards: [
@@ -730,9 +730,9 @@
 		{
 			dependencies: ["5ADE08D373D363A2"]
 			description: [
-				"This is your twelfth &eSolar Panel&r added by Avaritia mod."
+				"{ftbquests.chapter.solarflux_reborn.quest1EB860042A15FEF8.description1}"
 				""
-				"Generates &c8,388,608 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest1EB860042A15FEF8.description2}"
 			]
 			id: "1EB860042A15FEF8"
 			rewards: [
@@ -758,13 +758,13 @@
 		{
 			dependencies: ["1EB860042A15FEF8"]
 			description: [
-				"This is your twelfth and last &eSolar Panel&r in the Solar Flux Reborn mod."
+				"{ftbquests.chapter.solarflux_reborn.quest9221120B99432D.description1}"
 				""
-				"Generates &c16,777,216 FE&r/tick"
+				"{ftbquests.chapter.solarflux_reborn.quest9221120B99432D.description2}"
 				""
-				"You've come a long way, from generating just &c1 FE/t&r to building the most powerful &eSolar Panel&r in Project Infinity 0.1, capable of producing &c16,777,216 FE/t&r without upgrades (winks)"
+				"{ftbquests.chapter.solarflux_reborn.quest9221120B99432D.description3}"
 				""
-				"You've done an amazing job. Congratulations! "
+				"{ftbquests.chapter.solarflux_reborn.quest9221120B99432D.description4}"
 			]
 			icon_scale: 1.25d
 			id: "009221120B99432D"
@@ -807,7 +807,7 @@
 		}
 		{
 			dependencies: ["7911D72245D86A30"]
-			description: ["This photovoltaic cell need for craft tier V &eSolar Panel&r"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest72C054D9C3B98723.description1}"]
 			id: "72C054D9C3B98723"
 			rewards: [
 				{
@@ -835,7 +835,7 @@
 				"72C054D9C3B98723"
 				"1DBC769D11787A26"
 			]
-			description: ["This photovoltaic cell need for craft tier VI &eSolar Panel&r"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest260B105CA106384C.description1}"]
 			id: "260B105CA106384C"
 			rewards: [
 				{
@@ -863,7 +863,7 @@
 				"317E3C250230188F"
 				"260B105CA106384C"
 			]
-			description: ["This photovoltaic cell need for craft tier VII &eSolar Panel&r"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest7AE2C6A1E9B346E8.description1}"]
 			id: "7AE2C6A1E9B346E8"
 			rewards: [
 				{
@@ -891,7 +891,7 @@
 				"054E573D5261E706"
 				"7AE2C6A1E9B346E8"
 			]
-			description: ["This photovoltaic cell need for craft tier VIII &eSolar Panel&r"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest504987403C94C5DA.description1}"]
 			id: "504987403C94C5DA"
 			rewards: [
 				{
@@ -916,7 +916,7 @@
 		}
 		{
 			dependencies: ["07695BF95821104C"]
-			description: ["You need craft blazing coating to make the photovoltaic tier IV"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest1DBC769D11787A26.description1}"]
 			hide_dependency_lines: true
 			id: "1DBC769D11787A26"
 			rewards: [
@@ -942,7 +942,7 @@
 		}
 		{
 			dependencies: ["07695BF95821104C"]
-			description: ["You need craft emerald glass to make the photovoltaic tier V"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest317E3C250230188F.description1}"]
 			hide_dependency_lines: true
 			id: "317E3C250230188F"
 			rewards: [
@@ -968,7 +968,7 @@
 		}
 		{
 			dependencies: ["317E3C250230188F"]
-			description: ["You need craft ender glass to make the photovoltaic tier VI"]
+			description: ["{ftbquests.chapter.solarflux_reborn.quest54E573D5261E706.description1}"]
 			id: "054E573D5261E706"
 			rewards: [
 				{
@@ -1000,15 +1000,15 @@
 				type: "item"
 			}]
 			secret: true
-			subtitle: "Thank you a lot!"
+			subtitle: "{ftbquests.chapter.solarflux_reborn.quest18B283D14819EFDD.subtitle}"
 			tasks: [{
 				id: "14CD13C58DA87444"
-				title: "Quest added by &4CLISHÉ"
+				title: "{ftbquests.chapter.solarflux_reborn.quest18B283D14819EFDD.task.1498875990190355524.title}"
 				type: "checkmark"
 			}]
 			x: -2.0d
 			y: -4.5d
 		}
 	]
-	title: "SolarFlux Reborn"
+	title: "{ftbquests.chapter.solarflux_reborn.title}"
 }

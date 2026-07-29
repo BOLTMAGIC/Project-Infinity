@@ -1250,7 +1250,7 @@
 		}
 		{
 			dependencies: ["53E7A09F3F3B6272"]
-			description: ["Make this and connect it to ae2 to start autmating blood magic.  (requires patters and cards to work)"]
+			description: ["{ftbquests.chapter.blood_magic.quest6FF7C9BC80A7EFE1.description1}"]
 			id: "6FF7C9BC80A7EFE1"
 			rewards: [{
 				id: "540B39465C861B6B"
@@ -1267,7 +1267,7 @@
 		}
 		{
 			dependencies: ["46ABB6AD85644E7C"]
-			description: ["Make these to make patterns for the blood assembler to automate blood magic crafting."]
+			description: ["{ftbquests.chapter.blood_magic.quest4825D321E1FF7D45.description1}"]
 			id: "4825D321E1FF7D45"
 			rewards: [{
 				id: "5E885B2BF85CD877"
@@ -1284,7 +1284,7 @@
 		}
 		{
 			dependencies: ["143A7BF0B54CED1B"]
-			description: ["add me to blood assembler to craft tier 2 recipes"]
+			description: ["{ftbquests.chapter.blood_magic.questD2E146A03C0D43.description1}"]
 			id: "00D2E146A03C0D43"
 			rewards: [{
 				id: "6D9CC514D06E388A"
@@ -1301,7 +1301,7 @@
 		}
 		{
 			dependencies: ["22899D5B9A1D407E"]
-			description: ["add me to blood assembler to craft tier 3 recipes"]
+			description: ["{ftbquests.chapter.blood_magic.quest6E81876E31E76450.description1}"]
 			id: "6E81876E31E76450"
 			rewards: [{
 				id: "0275E905AD90F9FA"
@@ -1318,7 +1318,7 @@
 		}
 		{
 			dependencies: ["22657461D5EC7233"]
-			description: ["add me to blood assembler to craft tier 4 recipes"]
+			description: ["{ftbquests.chapter.blood_magic.quest49439E68729D062.description1}"]
 			id: "049439E68729D062"
 			rewards: [{
 				id: "002FFCCCF2E19927"
@@ -1335,7 +1335,7 @@
 		}
 		{
 			dependencies: ["53E7A09F3F3B6272"]
-			description: ["add me to blood assembler to craft tier 5 recipes"]
+			description: ["{ftbquests.chapter.blood_magic.quest3E859E7AF6A98B86.description1}"]
 			id: "3E859E7AF6A98B86"
 			rewards: [{
 				id: "57306DB8CC9E065D"
@@ -1352,7 +1352,7 @@
 		}
 		{
 			dependencies: ["22899D5B9A1D407E"]
-			description: ["increases the number of crafts that happen at one time by 4x."]
+			description: ["{ftbquests.chapter.blood_magic.quest46074F9479EEFC2A.description1}"]
 			id: "46074F9479EEFC2A"
 			rewards: [{
 				id: "76A0C3358DC4F6B1"
@@ -1369,7 +1369,7 @@
 		}
 		{
 			dependencies: ["22657461D5EC7233"]
-			description: ["this decreases the time between crafts for the blood assembler."]
+			description: ["{ftbquests.chapter.blood_magic.questA3A8763FF67AC2C.description1}"]
 			id: "0A3A8763FF67AC2C"
 			rewards: [{
 				id: "35732257E3360EB2"
@@ -1451,11 +1451,11 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.blood_magic.quest53E7A09F3F3B6272.task.1584693650998761559.title}"
+					title: "{ftbquests.chapter.blood_magic.quest36E8C71637541797.task.9020606411119993505.title}"
 					type: "item"
 				}
 			]
-			title: "Blood Altar VI"
+			title: "{ftbquests.chapter.blood_magic.quest36E8C71637541797.title}"
 			x: -3.0d
 			y: 3.0d
 		}

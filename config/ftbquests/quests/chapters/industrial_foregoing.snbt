@@ -951,8 +951,8 @@
 		}
 		{
 			description: [
-				"&2Quests added by Klaasy__.&r"
-				"&1Thank you a lot!&r"
+				"{ftbquests.chapter.industrial_foregoing.quest4359EFAABC4AB32F.description1}"
+				"{ftbquests.chapter.industrial_foregoing.quest4359EFAABC4AB32F.description2}"
 			]
 			id: "4359EFAABC4AB32F"
 			invisible: true
@@ -961,7 +961,7 @@
 				id: "7E39DDFA8955EA45"
 				type: "checkmark"
 			}]
-			title: "&2Quests added by Klaasy__.&r &1Thank you a lot!&r"
+			title: "{ftbquests.chapter.industrial_foregoing.quest4359EFAABC4AB32F.title}"
 			x: 1.0d
 			y: -11.5d
 		}

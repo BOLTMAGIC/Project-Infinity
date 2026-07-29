@@ -108,7 +108,9 @@ Recipe changes and fixes:
 - changed creative fluid tank to use mekanism extras infinite mechanical pipe instead of cyclic fluid pipe
 - changed the Enchant Points you get from crystals (5, 20, 100, 980) with new recipes for T3 and T4 ( thx to Lightreaper45)
 - changed recipe for voidminer and solar panels (verdium to rosarium)
-- 
+- changed inf 8 block to inf ingot recipe (thx to Lightreaper45)
+- changed recipe for creative bin (thx to Lightreaper45)
+- changed recipe for world breaker (thx to Lightreaper45)
 ----------
 Mod changes and fixes:
 - Add redstone mode functionality to MM controller

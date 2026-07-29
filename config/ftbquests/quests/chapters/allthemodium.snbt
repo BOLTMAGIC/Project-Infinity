@@ -389,7 +389,7 @@
 		}
 		{
 			dependencies: ["1C014E4F1DE73C03"]
-			description: ["This template is found in ancient city within suspicious clay."]
+			description: ["{ftbquests.chapter.allthemodium.quest45FDD8348D8FD770.description1}"]
 			id: "45FDD8348D8FD770"
 			rewards: [
 				{
@@ -416,7 +416,7 @@
 					type: "structure"
 				}
 			]
-			title: "Allthemodium Template"
+			title: "{ftbquests.chapter.allthemodium.quest45FDD8348D8FD770.title}"
 			x: 2.0d
 			y: -5.0d
 		}
@@ -676,9 +676,9 @@
 		{
 			dependencies: ["1C014E4F1DE73C03"]
 			description: [
-				"Place in the overworld to go to the mining dimesion"
-				"Place in the Nether to go to the \"other\" dimension"
-				"Place in the end to go to the void dimesion"
+				"{ftbquests.chapter.allthemodium.quest4E22DBF17286B3F4.description1}"
+				"{ftbquests.chapter.allthemodium.quest4E22DBF17286B3F4.description2}"
+				"{ftbquests.chapter.allthemodium.quest4E22DBF17286B3F4.description3}"
 			]
 			id: "4E22DBF17286B3F4"
 			rewards: [{
@@ -946,7 +946,7 @@
 		}
 		{
 			dependencies: ["2909CC7DAE6E69AC"]
-			description: ["This template is found in treasure bastion in suspicious soul sand."]
+			description: ["{ftbquests.chapter.allthemodium.quest54360494E42CD3.description1}"]
 			id: "0054360494E42CD3"
 			rewards: [{
 				id: "71E87C20576FA3C6"
@@ -966,13 +966,13 @@
 					type: "structure"
 				}
 			]
-			title: "Vibranium template"
+			title: "{ftbquests.chapter.allthemodium.quest54360494E42CD3.title}"
 			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["0091DB2772579996"]
-			description: ["This template is found in the dimension \"The Other\" in the dungeon.    in the librairy room."]
+			description: ["{ftbquests.chapter.allthemodium.quest15364C6FD7FA16CD.description1}"]
 			id: "15364C6FD7FA16CD"
 			rewards: [{
 				id: "276D665D2ED48488"
@@ -1033,7 +1033,7 @@
 						]
 					}
 				}
-				title: "Vibranium tools"
+				title: "{ftbquests.chapter.allthemodium.quest46A49484DF60ECA.task.5037395943044660532.title}"
 				type: "item"
 			}]
 			x: 4.0d
@@ -1075,7 +1075,7 @@
 				}
 				type: "item"
 			}]
-			title: "Vibranium armor"
+			title: "{ftbquests.chapter.allthemodium.quest7D0D1117941364E0.title}"
 			x: 5.0d
 			y: -2.5d
 		}
@@ -1119,7 +1119,7 @@
 				}
 				type: "item"
 			}]
-			title: "Unobtainium tools"
+			title: "{ftbquests.chapter.allthemodium.questD7A02DEB12B8D1E.title}"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -1159,7 +1159,7 @@
 				}
 				type: "item"
 			}]
-			title: "unobtainium armor"
+			title: "{ftbquests.chapter.allthemodium.questABE5C97214D96C7.title}"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -1249,7 +1249,7 @@
 				}
 				type: "item"
 			}]
-			title: "ATM Alloy tools"
+			title: "{ftbquests.chapter.allthemodium.quest18F3B67502A52FD7.title}"
 			x: 2.0d
 			y: 0.5d
 		}

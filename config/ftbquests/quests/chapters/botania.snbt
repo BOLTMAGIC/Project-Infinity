@@ -2797,10 +2797,10 @@
 		{
 			dependencies: ["3322EC6E6CA8BAC3"]
 			description: [
-				"At some point in your progression as a &abotanist&r, your flowers will create &bmana&r so fast that &espreaders&r are not enough to handle it."
-				"With the &6Mana Collector&r, you can put mana generated from flowers directly into a &dspark network&r."
-				"The &6Mana Collector&r acts as a little &estorage&r that can receive mana from flowers and interact with &dsparks&r."
-				"To extract the mana from the collector, you'll most likely need a &cRecessive Spark Augment&r."
+				"{ftbquests.chapter.botania.quest18230FA49D58A9C.description1}"
+				"{ftbquests.chapter.botania.quest18230FA49D58A9C.description2}"
+				"{ftbquests.chapter.botania.quest18230FA49D58A9C.description3}"
+				"{ftbquests.chapter.botania.quest18230FA49D58A9C.description4}"
 			]
 			id: "018230FA49D58A9C"
 			min_width: 350

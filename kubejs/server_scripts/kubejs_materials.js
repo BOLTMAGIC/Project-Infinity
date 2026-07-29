@@ -11,7 +11,13 @@ ServerEvents.recipes((event) => {
 
   event.smelting('compressium:stone_1', 'compressium:cobblestone_1');
 
-  shapeless(event, 'kubejs:infinity_8_block', ['kubejs:infinity_8']);
+  shapeless(event, 'kubejs:infinity_8_block', [
+    'kubejs:infinity_8',
+    'woot_revived:gold_enchanted_plate',
+    'woot_revived:gold_enchanted_plate',
+    'woot_revived:gold_enchanted_plate',
+    'woot_revived:gold_enchanted_plate',
+  ]);
   shapeless(event, 'kubejs:infinity_8', ['kubejs:infinity_8_block']);
 
   shapeless(event, 'kubejs:infinity_6_block', ['9x kubejs:infinity_6']);
@@ -258,8 +264,12 @@ ServerEvents.recipes((event) => {
   create3x3same(event, 'kubejs:blackstone_6', ['9x kubejs:blackstone_5']);
   shapeless(event, '9x kubejs:blackstone_5', ['kubejs:blackstone_6']);
 
-  create3x3same(event, 'kubejs:compressed_awakened_draconium_block', ['9x draconicevolution:awakened_draconium_block']);
-  shapeless(event, '9x draconicevolution:awakened_draconium_block', ['kubejs:compressed_awakened_draconium_block']);
+  create3x3same(event, 'kubejs:compressed_awakened_draconium_block', [
+    '9x draconicevolution:awakened_draconium_block',
+  ]);
+  shapeless(event, '9x draconicevolution:awakened_draconium_block', [
+    'kubejs:compressed_awakened_draconium_block',
+  ]);
 
   create3x3same(event, 'kubejs:compressed_hellforgedparts', [
     'bloodmagic:hellforgedparts',

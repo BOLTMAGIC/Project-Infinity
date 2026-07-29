@@ -828,12 +828,12 @@
 			id: "7EFDD81ACC6B4054"
 			tasks: [{
 				id: "5A0B4BDADBB34EFD"
-				title: "Created by Solardaisy"
+				title: "{ftbquests.chapter.ore_processing.quest7EFDD81ACC6B4054.task.6488363091518246653.title}"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: -4.5d
 		}
 	]
-	title: "Smelters"
+	title: "{ftbquests.chapter.ore_processing.title}"
 }

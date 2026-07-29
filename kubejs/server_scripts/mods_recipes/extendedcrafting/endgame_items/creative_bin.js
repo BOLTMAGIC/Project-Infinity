@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         'BEFGEGFEB',
         'CFHIIIJFC',
         'KGLMNMOGK',
-        'BEMNPNMEB',
+        'BUMNPNMUB',
         'KGQMNMRGK',
         'CFSIIITFC',
         'BEFGEGFEB',
@@ -71,6 +71,9 @@ ServerEvents.recipes((event) => {
         },
         T: {
           item: 'mekanism_extras:supreme_bin',
+        },
+        U: {
+          item: 'woot_revived:netherite_cell',
         },
       },
       result: {
