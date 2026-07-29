@@ -1,4 +1,9 @@
 %#red%**Version 0.0.51.0**%#%
+
+MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
+
+If you want the new EnchantmentLimiter settings you need to place the "enchantlimiter-server.toml" from defaultconfig into your saves serverconfig folder
+
 Mod Info:
 - MODS ADDED:
     - Compact Expansion (configurable) from MiniMaxi
