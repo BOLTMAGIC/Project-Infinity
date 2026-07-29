@@ -38,7 +38,7 @@
 	#Range: 1 ~ 2147483646
 	ultimateThermalEvaporationOutputTankCapacity = 10240000
 	#Settings for the Render fluid
-	#Render fluid inside of Thermal Evaporation Plants.
+	#Render fluid inside of More Thermal Evaporation Plants.
 	RenderFluid = true
 	#Amount of fluid (mB) that each block of the Basic Thermal Evaporation Plant contributes to the input tank capacity. Max = volume * fluidPerTank
 	#Range: 1 ~ 29826161
@@ -64,4 +64,10 @@
 	#Amount of output fluid (mB) that the Creative Thermal Evaporation Plant can store.
 	#Range: 1 ~ 2147483646
 	creativeThermalEvaporationOutputTankCapacity = 2147483646
+	#Settings for the Type
+	#Enable Large More Thermal Evaporation Plants.
+	EnabledLargeType = true
+	#Performance multiplier for Large More Thermal Evaporation Plants.
+	#Range: 1 ~ 2147483646
+	LargeMultiplier = 12
 

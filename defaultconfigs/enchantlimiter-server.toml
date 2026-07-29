@@ -16,9 +16,9 @@
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"incremental cost" = 1.0
 	#Items that have their own enchantment point cap. Format is name, base enchantability, increment per extra point of enchantability.
-	"custom items" = ["matc:inferium_crystal, 2, 0", "matc:prudentium_crystal, 2, 0", "matc:tertium_crystal, 2, 0", "matc:imperium_crystal, 2, 0", "matc:supremium_crystal, 2, 0", "exdeorum:string_mesh, 2, 0", "exdeorum:flint_mesh, 2, 0", "exdeorum:iron_mesh, 2, 0", "exdeorum:golden_mesh, 2, 0", "exdeorum:diamond_mesh, 2, 0", "exdeorum:netherite_mesh, 2, 0", "kubejs:allthemodium_mesh, 2, 0", "kubejs:vibranium_mesh, 2, 0", "ae2:annihilation_plane, 0, 0"]
+	"custom items" = ["matc:inferium_crystal, 2, 0", "matc:prudentium_crystal, 2, 0", "matc:tertium_crystal, 2, 0", "matc:imperium_crystal, 2, 0", "matc:supremium_crystal, 2, 0", "exdeorum:string_mesh, 2, 0", "exdeorum:flint_mesh, 2, 0", "exdeorum:iron_mesh, 2, 0", "exdeorum:golden_mesh, 2, 0", "exdeorum:diamond_mesh, 2, 0", "exdeorum:netherite_mesh, 2, 0", "kubejs:allthemodium_mesh, 2, 0", "kubejs:vibranium_mesh, 2, 0"]
 	#Define enchantments here. Format is name, base cost, incremental cost.
-	enchantments = ["minecraft:mending, 8, 0", "minecraft:sharpness, 1, 1"]
+	enchantments = ["minecraft:mending, 8, 0", "minecraft:sharpness, 1, 1", "minecraft:vanishing_curse, -4, 0"]
 	#Enchantments that should be blacklisted. Format is name. Examples: ["minecraft:mending", "minecraft:sharpness"]
 	"blacklisted enchantments" = []
 
@@ -26,23 +26,27 @@
 	#Enable or disable crystal items entirely. Default: true
 	"enable crystals" = true
 	#Blacklist for crystals. Entries can be exact item (modid:item), tag (tag:namespace:path), or wildcard namespace (modid:*). Examples: ["minecraft:diamond_sword", "YOUR_MOD_ID:custom_item"]
-	"crystal blacklist" = ["exdeorum:*", "kubejs:allthemodium_mesh", "kubejs:vibranium_mesh", "matc:*", "ae2:annihilation_plane"]
+	"crystal blacklist" = ["exdeorum:*", "kubejs:allthemodium_mesh", "kubejs:vibranium_mesh", "matc:*"]
 	#Value for common crystal. Default: 1
 	#Range: 0.0 ~ 1.7976931348623157E308
-	common_crystal_value = 1.0
+	common_crystal_value = 5.0
 	#Value for uncommon crystal. Default: 3
 	#Range: 0.0 ~ 1.7976931348623157E308
-	uncommon_crystal_value = 3.0
+	uncommon_crystal_value = 20.0
 	#Value for rare crystal. Default: 5
 	#Range: 0.0 ~ 1.7976931348623157E308
-	rare_crystal_value = 5.0
+	rare_crystal_value = 100.0
 	#Value for legendary crystal. Default: 10
 	#Range: 0.0 ~ 1.7976931348623157E308
-	legendary_crystal_value = 10.0
+	legendary_crystal_value = 980.0
 
 [tooltip]
-	#Show only a single numeric amount in the tooltip instead of used/total. If true, enchanted items/books show the consumed points and non-enchanted items show the total. Default: false
+	#Show only a single numeric amount in the tooltip instead of used/total. If true, enchanted items/books show the consumed points and non-enchanted items show the total. Default: true
 	show_only_number = true
 	#When true, positive point values are colored red; otherwise they are white. Negative values are colored green. Default: true
 	positive_color_red = true
+
+[general]
+	#Enable or disable all EnchantLimiter features globally. Default: true
+	enabled = true
 

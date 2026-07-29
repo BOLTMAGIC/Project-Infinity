@@ -52,7 +52,7 @@
 	completedCraftingPlanCacheTtlTicks = 40
 	#Experimental opt-in: for REPORT_MISSING_ITEMS requests, return an immediate missing-only plan when a strict deterministic preflight proves the craft is impossible.
 	#This deliberately ends AE2's full calculation after the first proven blocker, so it is disabled by default. Item, fluid, and chemical keys use the same proof path.
-	fastFailMissingCrafts = true
+	fastFailMissingCrafts = false
 	#Do not run deterministic missing preflight below this requested amount.
 	#Range: 1 ~ 9223372036854775807
 	minimumRequestedAmountForFastFail = 1
@@ -104,12 +104,6 @@
 
 [compatibility]
 
-	[compatibility.neoEcoAe]
-		#Apply ACO's adaptive per-CPU and shared per-grid pattern-push budgets to Neo ECO AE Extension's custom ECO CPU.
-		#Neo ECO's own normal, batch, and aggressive fast paths remain authoritative; ACO only bounds their per-tick execution window.
-		#Supported target: Neo ECO AE Extension 20.3.x.
-		throttleNeoEcoAeExecution = true
-
 	[compatibility.appliedE]
 		#Enable conservative compatibility for AppliedE and AppliedE TPS Fix.
 		#ACO does not replace EMC accounting or AppliedE's temporary-pattern lifecycle.
@@ -120,6 +114,12 @@
 		#Treat AppliedE's EMC Module as a dynamic crafting provider.
 		#Repeated same-tick notifications are still coalesced, but ACO does not enumerate every EMC pattern merely to decide whether the final refresh may be discarded.
 		treatAppliedEProviderAsDynamic = true
+
+	[compatibility.neoEcoAe]
+		#Apply ACO's adaptive per-CPU and shared per-grid pattern-push budgets to Neo ECO AE Extension's custom ECO CPU.
+		#Neo ECO's own normal, batch, and aggressive fast paths remain authoritative; ACO only bounds their per-tick execution window.
+		#Supported target: Neo ECO AE Extension 20.3.x.
+		throttleNeoEcoAeExecution = true
 
 [gridTickBudget]
 	#Enable server-side budget controls for selected AE2 grid tickables such as IO ports, import/export buses, and ExtendedAE circuit cutters. Disabled by default because AE2 buses are correctness-sensitive and must be opt-in tested per pack.
@@ -381,27 +381,41 @@
 	transactionalBatchTargetNamespaces = ["gtceu", "mekanism"]
 
 [experimentalCraftingEngine]
+	#Enable only the AQE BigInteger calculation and execution path when Advanced AE and Advanced Quantum Engineering are installed.
+	#This does not enable Native Batch, bus rewrites, terminal rewrites, or normal-AE2 authoritative replacement.
+	enableAqeBigCraftingProfile = true
+	#Allow the AE2 craft-amount screen to submit root amounts from Integer.MAX_VALUE + 1 through Long.MAX_VALUE.
+	#Amounts at or below Integer.MAX_VALUE keep AE2's original packet and menu path. Disable this to restore the original int-only screen.
+	enableLongRootCraftAmounts = true
 	#Master switch for ACO's next-generation compiled planner, native machine batching, fair scheduler, and persistent transaction journal.
 	#This is deliberately false. The implementation can be built and tested without changing live AE2 behavior.
 	enableExperimentalCraftingEngine = false
 	#Compare the compiled long planner with completed AE2 plans without replacing or modifying AE2's result.
 	#Requires the AQE profile or enableExperimentalCraftingEngine. Shadow mismatches only update diagnostics.
-	enableShadowMode = false
+	enableShadowMode = true
 	#Log the first bounded set of Shadow Mode differences. Disabled engine means no comparison or logging.
 	logShadowMismatches = true
 	#Skip Shadow Mode validation above this many patterns to keep diagnostic work bounded.
 	#Range: 1 ~ 1048576
 	shadowMaximumPatterns = 262144
+	#Required matching AE2 Shadow comparisons for the same generation-keyed root program before it may become authoritative.
+	#Set to 0 only to explicitly bypass qualification. One mismatch rejects that root until its Pattern or recipe generation changes.
+	#Range: 0 ~ 1048576
+	authoritativeMinimumShadowMatches = 64
+	#Require prior matching AE2 Shadow calculations before accepting an otherwise strictly proven AQE BigInteger plan.
+	#Disabled by default because a true long-overflow request cannot itself complete in AE2 for comparison.
+	requireAqeBigPlanShadowQualification = false
 	#Build an immutable, generation-keyed crafting graph for experimental planning.
-	enableCompiledCraftingGraph = false
+	enableCompiledCraftingGraph = true
 	#Use a compiled plan only for the strictly provable single-pattern path. Any ambiguity, generation change, fuzzy input, overflow, or unsupported recipe falls back to AE2.
 	#Kept false until the user completes live comparison testing.
 	enableAuthoritativeCompiledPlanner = false
 	#Reject AE2 tree calculations before unchecked long/double arithmetic can wrap or saturate.
 	#This does not make a standard AE2 job BigInteger-capable; oversized work must use execution windows.
 	enableCheckedAe2CraftingArithmetic = true
-	#Use the prepare/commit/account/reconcile transaction protocol. Kept false until recovery testing is complete.
-	enableTransactionalBatchingV2 = false
+	#Use the prepare/commit/account/reconcile transaction protocol for explicitly registered native adapters.
+	#This protocol is independent from the compiled-planner experiments. GTCEu and Mekanism still require their own switches.
+	enableTransactionalBatchingV2 = true
 	#Allow the V2 transaction engine to use the exact-recipe GTCEu native batch adapter. Unsupported recipes always fall back.
 	enableGtceuNativeBatching = false
 	#Allow the V2 transaction engine to use the exact-recipe Mekanism item/fluid/chemical native batch adapter. Unsupported recipes always fall back.
@@ -432,13 +446,19 @@
 	#Expose ACO's versioned BigInteger host and job backend to explicitly integrated CPU add-ons.
 	#This does not patch normal AE2 CPUs. It is safe to leave enabled when no compatible host add-on is installed.
 	enableBigIntegerCraftingBackend = true
+	#Capture exact per-key BigInteger stock from supported storage add-ons while exposing a saturated long facade to AE2.
+	#This prevents KeyCounter overflow and allows ACO planning to use ExtendedAE Plus Infinity BigInteger Cell amounts above Long.MAX_VALUE.
+	enableExactBigIntegerInventorySnapshots = true
+	#Safely calculate plans whose individual or aggregate AEKey counts, Pattern counts, or exact CPU-byte cost exceed Long.MAX_VALUE.
+	#Counts above signed long require an exact supported inventory snapshot and an integrated AQE BigInteger host; unsupported paths fall back without approximation.
+	enableAtomicBigCapacityPlans = true
 	#Execute explicitly submitted BigInteger root jobs as bounded standard AE2 child jobs on an AQE Quantum Computer.
 	#False until phase-9 live testing. Capacity display and ordinary long jobs continue to work while this is false.
-	enableBigIntegerGameplayExecution = false
-	#Maximum magnitude stored by the BigInteger backend, in binary bits. 256 bits is about 77 decimal digits.
-	#The hard implementation maximum is 16384 decimal digits (currently 54427 bits). Values above 10^16384-1 are rejected exactly before NBT or packet allocation.
+	enableBigIntegerGameplayExecution = true
+	#Maximum magnitude stored by the gameplay BigInteger backend, in binary bits.
+	#Bounded by the same 16,384-decimal-digit implementation ceiling used by AQE. Values above the configured limit are rejected before NBT, packet, or planner allocation.
 	#Range: 64 ~ 54427
-	bigIntegerMaximumBits = 256
+	bigIntegerMaximumBits = 54427
 	#Maximum pattern executions exposed to a long/int machine adapter in one BigInteger execution window.
 	#Larger jobs remain BigInteger counters and are resumed through additional windows.
 	#Range: 1 ~ 1048576
@@ -457,32 +477,48 @@
 	#New jobs or output reservations fall back before exceeding this bound.
 	#Range: 32 ~ 4096
 	bigIntegerRuntimeCountBudgetMiB = 256
-	#Enable only the AQE BigInteger calculation and execution path when Advanced AE and Advanced Quantum Engineering are installed.
-	#This does not enable Native Batch, bus rewrites, terminal rewrites, or normal-AE2 authoritative replacement.
-	enableAqeBigCraftingProfile = true
-	#Allow the AE2 craft-amount screen to submit root amounts from Integer.MAX_VALUE + 1 through Long.MAX_VALUE.
-	#Amounts at or below Integer.MAX_VALUE keep AE2's original packet and menu path. Disable this to restore the original int-only screen.
-	enableLongRootCraftAmounts = true
-	#Required matching AE2 Shadow comparisons for the same generation-keyed root program before it may become authoritative.
-	#Set to 0 only to explicitly bypass qualification. One mismatch rejects that root until its Pattern or recipe generation changes.
-	#Range: 0 ~ 1048576
-	authoritativeMinimumShadowMatches = 64
-	#Require prior matching AE2 Shadow calculations before accepting an otherwise strictly proven AQE BigInteger plan.
-	#Disabled by default because a true long-overflow request cannot itself complete in AE2 for comparison.
-	requireAqeBigPlanShadowQualification = false
-	#Capture exact per-key BigInteger stock from supported storage add-ons while exposing a saturated long facade to AE2.
-	#This prevents KeyCounter overflow and allows ACO planning to use ExtendedAE Plus Infinity BigInteger Cell amounts above Long.MAX_VALUE.
-	enableExactBigIntegerInventorySnapshots = true
-	#Safely calculate plans whose individual or aggregate AEKey counts, Pattern counts, or exact CPU-byte cost exceed Long.MAX_VALUE.
-	#Counts above signed long require an exact supported inventory snapshot and an integrated AQE BigInteger host; unsupported paths fall back without approximation.
-	enableAtomicBigCapacityPlans = true
 
 [diagnostics]
 	#Log AE2 crafting calculations that take longer than slowCraftCalculationMillis.
 	logSlowCraftCalculations = true
 	#Slow crafting calculation threshold in milliseconds.
 	#Range: 1 ~ 300000
-	slowCraftCalculationMillis = 500
+	slowCraftCalculationMillis = 1000
 	#Log preliminary missing preview cache hits, writes, and clears.
 	logCacheStatistics = false
+
+[exactVectorCrafting]
+	#Execute strictly deterministic ordinary crafting DAGs as one quantity-independent transaction.
+	#Unsupported graphs fall back before input ownership is transferred.
+	enabled = true
+	#Try one Exact Vector parent transaction before creating checked-long child windows.
+	#After input ownership transfer, failure is recovered or quarantined and never falls back.
+	enableAqeBigIntegerParents = true
+	#Maximum distinct deterministic pattern nodes in one Exact Vector plan.
+	#Range: 1 ~ 1048576
+	maximumPatternNodes = 1024
+	#Maximum distinct external input keys in one Exact Vector transaction.
+	#Range: 1 ~ 65536
+	maximumUniqueInputKeys = 128
+	#Maximum distinct final and fixed remaining-output keys in one Exact Vector transaction.
+	#Range: 1 ~ 65536
+	maximumUniqueOutputKeys = 128
+	#Maximum new Exact Vector ownership transfers per ME grid and server tick.
+	#Range: 1 ~ 64
+	maximumStartsPerGridPerTick = 1
+	#Maximum physical crafting-table recipe nodes inspected per ME grid and server tick.
+	#Available nodes are claimed as one range; request quantity never controls this loop.
+	#Trees up to 64 nodes are fully scanned each tick within this count limit.
+	#Dependency-blocked nodes return their unused claim to the same grid.
+	#Range: 1 ~ 1048576
+	maximumActiveStagesPerGridPerTick = 256
+	#Maximum concurrently owned Exact Vector transactions per ME grid.
+	#Range: 1 ~ 1024
+	maximumActiveTransactionsPerGrid = 4
+	#Soft main-thread budget for physical crafting-table scheduling on one grid.
+	#Timing begins at the first Exact Vector operation, not at server tick START.
+	#Range: 1 ~ 45
+	gridTimeBudgetMillis = 2
+	#Log bounded physical crafting-tree acceptance, recovery, and quarantine diagnostics.
+	logVectorDiagnostics = false
 

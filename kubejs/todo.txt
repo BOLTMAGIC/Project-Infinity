@@ -104,6 +104,10 @@ Recipe changes and fixes:
 - added a tier 2 prediction chamber (lategame) (thx to edwardeau)
 - added a new Blood Magic Multiblock Tier 6 (thx to KYO)
 - added a new meteor ritual (5M LP and a compressed Awakened Draconium Block)
+- removed cyclic cables (dupe) (thx to singeoui)
+- changed creative fluid tank to use mekanism extras infinite mechanical pipe instead of cyclic fluid pipe
+- changed the Enchant Points you get from crystals (5, 20, 100, 980) with new recipes for T3 and T4 ( thx to Lightreaper45)
+- changed recipe for voidminer and solar panels (verdium to rosarium)
 - 
 ----------
 Mod changes and fixes:

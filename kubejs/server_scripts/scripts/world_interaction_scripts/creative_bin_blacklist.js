@@ -17,6 +17,8 @@ BlockEvents.rightClicked('mekanism:creative_bin', (event) => {
     'cyclic:crate', // dumb item that doesn't use NBT correctly
     'cyclic:storage_bag',
 
+    'minecraft:bundle',
+
     /^refinedstorage:.*_storage_(disk|block)$/, // uuid based item, can't filter with NBT
 
     'expatternprovider:package',

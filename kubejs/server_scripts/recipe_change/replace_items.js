@@ -237,6 +237,27 @@ ServerEvents.recipes((event) => {
   );
 
   event.replaceInput(
+    { output: 'voidminers:verdium_miner' },
+    'minecraft:obsidian',
+    'evolvedmekanism:block_alloy_atomic'
+  );
+  event.replaceInput(
+    { output: 'voidminers:solar_verdium_panel' },
+    'minecraft:daylight_detector',
+    'evolvedmekanism:block_alloy_atomic'
+  );
+  event.replaceInput(
+    { output: 'voidminers:azurine_miner' },
+    'minecraft:obsidian',
+    'evolvedmekanism:alloy_singular'
+  );
+  event.replaceInput(
+    { output: 'voidminers:solar_azurine_panel' },
+    'minecraft:daylight_detector',
+    'evolvedmekanism:alloy_singular'
+  );
+
+  event.replaceInput(
     { output: 'industrialforegoingsouls:soul_surge' },
     'minecraft:piston',
     'allthemodium:unobtainium_gear'

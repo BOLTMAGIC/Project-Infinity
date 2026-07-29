@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
           item: 'trashcans:liquid_trash_can',
         },
         h: {
-          item: 'cyclic:fluid_pipe',
+          item: 'mekanism_extras:infinite_mechanical_pipe',
         },
         i: {
           item: 'mob_grinding_utils:xp_tap',
@@ -352,7 +352,7 @@ ServerEvents.recipes((event) => {
           item: 'trashcans:liquid_trash_can',
         },
         h: {
-          item: 'cyclic:fluid_pipe',
+          item: 'mekanism_extras:infinite_mechanical_pipe',
         },
         i: {
           item: 'mob_grinding_utils:xp_tap',
