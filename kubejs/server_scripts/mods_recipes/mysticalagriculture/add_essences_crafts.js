@@ -23,6 +23,10 @@ ServerEvents.recipes((event) => {
     'mysticalagriculture:vibranium_essence',
   ]);
 
+  create323(event, '4x mekanism:ingot_uranium', [
+    'mysticalagriculture:uranium_essence',
+  ]);
+
   create323(event, 'allthemodium:unobtainium_nugget', [
     'mysticalagriculture:unobtainium_essence',
   ]);

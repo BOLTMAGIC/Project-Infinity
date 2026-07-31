@@ -38,6 +38,14 @@
 			x: 5.0d
 			y: -4.0d
 		}
+		{
+			height: 7.0d
+			image: "kubejs:block/screen/bloodmagic_altar_6"
+			rotation: 0.0d
+			width: 7.397450753186558d
+			x: 4.0d
+			y: 1.5d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -1283,7 +1291,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["143A7BF0B54CED1B"]
+			dependencies: ["22657461D5EC7233"]
 			description: ["{ftbquests.chapter.blood_magic.questD2E146A03C0D43.description1}"]
 			id: "00D2E146A03C0D43"
 			rewards: [{
@@ -1297,10 +1305,10 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -7.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["22899D5B9A1D407E"]
+			dependencies: ["53E7A09F3F3B6272"]
 			description: ["{ftbquests.chapter.blood_magic.quest6E81876E31E76450.description1}"]
 			id: "6E81876E31E76450"
 			rewards: [{
@@ -1313,11 +1321,11 @@
 				item: "bmaddon:blood_altar_tier_card_3"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["22657461D5EC7233"]
+			dependencies: ["6E81876E31E76450"]
 			description: ["{ftbquests.chapter.blood_magic.quest49439E68729D062.description1}"]
 			id: "049439E68729D062"
 			rewards: [{
@@ -1330,11 +1338,11 @@
 				item: "bmaddon:blood_altar_tier_card_4"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["53E7A09F3F3B6272"]
+			dependencies: ["049439E68729D062"]
 			description: ["{ftbquests.chapter.blood_magic.quest3E859E7AF6A98B86.description1}"]
 			id: "3E859E7AF6A98B86"
 			rewards: [{
@@ -1347,8 +1355,8 @@
 				item: "bmaddon:blood_altar_tier_card_5"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22899D5B9A1D407E"]

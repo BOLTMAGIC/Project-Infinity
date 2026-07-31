@@ -2,6 +2,8 @@ priority: 0;
 
 //add Tags to Items
 ServerEvents.tags('item', (event) => {
+  event.add('forge:dusts/aluminium', 'common_ore_library:aluminum_dust');
+
   event.add('forge:plastic', 'pneumaticcraft:plastic');
 
   event.add('mysticalagriculture:essences', [

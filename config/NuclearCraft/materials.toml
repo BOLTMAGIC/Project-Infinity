@@ -71,8 +71,8 @@
 	nichrome = true
 	boron = true
 	magnesium_diboride = true
-	hafnium = true
 	baratol = true
+	hafnium = true
 
 [nuggets]
 	steel = true
@@ -154,6 +154,7 @@
 	tough_alloy = true
 	steel = true
 	ferroboron = true
+	protactinium_231 = true
 	cobalt = true
 	strontium_90 = true
 	potassium_hydroxide = true
@@ -172,6 +173,7 @@
 	iodine = true
 	zirconium = true
 	electrum = true
+	barium_nitrate = true
 	caesium_137 = true
 	strontium = true
 	rhodochrosite = true
@@ -234,21 +236,15 @@
 	iron = true
 	hsla_steel = true
 	boron = true
-	bismuth = true
-	protactinium_231 = true
-	barium_nitrate = true
 	baratol = true
+	bismuth = true
 
 [blocks]
 	steel = true
-	electrum = true
 	supercold_ice = true
-	magnesium = true
 	cobalt = true
 	aluminum = true
 	graphite = true
-	lead = true
-	bronze = true
 	californium250 = true
 	lithium = true
 	platinum = true
@@ -258,13 +254,17 @@
 	tin = true
 	beryllium = true
 	uranium238 = true
-	silver = true
-	uranium = true
 	zirconium = true
 	zinc = true
-	boron = true
-	corium = true
+	electrum = true
+	magnesium = true
 	kumanderite = true
+	lead = true
+	bronze = true
+	silver = true
+	corium = true
+	uranium = true
+	boron = true
 
 [gems]
 	boron_arsenide = true
@@ -277,5 +277,5 @@
 
 [forge_tag_priority]
 	#Priority of mods to resolve forge tags to itemstack and fluidstack.
-	mods_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering", "kubejs"]
+	mods_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering", "tconstruct"]
 

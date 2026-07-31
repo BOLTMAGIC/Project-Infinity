@@ -1010,13 +1010,45 @@
 			size: 2.0d
 			tasks: [
 				{
-					id: "74AC59E3CB78AB27"
-					item: "compactmachines:machine_tiny"
+					id: "55688C3E732E87DF"
+					item: "compactmachines:personal_shrinking_device"
 					type: "item"
 				}
 				{
-					id: "55688C3E732E87DF"
-					item: "compactmachines:personal_shrinking_device"
+					id: "3A24BBF474187E76"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "compactmachines:machine_tiny"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_small"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_normal"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_large"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_giant"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_maximum"
+								}
+							]
+						}
+					}
+					title: "Custom Machine"
 					type: "item"
 				}
 			]

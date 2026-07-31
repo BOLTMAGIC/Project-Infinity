@@ -3,10 +3,34 @@
 finish quests high prio
 fix shop prices high prio
 rf tools recipes
-gateway change. players need to kill not masher
 LUMINOUS (Overworld/ Nether/ Beasts) and Mekanism FuryBorn in the Artifacts
 ----------
-changelog v. 0.0.51.0
+changelog v. 0.0.51.1
+
+MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
+
+If you want the new EnchantmentLimiter settings you need to place the "enchantlimiter-server.toml" from defaultconfig into your saves serverconfig folder
+
+Mod Info:
+- MODS REMOVED:
+    - AE2 Optimizer Mod
+----------
+Recipe changes and fixes:
+- fixed Vitality Fluid Crash
+- changed recipe for World Breaker to use Creative Bin (thx to Lightreaper45)
+- changed recipe for dungeon pass (thx to alekzander)
+- readded uranium seeds (thx to Kyo and ricky1680)
+- added ram trophy dupe (thx to edwardeau)
+- changed recipe for reaction chamber (thx to Miguelito)
+- changed recipe for rosarium miner and solar panels (thx to Lightreaper45)
+- removed recipes for NeoEco controllers (will get readded when the mod gets some fixes)
+----------
+Mod changes and fixes:
+- fixed EnchantmentLimiter
+- Masterful Machinery TPS fixes
+----------
+
+and the changes from 0.0.51.0:
 
 MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
 
@@ -47,7 +71,7 @@ Mod Info:
     - Mekanism Advanced Generators
     - Reliable Replacer
     - Nether Package Fixer
-    - Bosses´Rise (Block_Factorys_Bosses)
+    - Bosses´Rise (Block Factorys Bosses)
 ----------
 Recipe changes and fixes:
 - Fixed Wither Insanium Essence drop (2% for drop) (thx to Reninsane)
@@ -63,8 +87,8 @@ Recipe changes and fixes:
 - changed recipe for entity ticker (before you needed 531 CU now you need 597) (26 crystal matrix blocks + 1 neutronium block) (thx to Iceuandfireu)
 - changed the recipes for curvy pipes (easier) (thx to alp CAKEEEEEEEEEEE)
 - added a new twilight forest gateway (needs a snow queen trophy)
-- added a new mutant monster gateway (needs a endersoul hand) (thx to Its_Only_Titan)
-- added es_es lang for kubejs, Masterful Machinery and quests (thx to darkdeath7)
+- added a new mutant monster gateway (needs a endersoul hand) (thx to Its Only Titan)
+- added es/es lang for kubejs, Masterful Machinery and quests (thx to darkdeath7)
 - fixed creative battery from ID (thx to Kaimonick)
 - changed recipes for Blood Magic Addon (thx to MiniMaxi)
 - new texture for Infinity 11
@@ -98,7 +122,7 @@ Recipe changes and fixes:
 - changed recipe for basic collector (way harder)
 - lowered ATM ores in ultimate voidminer (thx to Iceuandfireu)
 - changed recipe for time in a bottle
-- reworked EssenceForge recipes and cost (thx to hi_5979)
+- reworked EssenceForge recipes and cost (thx to hi/5979)
     - T1 EF will no longer work with T5 seeds.
     - T2 EF will no longer work with T6 seeds.
     - T4 EF will use fewer ether gas for lower tier seeds
@@ -117,9 +141,6 @@ Recipe changes and fixes:
 - changed recipe for creative bin (thx to Lightreaper45)
 - changed recipe for world breaker (thx to Lightreaper45)
 ----------
-Mod changes and fixes:
-- Add redstone mode functionality to MM controller
-- Fixed Mana Voiding for Botanical Machinery
-----------
 known bugs:
--polymorph (changing the output for mod conflicts) is not possible with tinkers crafting station
+- polymorph (changing the output for mod conflicts) is not possible with tinkers crafting station
+- ME Transmutation Module is buggy and needs to be placed again to work after a server restart

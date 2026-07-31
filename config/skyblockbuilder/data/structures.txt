@@ -186,6 +186,7 @@ mns:warped_dome
 mns:warped_pool
 mythicbotany:andwari_cave
 mythicbotany:elven_house
+nuclearcraft:wasteland_village
 outer_end:catacombs
 outer_end:end_tower
 twilightforest:aurora_palace

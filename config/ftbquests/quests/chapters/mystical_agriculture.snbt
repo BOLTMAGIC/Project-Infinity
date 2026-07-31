@@ -3766,8 +3766,8 @@
 				item: "mysticalagriculture:soulium_seeds"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 7.0d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3763C9494249EC62"]
@@ -4718,6 +4718,22 @@
 			}]
 			x: 14.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3763C9494249EC62"]
+			id: "27A1397B5571C1A7"
+			rewards: [{
+				id: "1D17AFCDE3C0EC95"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B8D225A34AAE412"
+				item: "mysticalagriculture:uranium_seeds"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
 		}
 	]
 	title: "{ftbquests.chapter.mystical_agriculture.title}"

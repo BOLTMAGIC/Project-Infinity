@@ -121,6 +121,9 @@ ServerEvents.recipes((event) => {
         {
           item: 'mysticalagriculture:blazing_crystal_essence',
         },
+        {
+          item: 'mysticalagriculture:uranium_essence',
+        },
       ],
       result: {
         item: 'kubejs:tier4_super_essence',

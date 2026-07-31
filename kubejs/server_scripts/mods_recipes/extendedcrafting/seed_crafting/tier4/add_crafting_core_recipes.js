@@ -142,6 +142,10 @@ ServerEvents.recipes((event) => {
     'mysticalagriculture:titanium_seeds',
     'nuclearcraft:niobium_titanium_electromagnet',
   ]);
+  seedcraftingtier4_1(event, [
+    'mysticalagriculture:uranium_seeds',
+    'mekanism:block_uranium',
+  ]);
   seedcraftingtier4_2(event, [
     'mysticalagriculture:steel_seeds',
     'thermal:steel_block',
@@ -204,7 +208,7 @@ ServerEvents.recipes((event) => {
   ]);
 });
 
-function combinationcraft1(event, recipe) {
+function combinationcraft1 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',
@@ -247,7 +251,7 @@ function combinationcraft1(event, recipe) {
     .id('combination_' + recipe[1]);
 }
 
-function combinationcraft2(event, recipe) {
+function combinationcraft2 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',
@@ -287,7 +291,7 @@ function combinationcraft2(event, recipe) {
     .id('combination_' + recipe[1]);
 }
 
-function combinationcraft3(event, recipe) {
+function combinationcraft3 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',
@@ -506,7 +510,7 @@ ServerEvents.recipes((event) => {
     .id('combination_botania:creative_pool');
 });
 
-function mobseedcraftingtier4(event, recipe) {
+function mobseedcraftingtier4 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',
@@ -596,7 +600,7 @@ function mobseedcraftingtier4(event, recipe) {
     .id('combination_' + recipe[0]);
 }
 
-function seedcraftingtier4_1(event, recipe) {
+function seedcraftingtier4_1 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',
@@ -678,7 +682,7 @@ function seedcraftingtier4_1(event, recipe) {
     .id('combination_' + recipe[0]);
 }
 
-function seedcraftingtier4_2(event, recipe) {
+function seedcraftingtier4_2 (event, recipe) {
   event
     .custom({
       type: 'extendedcrafting:combination',

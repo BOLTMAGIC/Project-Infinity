@@ -12,16 +12,16 @@
 			image: "kubejs:block/screen/research_station"
 			rotation: 0.0d
 			width: 8.85d
-			x: -4.0d
-			y: -8.5d
+			x: 1.0d
+			y: -9.0d
 		}
 		{
 			height: 7.0d
 			image: "kubejs:block/screen/research_multiblock_full1"
 			rotation: 0.0d
 			width: 7.0d
-			x: 4.0d
-			y: -10.5d
+			x: 8.5d
+			y: -9.5d
 		}
 		{
 			height: 5.0d
@@ -47,7 +47,7 @@
 			rotation: 0.0d
 			width: 2.9d
 			x: 3.0d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			height: 5.0d
@@ -55,31 +55,31 @@
 			rotation: 0.0d
 			width: 3.6d
 			x: 6.0d
-			y: 5.0d
+			y: 3.5d
 		}
 		{
 			height: 5.0d
 			image: "kubejs:block/screen/penrose1"
 			rotation: 0.0d
 			width: 5.5d
-			x: -14.0d
-			y: 1.5d
+			x: -12.5d
+			y: -5.5d
 		}
 		{
 			height: 5.0d
 			image: "kubejs:block/screen/penrose2"
 			rotation: 0.0d
 			width: 6.7d
-			x: -10.0d
-			y: 5.0d
+			x: -5.5d
+			y: -8.0d
 		}
 		{
 			height: 5.0d
 			image: "kubejs:block/screen/entopy_cradle"
 			rotation: 0.0d
 			width: 5.5d
-			x: -10.5d
-			y: -7.0d
+			x: -12.0d
+			y: 3.5d
 		}
 		{
 			click: "https://www.youtube.com/watch?v=VvgBHT97HtM"
@@ -98,8 +98,8 @@
 			image: "jei:textures/jei/atlas/gui/icons/info.png"
 			rotation: 0.0d
 			width: 0.5d
-			x: -4.970238095238095d
-			y: -4.107142857142861d
+			x: -5.0d
+			y: 0.25d
 		}
 	]
 	order_index: 5
@@ -156,6 +156,8 @@
 				"{ftbquests.chapter.crazy_ae2.quest2038BB072CF5A537.description11}"
 				""
 				"{ftbquests.chapter.crazy_ae2.quest2038BB072CF5A537.description12}"
+				""
+				"The &bResearch Station&r runs on FE, not AE."
 			]
 			icon: "crazyae2addons:research_station"
 			id: "2038BB072CF5A537"
@@ -223,6 +225,8 @@
 				"{ftbquests.chapter.crazy_ae2.quest45FC26A201DB8F40.description16}"
 				""
 				"{ftbquests.chapter.crazy_ae2.quest45FC26A201DB8F40.description17}"
+				""
+				"&6Research Units&r requires AE to work, so connect them to your &3ME&r network or provide them some energy."
 				""
 				"{ftbquests.chapter.crazy_ae2.quest45FC26A201DB8F40.description18}"
 			]
@@ -542,7 +546,7 @@
 				title: "{ftbquests.chapter.crazy_ae2.quest6BED74AB906CBFE5.task.5943226025093796839.title}"
 				type: "checkmark"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: -7.0d
 		}
 		{
@@ -593,7 +597,6 @@
 				""
 				"{ftbquests.chapter.crazy_ae2.quest26CDA9B2273B550A.image0}"
 			]
-			hide_dependency_lines: true
 			id: "26CDA9B2273B550A"
 			min_width: 300
 			rewards: [{
@@ -607,8 +610,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest26CDA9B2273B550A.title}"
-			x: 11.5d
-			y: -4.5d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -668,8 +671,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest3456614E9D901485.title}"
-			x: 12.5d
-			y: -4.5d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -731,8 +734,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest2696971504ECC26C.title}"
-			x: 13.5d
-			y: -4.5d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -785,8 +788,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest6AC6E0B149B9F75B.title}"
-			x: 14.5d
-			y: -4.5d
+			x: 13.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -827,8 +830,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest340BEAEB169C308.title}"
-			x: 11.5d
-			y: -2.5d
+			x: 13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -883,8 +886,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest6B173D14C7EF8E1B.title}"
-			x: 12.5d
-			y: -3.5d
+			x: 16.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -931,8 +934,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest1714F010F020306F.title}"
-			x: 13.5d
-			y: -3.5d
+			x: 16.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -985,8 +988,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest405242D9880E42A7.title}"
-			x: 14.5d
-			y: -3.5d
+			x: 15.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -1043,8 +1046,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.crazy_ae2.quest77F0D8D9873A1478.title}"
-			x: 11.5d
-			y: -3.5d
+			x: 16.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
@@ -1083,14 +1086,16 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest6F6330478054EA0B.title}"
-			x: 12.5d
-			y: -2.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6BED74AB906CBFE5"]
 			description: [
 				"{ftbquests.chapter.crazy_ae2.questC71707A970A68B9.description1}"
 				"{ftbquests.chapter.crazy_ae2.questC71707A970A68B9.description2}"
+				""
+				"It doesn't require &eResearch&r or &bRecipe Fabricator&r to craft right now."
 			]
 			id: "0C71707A970A68B9"
 			rewards: [{
@@ -1110,11 +1115,14 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.questC71707A970A68B9.title}"
-			x: 13.5d
-			y: -2.5d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["6BED74AB906CBFE5"]
+			dependencies: [
+				"6BED74AB906CBFE5"
+				"7C508ADA6057400A"
+			]
 			description: [
 				"{ftbquests.chapter.crazy_ae2.quest74BA545B550A5376.description1}"
 				""
@@ -1150,17 +1158,22 @@
 				item: "kubejs:apotheotic_coin"
 				type: "item"
 			}]
+			shape: "diamond"
+			size: 2.0d
 			tasks: [{
 				id: "59A659FAC6F2DF64"
 				item: "kubejs:infinity_9"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.crazy_ae2.quest74BA545B550A5376.title}"
-			x: 14.5d
-			y: -2.5d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["2E66DFDA5014FCD7"]
+			dependencies: [
+				"2E66DFDA5014FCD7"
+				"776B4D6ABC3FA1A8"
+			]
 			description: [
 				"{ftbquests.chapter.crazy_ae2.quest352A145082DCB3F4.description1}"
 				""
@@ -1251,6 +1264,7 @@
 				""
 				"{ftbquests.chapter.crazy_ae2.quest5C7C5653FD5840C9.description3}"
 			]
+			hide_dependent_lines: true
 			id: "5C7C5653FD5840C9"
 			rewards: [{
 				id: "4DA23E13AF831985"
@@ -1269,7 +1283,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -1379,33 +1393,36 @@
 		{
 			dependencies: ["2E66DFDA5014FCD7"]
 			description: [
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description1}"
+				"The &5Entropy Cradle&r is a massive &cenergy accumulator&r and &etransmutation multiblock&r."
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description2}"
+				"It can store up to &a300,000,000 AE&r, which is &a600,000,000 FE&r, and converts entire structures into &5extremely powerful blocks&r once fully charged."
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description3}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description4}"
+				"• The Entropy Cradle charges using &3AE2&r energy only"
+				"• Charging stops automatically at &a300M AE&r"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description5}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description6}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description7}"
+				"During charging:"
+				"• &eSix capacitor layers&r light up progressively"
+				"• Capacitors emit a &credstone comparator signal&r when the Cradle is &afully charged&r"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description8}"
+				"Once the Cradle is &afully charged&r:"
+				"• Apply a &credstone pulse&r to the controller"
+				"• The Cradle &cdischarges&r completely"
+				"• If a &eknown recipe structure&r is inside, it will be &atransmuted&r into a powerful block"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description9}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description10}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description11}"
+				"Examples include:"
+				"• &dPenrose Frame&r"
+				"• &eEnergy Storage Components&r"
+				"• &5Infinity 9 Block&r"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description12}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description13}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description14}"
+				"• All available transmutation recipes can be found in &eJEI&r"
+				"• The Entropy Cradle can be &afully automated&r using the &dAuto Builder&r"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description15}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description16}"
+				"• Requires a valid &3AE2&r network with channels"
+				"• Can &cONLY&r be charged using &3AE2&r energy"
+				"• Full charge is required — partial charge does &cNOT&r work"
 				""
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description17}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description18}"
-				"{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.description19}"
+				"It is recommended to seperate it from main networks with quartz fiber."
+				"This will save 1 channel, and also prevents &3Crafting Storages&r in recipe structure from being assigned."
 			]
 			icon: "crazyae2addons:entropy_cradle_controller"
 			id: "553EF8386D321C37"
@@ -1415,17 +1432,35 @@
 				item: "kubejs:apotheotic_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7C441F03A3ED06F2"
-				item: "crazyae2addons:entropy_cradle_controller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7C441F03A3ED06F2"
+					item: "crazyae2addons:entropy_cradle_controller"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1487053E921B3A41"
+					item: { Count: 24, id: "crazyae2addons:entropy_cradle_capacitor" }
+					type: "item"
+				}
+				{
+					count: 236L
+					id: "1CCB16EE8A105BE5"
+					item: { Count: 236, id: "crazyae2addons:entropy_cradle" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.crazy_ae2.quest553EF8386D321C37.title}"
 			x: -5.0d
-			y: -3.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["2E66DFDA5014FCD7"]
+			dependencies: [
+				"2E66DFDA5014FCD7"
+				"44787ACAAF0D6A71"
+				"2299E34F6E800580"
+			]
 			description: [
 				"{ftbquests.chapter.crazy_ae2.quest50797EF7D8C92A29.description1}"
 				""
@@ -1545,14 +1580,347 @@
 				item: "kubejs:apotheotic_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7D70DE7C20203E64"
-				item: "crazyae2addons:penrose_controller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7D70DE7C20203E64"
+					item: "crazyae2addons:penrose_controller"
+					type: "item"
+				}
+				{
+					id: "15A74908F0ADB184"
+					item: "crazyae2addons:penrose_port"
+					type: "item"
+				}
+				{
+					id: "04309663918F8A67"
+					item: "crazyae2addons:penrose_coil"
+					type: "item"
+				}
+				{
+					id: "3B570723120E7819"
+					item: "crazyae2addons:penrose_frame"
+					type: "item"
+				}
+				{
+					id: "512DDCD2733A63AF"
+					item: "crazyae2addons:penrose_injection_port"
+					type: "item"
+				}
+				{
+					id: "1BC8B86CA1B7DFA9"
+					item: "crazyae2addons:penrose_mass_emitter"
+					type: "item"
+				}
+				{
+					id: "2B66FE1C40295535"
+					item: "crazyae2addons:penrose_hawking_vent"
+					type: "item"
+				}
+				{
+					id: "0B3E17213508B388"
+					item: "crazyae2addons:penrose_heat_emitter"
+					type: "item"
+				}
+				{
+					id: "2C6040F31CB02DE9"
+					item: "crazyae2addons:penrose_heat_vent"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.crazy_ae2.quest50797EF7D8C92A29.title}"
 			x: -5.0d
-			y: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5CE906B61DAC95BC"]
+			description: [
+				"A large &eEnergy Storage&r."
+				""
+				"Each tier stores 4x the power of previous one."
+			]
+			hide_dependent_lines: true
+			id: "28433386858E2291"
+			min_required_tasks: 1
+			rewards: [{
+				id: "17974AF0EFF3E843"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "276EF8FD7A3C0A22"
+					item: "crazyae2addons:energy_storage_1k"
+					type: "item"
+				}
+				{
+					id: "1A8B00D6886DAD0D"
+					item: "crazyae2addons:energy_storage_4k"
+					type: "item"
+				}
+				{
+					id: "2E31C22CC7F755C9"
+					item: "crazyae2addons:energy_storage_16k"
+					type: "item"
+				}
+				{
+					id: "311D2E6B8001DD8F"
+					item: "crazyae2addons:energy_storage_64k"
+					type: "item"
+				}
+				{
+					id: "1D80041EA9A6B428"
+					item: "crazyae2addons:energy_storage_256k"
+					type: "item"
+				}
+			]
+			title: "&ek-tier Energy Storage&r"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5CE906B61DAC95BC"
+				"28433386858E2291"
+			]
+			description: [
+				"The most powerful &eEnergy Storage&r for AE2 and its addons."
+				""
+				"Recommend having one &e256M Energy Storage&r for late game."
+			]
+			hide_dependent_lines: true
+			id: "5B9BEE78F3182B51"
+			min_required_tasks: 1
+			rewards: [{
+				id: "4F8DDCE4AB8FFA41"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "495D70617A72C1E2"
+					item: "crazyae2addons:energy_storage_1m"
+					type: "item"
+				}
+				{
+					id: "39EF80EB31A3D8B5"
+					item: "crazyae2addons:energy_storage_4m"
+					type: "item"
+				}
+				{
+					id: "62105D1AFF2AD8AA"
+					item: "crazyae2addons:energy_storage_16m"
+					type: "item"
+				}
+				{
+					id: "412E640E2F63F6C1"
+					item: "crazyae2addons:energy_storage_64m"
+					type: "item"
+				}
+				{
+					id: "3E8375A926EF4AB3"
+					item: "crazyae2addons:energy_storage_256m"
+					type: "item"
+				}
+			]
+			title: "&eM-tier Energy Storage&r"
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5CE906B61DAC95BC"]
+			description: ["The controller block of &eSpawner Extractor&r."]
+			hide_dependent_lines: true
+			id: "776B4D6ABC3FA1A8"
+			rewards: [{
+				id: "477043A2D2998A8D"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76352D139BBAC28D"
+				item: "crazyae2addons:spawner_extractor_controller"
+				type: "item"
+			}]
+			title: "&eSpawner Extractor Controller&r"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5CE906B61DAC95BC"
+				"5A1803F9E9188738"
+			]
+			description: [
+				"The base block of the &5Penrose Sphere&r, both used in the multiblock and as a crafting ingredient."
+				""
+				"You'll need a lot of this if you want to build the &5Penrose Sphere&r."
+			]
+			hide_dependent_lines: true
+			id: "44787ACAAF0D6A71"
+			rewards: [{
+				id: "026D7A948241F6F2"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F1088867C946061"
+				item: "crazyae2addons:penrose_frame"
+				type: "item"
+			}]
+			title: "&dPenrose Frame&r"
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5CE906B61DAC95BC"]
+			description: ["Can be used to craft &5Infinity 9&r in &eRecipe Fabricator&r once researched."]
+			hide_dependent_lines: true
+			id: "7C508ADA6057400A"
+			rewards: [{
+				id: "60DCAD243E1E9050"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "242A1011897788B4"
+				item: "kubejs:infinity_9_block"
+				type: "item"
+			}]
+			title: "&5Infinity 9 Block&r"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6BED74AB906CBFE5"
+				"2299E34F6E800580"
+			]
+			description: [
+				"The &dSuper Singularity Block&r is a crafting ingredient for the &dPenrose Frame&r."
+				""
+				"It doesn't do much on its own."
+			]
+			hide_dependent_lines: true
+			id: "5A1803F9E9188738"
+			rewards: [{
+				id: "515AFB7EE249766C"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48DE4E4F450ED148"
+				item: "crazyae2addons:super_singularity_block"
+				type: "item"
+			}]
+			title: "&dSuper Singularity Block&r"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E66DFDA5014FCD7"]
+			description: [
+				"&eReinforced Matter Condenser&r compesses 8192 &1Singularities&r into one &dSuper Singulerity&r."
+				""
+				"Requires a full stack of &3256k storage component&r for the &eReinforced Matter Condenser&r to function."
+			]
+			hide_dependent_lines: true
+			icon: "crazyae2addons:super_singularity"
+			id: "2299E34F6E800580"
+			rewards: [{
+				id: "69DC5DD26CFA5913"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0C79F78EFCF7F5EC"
+					item: "crazyae2addons:reinforced_matter_condenser"
+					type: "item"
+				}
+				{
+					id: "2DEAB3C1183A151B"
+					item: "crazyae2addons:super_singularity"
+					type: "item"
+				}
+			]
+			title: "&dSuper Singularity&r"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["72E818B455A6950B"]
+			description: ["&bResearch Fluid&r can also be crafted inside &bRecipe Fabricator&r, without any &eData Drive&r."]
+			id: "29ADBB763E66B424"
+			rewards: [{
+				id: "45BE11D2FD353435"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "04754493E3EED64B"
+				title: "Easier &bResearch Fluid&r"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["553EF8386D321C37"]
+			hide_dependent_lines: true
+			id: "5CE906B61DAC95BC"
+			rewards: [{
+				id: "26504E65F8C5A464"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "7C3093E5EB376A8B"
+				title: "&eWhat can Entropy Cradle make?&r"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5CE906B61DAC95BC"]
+			id: "42BC4C6D81C3BA64"
+			tasks: [{
+				id: "5DB7E7818F5BD475"
+				item: "bmaddon:blood_altar_tier_card_3"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5CE906B61DAC95BC"
+				"42BC4C6D81C3BA64"
+			]
+			id: "43E81B177D849878"
+			tasks: [{
+				id: "588EE39F26A71257"
+				item: "bmaddon:blood_altar_tier_card_4"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5CE906B61DAC95BC"
+				"43E81B177D849878"
+			]
+			id: "34A6560967130C0F"
+			tasks: [{
+				id: "6BCCB9387C8F9C3D"
+				item: "bmaddon:blood_altar_tier_card_5"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.chapter.crazy_ae2.title}"

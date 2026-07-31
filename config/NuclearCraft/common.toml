@@ -6,40 +6,31 @@
 	#Allow solar panel registration: du, elite, advanced, basic
 	register_panel = [true, true, true, true]
 	#Solar panel power generation: du, elite, advanced, basic
-	panel_power = [400, 1500, 100, 25]
+	panel_power = [448, 1792, 112, 28]
 	#Allow rtg registration: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
 	register_rtg = [true, true, true, true]
 	#rtg generation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
-	rtg_power = [100, 400, 1200, 4000]
+	rtg_power = [112, 448, 1792, 4096]
 	#rtg radiation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
 	rtg_radiation = [560, 57800, 200000, 1900000]
 	#Steam turbine (one block) base power gen
-	steam_turbine_power_gen = 50
+	steam_turbine_power_gen = 80
 	#Decay Generator base power gen
-	decay_generator_power_gen = 100
+	decay_generator_power_gen = 128
 
 [energy_storage]
+	lightning_rod_charge = 1048576
 	#Allow block registration: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
 	energy_block_registration = [true, true, true, true, true, true, true, true]
 	#Storage: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
 	energy_block_storage = [1600000, 102400000, 6400000, 32000000, 2048000000, 512000000, 25600000, 128000000]
-	lithium_ion_battery_storage = 1000000
-	qnp_energy_storage = 2000000
+	lithium_ion_battery_storage = 1048576
+	qnp_energy_storage = 2097152
 	qnp_energy_per_block = 200
-	lightning_rod_charge = 1048576
 
 [Misc]
 	#Debug logging. Enable in case of issues to collect more data
 	debug_logging = false
-
-[storage_blocks]
-	#Blocks to store items, fluids, etc...
-	#Allow container registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
-	container_block_registration = [true, true, true, true]
-	#Allow barrel registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
-	barrel_block_registration = [true, true, true, true]
-	#Barrel capacity in Buckets: advanced_barrel, basic_barrel, elite_barrel, du_barrel
-	barrel_capacity = [512, 128, 8192, 2048]
 
 ["GregTech Energy Compatibility"]
 	#Tiers: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX
@@ -67,10 +58,10 @@
 	fusion_reactor_energy_tier = "IV"
 	#This only counts if GTCEU is supported
 	#Allowed Values: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX
-	kugelblitz_energy_tier = "LuV"
+	kugelblitz_energy_tier = "ZPM"
 	#This only counts if GTCEU is supported
 	#Allowed Values: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX
-	accelerators_energy_tier = "LuV"
+	accelerators_energy_tier = "ZPM"
 	#This only counts if GTCEU is supported
 	#Allowed Values: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX
 	processor_energy_tier = "MV"
@@ -92,6 +83,9 @@
 	#Pulse radiation dose applied on direct hit
 	#Range: 0 ~ 9223372036854775807
 	pulse_radiation = 200000
+	#Muzzle flash FX duration after a pulse shot, in ticks
+	#Range: 0 ~ 200
+	pulse_fx_ticks = 10
 	#Cooldown between beam shots, in ticks
 	#Range: 1 ~ 1200
 	beam_cooldown_ticks = 60
@@ -110,9 +104,6 @@
 	#Beam impact block break radius (0 disables block breaking)
 	#Range: 0 ~ 16
 	beam_block_break_radius = 3
-	#Muzzle flash FX duration after a pulse shot, in ticks
-	#Range: 0 ~ 200
-	pulse_fx_ticks = 10
 	#Muzzle flash FX duration after a beam shot, in ticks
 	#Range: 0 ~ 200
 	beam_fx_ticks = 20
@@ -129,10 +120,10 @@
 	fuse_ticks = 60
 	#Block ops applied per server tick during detonation (default 2048)
 	#Range: 64 ~ 65536
-	ops_per_tick = 32768
+	ops_per_tick = 16384
 	#Whole-chunk packets resent to clients per server tick during detonation. Raise to make blast visible to players faster; bandwidth cost scales with player count.
 	#Range: 1 ~ 1024
-	chunk_resends_per_tick = 32
+	chunk_resends_per_tick = 16
 	#If true, bombs mutate chunk sections directly and resend whole chunks instead of using server.setBlock per op. ~50-100x faster but skips neighbor updates, fluid flow, falling-block triggers, and Forge block events inside the blast. Set false to roll back to vanilla setBlock path.
 	fast_block_writes = true
 
@@ -307,4 +298,13 @@
 	#Node budget for a single pipe network's flood-fill discovery; caps recompute cost
 	#Range: > 16
 	max_network_size = 4096
+
+[storage_blocks]
+	#Blocks to store items, fluids, etc...
+	#Allow container registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	container_block_registration = [true, true, true, true]
+	#Allow barrel registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	barrel_block_registration = [true, true, true, true]
+	#Barrel capacity in Buckets: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	barrel_capacity = [512, 128, 8192, 2048]
 

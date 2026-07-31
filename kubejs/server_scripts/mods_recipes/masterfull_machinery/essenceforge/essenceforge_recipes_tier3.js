@@ -129,6 +129,7 @@ MMEvents.createProcesses((event) => {
     'mysticalagriculture:fluix_seeds',
     'mysticalagriculture:energized_steel_seeds',
     'mysticalagriculture:blazing_crystal_seeds',
+    'mysticalagriculture:uranium_seeds',
   ];
   generateTier3Recipes(event, tier4Seeds, 4);
 

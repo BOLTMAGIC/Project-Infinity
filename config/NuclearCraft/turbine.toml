@@ -6,13 +6,16 @@
 	min_size = 5
 	#Multiblock max size.
 	#Range: 5 ~ 25
-	max_size = 16
+	max_size = 17
 	#Steam flow per blade mB/t
 	#Range: 100 ~ 1000000
 	blade_flow = 2000
 	#Energy gen multiplier
 	#Range: 1.0 ~ 1000000.0
 	energy_gen = 10.0
+	#Create energy convertion rate
+	#Range: 0.01 ~ 2.0
+	create_energy_convertion = 0.2
 	#Efficiency %: gold, copper, magnesium, beryllium, silver, aluminum
 	efficiency = [104.0, 110.0, 86.0, 90.0, 112.0, 98.0]
 	#You can define blocks by block_name. So copper_turbine_coil will fall back to nuclearcraft:copper_turbine_coil. Or qualify it with namespace like some_mod:some_block.
@@ -31,9 +34,6 @@
 	copper = ["turbine_gold_coil"]
 	magnesium = ["turbine_bearing"]
 	beryllium = ["turbine_magnesium_coil"]
-	silver = ["turbine_magnesium_coil", "turbine_gold_coil"]
+	silver = ["turbine_magnesium_coil|turbine_gold_coil"]
 	aluminum = ["turbine_gold_coil|turbine_magnesium_coil|turbine_beryllium_coil|turbine_gold_coil|turbine_copper_coil"]
-	#Create energy convertion rate
-	#Range: 0.01 ~ 2.0
-	create_energy_convertion = 0.2
 

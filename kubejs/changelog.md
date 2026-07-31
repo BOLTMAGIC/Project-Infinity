@@ -1,3 +1,28 @@
+%#red%**Version 0.0.51.1**%#%
+
+MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
+
+If you want the new EnchantmentLimiter settings you need to place the "enchantlimiter-server.toml" from defaultconfig into your saves serverconfig folder
+
+Mod Info:
+- MODS REMOVED:
+    - AE2 Optimizer Mod
+----------
+Recipe changes and fixes:
+- fixed Vitality Fluid Crash
+- changed recipe for World Breaker to use Creative Bin (thx to Lightreaper45)
+- changed recipe for dungeon pass (thx to alekzander)
+- readded uranium seeds (thx to Kyo and ricky1680)
+- added ram trophy dupe (thx to edwardeau)
+- changed recipe for reaction chamber (thx to Miguelito)
+- changed recipe for rosarium miner and solar panels (thx to Lightreaper45)
+- removed recipes for NeoEco controllers (will get readded when the mod gets some fixes)
+----------
+Mod changes and fixes:
+- fixed EnchantmentLimiter
+- Masterful Machinery TPS fixes
+----------
+
 %#red%**Version 0.0.51.0**%#%
 
 MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!

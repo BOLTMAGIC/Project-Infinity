@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
           item: 'kubejs:azure_silver_ingot',
         },
         C: {
-          item: 'solarflux:sp_de.wyvern',
+          item: 'solarflux:sp_8',
         },
         D: {
           item: 'voidminers:solar_caerium_block',
@@ -142,7 +142,7 @@ ServerEvents.recipes((event) => {
           item: 'justdirethings:eclipsealloy_ingot',
         },
         D: {
-          item: 'solarflux:sp_de.draconic',
+          item: 'solarflux:sp_de.wyvern',
         },
         E: {
           item: 'kubejs:shining_alloy_block',
@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
           tag: 'forge:glass',
         },
         B: {
-          item: 'projectexpansion:pink_matter',
+          item: 'custom_capacitors:fast_capacitor',
         },
         C: {
           item: 'cataclysm:lacrima',
@@ -200,7 +200,7 @@ ServerEvents.recipes((event) => {
           item: 'cataclysm:essence_of_the_storm',
         },
         G: {
-          item: 'projectexpansion:violet_matter',
+          item: 'custom_capacitors:precision_capacitor',
         },
         H: {
           item: 'cataclysm:ancient_metal_ingot',
@@ -273,10 +273,10 @@ ServerEvents.recipes((event) => {
       ],
       key: {
         A: {
-          item: 'minecraft:glass',
+          tag: 'forge:glass',
         },
         B: {
-          item: 'projectexpansion:pink_matter',
+          item: 'custom_capacitors:fast_capacitor',
         },
         C: {
           item: 'cataclysm:lacrima',
@@ -291,7 +291,7 @@ ServerEvents.recipes((event) => {
           item: 'cataclysm:essence_of_the_storm',
         },
         G: {
-          item: 'projectexpansion:violet_matter',
+          item: 'custom_capacitors:precision_capacitor',
         },
         H: {
           item: 'cataclysm:ancient_metal_ingot',
@@ -312,7 +312,7 @@ ServerEvents.recipes((event) => {
           item: 'armorplus:guardian_scale',
         },
         N: {
-          item: 'solarflux:sp_de.chaotic',
+          item: 'solarflux:sp_de.draconic',
         },
         O: {
           item: 'kubejs:infinity_1',

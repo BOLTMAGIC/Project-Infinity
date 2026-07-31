@@ -1,6 +1,6 @@
 #Post a vanilla crafting event (ItemCraftedEvent) when the Crafting System finishes a recipe.
 #May introduce extra event/listener overhead; can be more noticeable with mods like Balm installed.
-postCraftingEvent = true
+postCraftingEvent = false
 #Number of 63-slot pages available in each smart crafting pattern bus.
 #Range: 1-8. Changes are fully applied after re-entering the world or restarting the server.
 #Range: 1 ~ 8
@@ -39,7 +39,7 @@ enableInfiniteStorage = true
 	#This can greatly reduce repeated pattern execution cost. If recipe compatibility issues occur in a modpack, disable this option to fall back to the slow path.
 	#Fast Path is automatically disabled when Post Crafting Event is enabled to preserve event semantics.
 	#Set JVM property -Dneoecoae.ecoFastPath=false to force-disable this optimization without editing the config.
-	ecoAe2FastPathEnabled = true
+	ecoAe2FastPathEnabled = false
 	#Periodically log ECO fast path cache statistics.
 	#Set JVM property -Dneoecoae.debugEcoFastPath=true to force-enable this without editing the config.
 	debugEcoFastPath = false
@@ -56,7 +56,7 @@ enableInfiniteStorage = true
 	#This keeps the same safety checks as the normal fast path, but allows much larger ECO Pattern Bus batch pushes.
 	#Default true. Disable this option if a modpack has recipe compatibility issues.
 	#Set JVM property -Dneoecoae.ecoAggressiveFastPath=true to force-enable this optimization without editing the config.
-	ecoAggressiveFastPathEnabled = true
+	ecoAggressiveFastPathEnabled = false
 	#Maximum new aggressive fast path crafts a CPU may schedule per tick.
 	#This also scales the simulated crafting power cap so batches up to this limit can advance at the controller's full progress rate when enough AE power is available.
 	#The controller's dynamic FX capacity still caps total in-flight simulated crafts.

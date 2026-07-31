@@ -23,6 +23,5 @@ StartupEvents.registry('fluid', (event) => {
     .bucketColor(0xa1fff7)
     .displayName('Cryotheum Coolant')
     .noBucket()
-    .displayName('Molten Blitz')
-    .tag('kubejs:molten_blitz');
+    .tag('kubejs:cryotheum_coolant');
 });

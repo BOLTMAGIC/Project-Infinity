@@ -230,6 +230,26 @@ ServerEvents.recipes((event) => {
     'ironfurnaces:netherite_furnace',
   ]);
 
+  shapeless(event, 'lrdynamicdungeon:dungeon_pass', [
+    'minecraft:paper',
+    'minecraft:paper',
+    'minecraft:paper',
+    '#lrdynamicdungeon:monster_parts',
+    'mekanism:alloy_reinforced',
+  ]);
+
+  create3x3(event, Item.of('twilightforest:quest_ram_trophy', 4), [
+    'twilightforest:naga_trophy',
+    'twilightforest:lich_trophy',
+    'twilightforest:minoshroom_trophy',
+    'twilightforest:hydra_trophy',
+    'twilightforest:quest_ram_trophy',
+    'twilightforest:knight_phantom_trophy',
+    'twilightforest:ur_ghast_trophy',
+    'twilightforest:alpha_yeti_trophy',
+    'twilightforest:snow_queen_trophy',
+  ]);
+
   create3x3(event, 'ironfurnaces:rainbow_core', [
     'minecraft:red_stained_glass',
     'minecraft:orange_stained_glass',
@@ -263,17 +283,16 @@ ServerEvents.recipes((event) => {
   );
 
   //#region projectexpansion
-  event
-    .shaped(
-      Item.of('projectexpansion:basic_collector'),
-      ['ABA', 'ACA', 'ADA'],
-      {
-        A: 'minecraft:glowstone',
-        B: 'projecte:collector_mk2',
-        C: 'projecte:aeternalis_fuel_block',
-        D: 'kubejs:fake_transmutation_tablet',
-      }
-    );
+  event.shaped(
+    Item.of('projectexpansion:basic_collector'),
+    ['ABA', 'ACA', 'ADA'],
+    {
+      A: 'minecraft:glowstone',
+      B: 'projecte:collector_mk2',
+      C: 'projecte:aeternalis_fuel_block',
+      D: 'kubejs:fake_transmutation_tablet',
+    }
+  );
 
   create3x3(event, 'projectexpansion:basic_emc_link', [
     'projecte:low_covalence_dust',
@@ -308,7 +327,10 @@ ServerEvents.recipes((event) => {
     'minecraft:air',
     'minecraft:air',
   ]);
-  event.shapeless('kubejs:fake_transmutation_tablet', 'projecte:transmutation_table');
+  event.shapeless(
+    'kubejs:fake_transmutation_tablet',
+    'projecte:transmutation_table'
+  );
 
   //#region refinedstorage
   shapeless(event, 'refinedstorage:creative_storage_block', [

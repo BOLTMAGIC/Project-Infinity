@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
           item: 'ae2:vibration_chamber',
         },
         H: {
-          item: 'ae2omnicells:spent_nuclear_waste_singularity',
+          item: 'crazyae2addons:super_singularity',
         },
         I: {
           item: 'extendedae_plus:basic_core',

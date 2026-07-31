@@ -99,13 +99,6 @@ const removeItemsbyOutput = [
   'cyclic:rotator',
   'cyclic:mattock_stone',
   'cyclic:prospector',
-  'ironfurnaces:silver_furnace',
-  'ironfurnaces:copper_furnace',
-  'ironfurnaces:upgrade_silver',
-  'ironfurnaces:upgrade_iron2',
-  'ironfurnaces:upgrade_silver2',
-  'ironfurnaces:upgrade_gold2',
-  'ironfurnaces:upgrade_copper',
   'avaritia:singularity',
   'avaritia_expand:crystal_tnt',
   'avaritia_expand:infinity_tnt',
@@ -177,7 +170,7 @@ const removeItemsbyOutput = [
   'industrialforegoing:conveyor_extraction_upgrade',
   'industrialforegoing:conveyor_splitting_upgrade',
   'thermal:florb',
-  'silentgems:soul_gem'
+  'silentgems:soul_gem',
 ];
 
 //#region ID removal
@@ -588,6 +581,32 @@ const removeItemsbyID = [
   'voidminers:solar_amethystine_panel',
   'voidminers:rosarium_miner',
   'voidminers:solar_rosarium_panel',
+  'nuclearcraft:mek_chemical_conversion',
+  'lrdynamicdungeon:dungeon_pass',
+  'neoecoae:storage_system_l4',
+  'neoecoae:crafting_system_l4',
+  'neoecoae:computation_system_l4',
+  'cyclic:storage_bag',
+  'cyclic:tile_transporter_empty_alt',
+  'cyclic:tile_transporter_empty',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
   '',
   '',
   '',
@@ -659,14 +678,10 @@ ServerEvents.recipes((event) => {
   event.remove({ output: /infinity_catalyst/, type: 'avaritia:extreme_craft' });
 
   event.remove({
-    input: [
-      'thermal:press_coin_die',
-    ],
+    input: ['thermal:press_coin_die'],
   });
   event.remove({
-    output: [
-      'thermal:press_coin_die',
-    ],
+    output: ['thermal:press_coin_die'],
   });
 });
 //#region Village removal

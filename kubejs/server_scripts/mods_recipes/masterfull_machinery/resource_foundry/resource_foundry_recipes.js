@@ -1816,6 +1816,13 @@ MMEvents.createProcesses(function (event) {
   });
 
   createRFProcess({
+    outputId: 'mm:uranium_ingot_from_uranium_essence',
+    outputItem: 'mekanism:ingot_uranium',
+    outputCount: 4,
+    inputs: [ { type: 'mm:item', item: 'mysticalagriculture:uranium_essence', count: 8 } ],
+  });
+
+  createRFProcess({
     outputId: 'mm:pulsating_alloy_from_essence',
     outputItem: 'enderio:pulsating_alloy_ingot',
     outputCount: 3,

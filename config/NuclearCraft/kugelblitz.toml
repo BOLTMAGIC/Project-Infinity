@@ -1,6 +1,8 @@
 
 #Settings for Fusion Reactor
 [general]
+	#Enable blachole dstortion shader.
+	blackhole_shader = true
 	#EXPL FE requirement.
 	#Range: 2048000000 ~ 20480000000
 	expl_fe = 10240000000
@@ -13,6 +15,4 @@
 	#Adjust rate of blackhole evaporation.
 	#Range: 0.001 ~ 1000.0
 	blackhole_evaporation_rate = 1.0
-	#Enable blachole dstortion shader.
-	blackhole_shader = true
 

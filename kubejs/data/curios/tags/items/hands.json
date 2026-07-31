@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "actuallyadditions:crafter_on_a_stick"
+    "actuallyadditions:crafter_on_a_stick",
+    "ae2netanalyser:network_analyser"
   ]
 }

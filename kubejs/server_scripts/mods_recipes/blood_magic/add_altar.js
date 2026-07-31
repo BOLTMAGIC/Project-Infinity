@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
       consumptionRate: 20000,
       drainRate: 200000,
       input: {
-        item: 'bloodmagic:dungeon_metal',
+        item: 'bloodmagic:largebloodstonebrick',
       },
       output: {
         item: 'bmaddon:blood_altar_tier_card_2',

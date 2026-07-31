@@ -96,6 +96,11 @@
 	base_power = 50
 	base_time = 200
 
+[creative_particle_source]
+	register = true
+	base_power = 50
+	base_time = 200
+
 [assembler]
 	register = true
 	base_power = 50
@@ -157,10 +162,10 @@
 	enable_veins = true
 	#Min and max values of blocks per vein.
 	#Result amount will be random value in this range.
-	blocks_per_vein = [30000, 70000]
+	blocks_per_vein = [50000, 1000000]
 	#Veins rarity. Bigger value - less veins.
 	#Range: 1 ~ 5000
-	veins_rarity = 100
+	veins_rarity = 70
 	#All veins will have random ores. It will ignore vein settings
 	randomized_ores = false
 	#Add new veins to generation for Immersive Engineering.
@@ -168,9 +173,4 @@
 	#Allow to leach veins from Immersive Engineering.
 	#To do so, you need to put IE core sample into leacher.
 	allow_to_leach_ie_veins = true
-
-[creative_particle_source]
-	register = true
-	base_power = 50
-	base_time = 200
 

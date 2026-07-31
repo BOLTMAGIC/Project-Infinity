@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
         'JKLMBNOPQ',
         'RSTUBVWXY',
         'Z   8   1',
-        '2   8   3',
+        '2  989  3',
         '4   8   5',
         '6   B   7',
       ],
@@ -116,6 +116,9 @@ ServerEvents.recipes((event) => {
         },
         8: {
           item: 'kubejs:infinity_12',
+        },
+        9: {
+          item: 'mekanism:creative_bin',
         },
       },
       result: {

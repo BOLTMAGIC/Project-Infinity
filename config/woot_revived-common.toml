@@ -20,6 +20,8 @@
 	energyMaxTransfer = 1000
 	#The energy transfer rate of the Dye Liquifier [Default: 50]
 	energyProcessTransfer = 50
+	#The fluid transfer rate of the Dye Liquifier [Default: 500]
+	fluidTransfer = 500
 	#The output tank capacity of the Dye Liquifier [Default: 25000]
 	outputTankCapacity = 25000
 	#The reference amount of color produce per dye [Default: 125]
@@ -34,8 +36,6 @@
 	blueTankCapacity = 12500
 	#The internal white tank capacity of the Dye Liquifier [Default: 12500]
 	whiteTankCapacity = 12500
-	#The fluid transfer rate of the Dye Liquifier [Default: 500]
-	fluidTransfer = 500
 
 #Enchanted Liquifier
 [enchanted_liquifier]
@@ -45,6 +45,8 @@
 	energyMaxTransfer = 1000
 	#The energy transfer rate of the Enchanted Liquifier [Default: 100]
 	energyProcessTransfer = 100
+	#The fluid transfer rate of the Enchanted Liquifier [Default: 500]
+	fluidTransfer = 500
 	#The output tank capacity of the Enchanted Liquifier [Default: 50000]
 	outputTankCapacity = 50000
 	#The enchanted fluid produced per enchant level [Default: 2500]
@@ -53,23 +55,21 @@
 	perEnchantEnergy = 5000
 	#The max level of enchantment that can be converted [Default: 10]
 	maxEnchantLevel = 10
-	#The fluid transfer rate of the Enchanted Liquifier [Default: 500]
-	fluidTransfer = 500
 
 #Fluid Infuser
 [fluid_infuser]
 	#The energy capacity of the Fluid Infuser [Default: 50000]
-	energyCapacity = 500000
+	energyCapacity = 50000
 	#The max energy in/out transfer rate of the Fluid Infuser [Default: 1000]
-	energyMaxTransfer = 50000
+	energyMaxTransfer = 1000
 	#The energy transfer rate of the Fluid Infuser [Default: 250]
-	energyProcessTransfer = 50000
-	#The input tank capacity of the Fluid Infuser [Default: 50000]
-	inputTankCapacity = 1500000
-	#The output tank capacity of the Fluid Infuser [Default: 50000]
-	outputTankCapacity = 1500000
+	energyProcessTransfer = 250
 	#The fluid transfer rate of the Fluid Infuser [Default: 50000]
-	fluidTransfer = 1500000
+	fluidTransfer = 50000
+	#The input tank capacity of the Fluid Infuser [Default: 50000]
+	inputTankCapacity = 50000
+	#The output tank capacity of the Fluid Infuser [Default: 50000]
+	outputTankCapacity = 50000
 
 #Item Infuser
 [item_infuser]
@@ -79,20 +79,10 @@
 	energyMaxTransfer = 1000
 	#The energy transfer rate of the Item Infuser [Default: 250]
 	energyProcessTransfer = 250
-	#The input tank capacity of the Item Infuser [Default: 25000]
-	inputTankCapacity = 25000
 	#The fluid transfer rate of the Item Infuser [Default: 500]
 	fluidTransfer = 500
-
-#Mob Shard
-[mob_shard]
-	#Number of kills to program the shard [Default: 5]
-	numOfKills = 5
-
-#Guide
-[guide]
-	#Should give the woot guide book on player first connection [Default: true]
-	shouldGiveOnSpawn = true
+	#The input tank capacity of the Item Infuser [Default: 25000]
+	inputTankCapacity = 25000
 
 #Magmator
 [magmator]
@@ -107,8 +97,18 @@
 	#The tick rate for the Netherite Magmator [Default: 1]
 	netheriteTickRate = 1
 
+#Mob Shard
+[mob_shard]
+	#Number of kills to program the shard [Default: 5]
+	numOfKills = 5
+
 #Upgrades
 [upgrades]
 	#Should the mass upgrade reroll the loot table or otherwise duplicate the already rolled items [Default: true]
-	massRerollLoot = false
+	massRerollLoot = true
+
+#Guide
+[guide]
+	#Should give the woot guide book on player first connection [Default: true]
+	shouldGiveOnSpawn = true
 
