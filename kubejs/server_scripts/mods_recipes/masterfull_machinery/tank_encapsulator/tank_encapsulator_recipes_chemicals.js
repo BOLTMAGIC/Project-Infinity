@@ -51,7 +51,7 @@ MMEvents.createProcesses((event) => {
     allthemodium: ['slurry.allthemodium.']
   }
 
-  function chemicalTankEncapsulator(tank_level, chemical_id) {
+  function chemicalTankEncapsulator(tank_level, chemical_id, chemical_type) {
     const chemID = chemical_id; // mekanism:dirty_gold
     const parts = chemID.split(':');
     const first = parts[0]; // mekanism
@@ -65,9 +65,6 @@ MMEvents.createProcesses((event) => {
         break
       }
     }
-
-    let chemical_type = chemicalTK.split('.')[0];
-    chemical_type = chemical_type == 'infuse_type' ? 'infuse' : chemical_type
     
     const ingredientInput = {
       type: `mm:mekanism/${chemical_type}`,
@@ -103,38 +100,38 @@ MMEvents.createProcesses((event) => {
       });
   }
 
-  chemicalTankEncapsulator('basic', 'evolvedmekanism:plaslitherite');
-  chemicalTankEncapsulator('basic', 'mekanism_extras:molten_thermonuclear');
-  chemicalTankEncapsulator('basic', 'mekanism_extras:naquadah_hexafluoride');
-  chemicalTankEncapsulator('basic', 'evolvedmekanism:better_gold');
-  chemicalTankEncapsulator('ultimate', 'mekanism:yellow');
-  chemicalTankEncapsulator('ultimate', 'mekanism:green');
-  chemicalTankEncapsulator('ultimate', 'mekanism:lime');
-  chemicalTankEncapsulator('ultimate', 'mekanism:cyan');
-  chemicalTankEncapsulator('ultimate', 'mekanism:light_blue');
-  chemicalTankEncapsulator('ultimate', 'mekanism:orange');
-  chemicalTankEncapsulator('ultimate', 'mekanism:chlorine');
-  chemicalTankEncapsulator('ultimate', 'mekanism:fissile_fuel');
-  chemicalTankEncapsulator('ultimate', 'mekanismgenerators:tritium');
-  chemicalTankEncapsulator('ultimate', 'mekanism:red');
-  chemicalTankEncapsulator('ultimate', 'mekanism:brown');
-  chemicalTankEncapsulator('absolute', 'mekanism:oxygen');
-  chemicalTankEncapsulator('advanced', 'mekanism:antimatter');
-  chemicalTankEncapsulator('absolute', 'mekanism:hydrogen');
-  chemicalTankEncapsulator('ultimate', 'mekanism:uranium_hexafluoride');
-  chemicalTankEncapsulator('ultimate', 'mekanism:sulfuric_acid');
-  chemicalTankEncapsulator('elite', 'allthemodium:clean_allthemodium');
-  chemicalTankEncapsulator('elite', 'allthemodium:clean_unobtainium');
-  chemicalTankEncapsulator('elite', 'allthemodium:clean_vibranium');
-  chemicalTankEncapsulator('ultimate', 'mekanism:blue');
-  chemicalTankEncapsulator('ultimate', 'mekanism:purple');
-  chemicalTankEncapsulator('ultimate', 'mekanismgenerators:deuterium');
-  chemicalTankEncapsulator('ultimate', 'mekanism:sulfur_trioxide');
-  chemicalTankEncapsulator('ultimate', 'mekanism:sodium');
-  chemicalTankEncapsulator('ultimate', 'mekanism:magenta');
-  chemicalTankEncapsulator('ultimate', 'mekanism:black');
-  chemicalTankEncapsulator('ultimate', 'mekanism:gray');
-  chemicalTankEncapsulator('ultimate', 'mekanism:light_gray');
-  chemicalTankEncapsulator('ultimate', 'mekanism:white');
-  chemicalTankEncapsulator('ultimate', 'mekanism:pink');
+  chemicalTankEncapsulator('basic', 'evolvedmekanism:plaslitherite', 'infuse');
+  chemicalTankEncapsulator('basic', 'mekanism_extras:molten_thermonuclear', 'gas');
+  chemicalTankEncapsulator('basic', 'mekanism_extras:naquadah_hexafluoride', 'gas');
+  chemicalTankEncapsulator('basic', 'evolvedmekanism:better_gold', 'infuse');
+  chemicalTankEncapsulator('ultimate', 'mekanism:yellow', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:green', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:lime', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:cyan', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:light_blue', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:orange', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:chlorine', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:fissile_fuel', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanismgenerators:tritium', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:red', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:brown', 'pigment');
+  chemicalTankEncapsulator('absolute', 'mekanism:oxygen', 'gas');
+  chemicalTankEncapsulator('advanced', 'mekanism:antimatter', 'gas');
+  chemicalTankEncapsulator('absolute', 'mekanism:hydrogen', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:uranium_hexafluoride', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:sulfuric_acid', 'gas');
+  chemicalTankEncapsulator('elite', 'allthemodium:clean_allthemodium', 'slurry');
+  chemicalTankEncapsulator('elite', 'allthemodium:clean_unobtainium', 'slurry');
+  chemicalTankEncapsulator('elite', 'allthemodium:clean_vibranium', 'slurry');
+  chemicalTankEncapsulator('ultimate', 'mekanism:blue', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:purple', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanismgenerators:deuterium', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:sulfur_trioxide', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:sodium', 'gas');
+  chemicalTankEncapsulator('ultimate', 'mekanism:magenta', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:black', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:gray', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:light_gray', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:white', 'pigment');
+  chemicalTankEncapsulator('ultimate', 'mekanism:pink', 'pigment');
 });
