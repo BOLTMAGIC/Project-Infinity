@@ -386,9 +386,9 @@
     'thermal/blitz': [{ item: 'thermal:blitz_rod', outCount: 16 }],
   };
 
-  const MULT = 512;
-  const STRUCTURE = 'mm:loot_fabrication_plant_structure';
-  const ENERGY = 1073621824;
+  const MULT = 16384;
+  const STRUCTURE = 'mm:loot_fabrication_plant_structure2';
+  const ENERGY = 2147483647;
   const PRED_ITEM = 'hostilenetworks:prediction';
 
   function safeIdPart (str) {
@@ -397,14 +397,14 @@
 
   function createLootFabRecipe (event, mob, spec) {
     const mobHNN = `hostilenetworks:${mob}`;
-    const rid = `mm:loot_fab_${safeIdPart(mob)}_${safeIdPart(
+    const rid = `mm:loot_fab2_${safeIdPart(mob)}_${safeIdPart(
       spec.item
     )}_${MULT}`;
 
     event
       .create(rid)
       .structureId(STRUCTURE)
-      .ticks(50)
+      .ticks(1)
       .input({
         type: 'mm:input/consume',
         ingredient: { type: 'mm:energy', amount: ENERGY },

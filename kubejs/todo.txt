@@ -1,7 +1,6 @@
 ----------
 //main
 finish quests high prio
-fix shop prices high prio
 rf tools recipes
 LUMINOUS (Overworld/ Nether/ Beasts) and Mekanism FuryBorn in the Artifacts
 ----------
@@ -26,6 +25,7 @@ Recipe changes and fixes:
 - changed recipe for blood generator so there is no NBT
 - removed all appliedE recipes
     - use the new ProjectCell Item
+- added loot fabrication plant tier 2
 - 
 ----------
 Mod changes and fixes:
