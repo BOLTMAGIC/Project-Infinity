@@ -1,4 +1,5 @@
-ServerEvents.recipes((event) => {
+(function() {
+  ServerEvents.recipes((event) => {
   const recipes = [
   {
     "base_block":"minecraft:lapis_block",
@@ -6707,10 +6708,11 @@ ServerEvents.recipes((event) => {
   }
   ]
 
-  recipes.forEach(object => {
-    object.other_blocks.forEach(other_block => {
-      event.stonecutting(other_block, object.base_block);
-      event.stonecutting(object.base_block, other_block);
+    recipes.forEach(object => {
+      object.other_blocks.forEach(other_block => {
+        event.stonecutting(other_block, object.base_block);
+        event.stonecutting(object.base_block, other_block);
+      });
     });
   });
-});
+})();

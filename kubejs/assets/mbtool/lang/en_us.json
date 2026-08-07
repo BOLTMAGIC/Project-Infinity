@@ -82,5 +82,7 @@
     "mbtool.structure.blood_altar_tier_card_3_block_structure": "Blood Altar Tier Card 3 Block Structure",
     "mbtool.structure.blood_altar_tier_card_4_block_structure": "Blood Altar Tier Card 4 Block Structure",
     "mbtool.structure.blood_altar_tier_card_5_block_structure": "Blood Altar Tier Card 5 Block Structure",
-    "mbtool.structure.blood_magic_altar_6": "Blood Magic Tier 6"
+    "mbtool.structure.blood_magic_altar_6": "Blood Magic Tier 6",
+    "mbtool.structure.omni_computer_multiblock": "Omni Computer Multiblock",
+    "mbtool.structure.sequence_array_multiblock": "Sequence Array Multiblock"
 }

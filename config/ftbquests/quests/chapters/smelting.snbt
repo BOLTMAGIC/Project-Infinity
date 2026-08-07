@@ -51,7 +51,7 @@
 			y: 3.0d
 		}
 	]
-	order_index: 16
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -87,6 +87,7 @@
 		}
 		{
 			dependencies: ["606B181B5E0B8CCB"]
+			description: ["You can skip this quest by clicking the checkmark"]
 			icon: "ironfurnaces:silver_furnace"
 			id: "257B32BDB6B96F3D"
 			min_required_tasks: 1
@@ -143,6 +144,7 @@
 		}
 		{
 			dependencies: ["21B120B6A7FE11F8"]
+			description: ["You can skip this quest by clicking the checkmark"]
 			icon: "ironfurnaces:crystal_furnace"
 			id: "12D5DC6C4C1E3CF2"
 			min_required_tasks: 1
@@ -435,7 +437,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6B83C6DAD9040951"]
@@ -466,7 +468,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			id: "06C28E5A32BE125C"
@@ -825,15 +827,18 @@
 			y: 6.5d
 		}
 		{
+			hide_until_deps_visible: true
 			id: "7EFDD81ACC6B4054"
+			invisible: true
+			optional: true
 			tasks: [{
 				id: "5A0B4BDADBB34EFD"
-				title: "{ftbquests.chapter.ore_processing.quest7EFDD81ACC6B4054.task.6488363091518246653.title}"
+				title: "Created by Solardaisy"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: -4.5d
 		}
 	]
-	title: "{ftbquests.chapter.ore_processing.title}"
+	title: "Smelters"
 }

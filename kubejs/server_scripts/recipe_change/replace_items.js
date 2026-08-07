@@ -136,14 +136,19 @@ ServerEvents.recipes((event) => {
     'kubejs:infinity_5'
   );
   event.replaceInput(
-    { output: 'advanced_ae:reaction_chamber' },
-    'minecraft:bucket',
-    'ae2omnicells:omni_link_processor'
-  );
-  event.replaceInput(
     { output: 'industrialforegoing:marine_fisher' },
     '#c:gears/iron',
     'allthemodium:unobtainium_gear'
+  );
+    event.replaceInput(
+    { output: 'molecularmanipulator:molecular_center_controller' },
+    'minecraft:netherite_block',
+    'kubejs:infinity_4'
+  );
+    event.replaceInput(
+    { output: 'molecularmanipulator:omni_computation_controller' },
+    'advanced_ae:quantum_processor',
+    'kubejs:infinity_4'
   );
   event.replaceInput(
     { output: 'thermal:device_water_gen' },

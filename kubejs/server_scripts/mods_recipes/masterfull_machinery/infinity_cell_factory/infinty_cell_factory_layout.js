@@ -26,10 +26,13 @@ MMEvents.createStructures((event) => {
           block: 'evolvedmekanism:block_better_gold',
         })
         .key('G', {
-          block: 'mm:gigantic_fluid_port_input',
+          portType: 'mm:fluid',
+          input: true,
         })
         .key('H', {
-          block: 'mm:gigantic_item_port_input',
+          portType: 'mm:item',
+          input: true,
+          minTier: 6,
         })
         .key('I', {
           block: 'mm:gigantic_energy_port_input',
@@ -41,7 +44,9 @@ MMEvents.createStructures((event) => {
           block: 'bloodmagic:dislocationrune',
         })
         .key('M', {
-          block: 'mm:gigantic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 6,
         })
         .key('N', {
           block: 'voidminers:solar_ultimate_block',

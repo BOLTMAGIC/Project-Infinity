@@ -12,5 +12,9 @@ JEIEvents.removeCategories((event) => {
     'packagedauto:fluid_package_contents',
     'packagedauto:volume_package',
     'packagedauto:fluid_package_filling',
+    'minecraft:tag_recipes/block',
+    'minecraft:tag_recipes/entity_type',
+    'minecraft:tag_recipes/fluid',
+    'minecraft:tag_recipes/item',
   ]);
 });

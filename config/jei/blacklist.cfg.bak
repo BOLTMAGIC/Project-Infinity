@@ -816,7 +816,6 @@ enviromats:hardened_stone_tile_stairs
 enviromats:greenschist_cobble
 obtrophies:trophy{BlockEntityTag:{VariantID:0,entity:"born_in_chaos_v1:sir_pumpkinhead_without_horse"}}
 sophisticatedstorage:iron_barrel:{mainColor:3847130,accentColor:3847130,flatTop:false}
-nuclearcraft:multiblock_builder
 chisel:slant/red_sandstone
 enderio:clear_glass_da_yellow
 sophisticatedstorage:limited_gold_barrel_3:{mainColor:16383998,accentColor:16383998,flatTop:false}

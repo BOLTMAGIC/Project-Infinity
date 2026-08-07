@@ -89,7 +89,7 @@ MMEvents.createProcesses((event) => {
       ingredient: {
         type: 'mm:item',
         item: 'ae2omnicells:charged_ender_ingot',
-        count: 64,
+        count: 256,
       },
     },
   ]);
@@ -729,14 +729,6 @@ MMEvents.createProcesses((event) => {
         type: 'mm:item',
         item: 'ae2omnicells:spent_nuclear_waste_singularity',
         count: 16,
-      },
-    },
-    {
-      type: 'mm:input/consume',
-      ingredient: {
-        type: 'mm:item',
-        item: 'crazyae2addons:super_singularity',
-        count: 1,
       },
     },
   ]);

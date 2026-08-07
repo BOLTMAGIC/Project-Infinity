@@ -1,4 +1,5 @@
-StartupEvents.registry('item', (e) => {
+(function() {
+  StartupEvents.registry('item', (e) => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   e.create('zahraanite').maxStackSize(64).texture('kubejs:item/zahraanite');
 
@@ -542,4 +543,5 @@ StartupEvents.registry('item', (e) => {
   e.create('fake_transmutation_tablet')
     .displayName('Fake Transmutation Tablet')
     .texture('kubejs:item/fake_transmutation_tablet');
-});
+  });
+})();

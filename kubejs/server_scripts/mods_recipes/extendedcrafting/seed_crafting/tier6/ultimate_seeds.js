@@ -4,19 +4,19 @@ ServerEvents.recipes((event) => {
     .custom({
       type: 'extendedcrafting:shaped_table',
       pattern: [
-        'ABCDEFGHIJCBA',
+        'ABCDEFVHIJCBA',
         'BKLMMNONPMMKB',
         'CQRRRSTSRRRMC',
-        'JMRUUUVUUURMD',
+        'JMRUUUGUUURMD',
         'IMRUWWWWWURXE',
         'HNSUWYZaWUSNF',
-        'bOTVWZcZWVTOd',
+        'VOTbWZcZWdTOV',
         'FNSUWaZYWUSNH',
         'EMRUWWWWWURMI',
-        'DMRUUUVUUURMJ',
+        'DMRUUUiUUURMJ',
         'CeRRRSTSRRRfC',
         'BKgMMNONMMhKB',
-        'ABCJIHiFEDCBA',
+        'ABCJIHVFEDCBA',
       ],
       key: {
         A: {

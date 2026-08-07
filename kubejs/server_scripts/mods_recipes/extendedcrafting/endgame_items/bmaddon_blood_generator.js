@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
           item: 'kubejs:ultimate_gem',
         },
         P: {
-          item: 'ae2:dense_energy_cell',
+          item: 'cataclysm:netherite_effigy',
         },
         Q: {
           item: 'mysticalagriculture:prosperity_ingot',

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "functional_storage"
 	group: "5255C8D5C49409ED"
+	icon: "functionalstorage:oak_1"
 	id: "638D292438C9FAE8"
 	images: [
 		{
@@ -23,7 +24,7 @@
 			y: 3.5d
 		}
 	]
-	order_index: 9
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -86,7 +87,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.functional_storage.quest44585421ED625DAF.title}"
+			title: "Drawer 1x1"
 			x: 1.5d
 			y: 0.5d
 		}
@@ -150,7 +151,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.functional_storage.quest7EE6EE130340B0F5.title}"
+			title: "Drawer 2x1"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -214,7 +215,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.functional_storage.quest4258424A4D66E294.title}"
+			title: "Drawer 2x2"
 			x: 4.5d
 			y: 0.5d
 		}
@@ -441,18 +442,18 @@
 				item: "functionalstorage:pusher_upgrade"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 7.0d
+			y: 5.0d
 		}
 		{
 			id: "66CF9498987AA4C0"
 			tasks: [{
 				id: "00930AAB63A90B66"
-				item: "functionalstorage:pusher_upgrade"
+				item: "functionalstorage:puller_upgrade"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			id: "31AAC3970D47FCAE"
@@ -466,8 +467,8 @@
 				item: "functionalstorage:collector_upgrade"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			id: "62F4BE8C71C1A426"
@@ -485,8 +486,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			id: "3BBE44979F88941F"
@@ -500,8 +501,8 @@
 				item: "functionalstorage:void_upgrade"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.5d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			id: "6FFD5ABA7AC975F5"
@@ -532,8 +533,8 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0D29E9D8BE2BCA34"]
@@ -553,8 +554,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 6.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			id: "07C990C0D5F95781"
@@ -565,9 +566,54 @@
 				title: "{ftbquests.chapter.functional_storage.quest7C990C0D5F95781.task.1373730011722749407.title}"
 				type: "checkmark"
 			}]
+			title: "Created by Solardaisy"
 			x: 4.5d
 			y: -2.5d
 		}
+		{
+			description: [
+				"&4&lWarning"
+				""
+				"ae2 has ghost items with compacting drawers. Says you have both the ore chunks and ore for example, even though they are the same."
+			]
+			id: "691FEDF7BF8BF075"
+			rewards: [{
+				id: "56B74F78257C370D"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "656A36C39C5E11D8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:simple_compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_simple_compacting_drawer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Compacting Drawers"
+			x: 6.0d
+			y: 1.5d
+		}
 	]
-	title: "{ftbquests.chapter.functional_storage.title}"
+	title: "Functional storage"
 }

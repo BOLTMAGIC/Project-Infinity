@@ -24,7 +24,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -54,7 +54,6 @@
 				"{ftbquests.chapter.solarflux_reborn.quest6B7CC05482168BAD.description2}"
 			]
 			id: "6B7CC05482168BAD"
-			min_required_dependencies: 2
 			rewards: [
 				{
 					id: "58B1E0FCEFC6AAA1"

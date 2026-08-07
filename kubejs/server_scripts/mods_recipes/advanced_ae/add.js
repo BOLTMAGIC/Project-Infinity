@@ -53,10 +53,13 @@ ServerEvents.recipes((event) => {
           item: 'ae2:vibration_chamber',
         },
         H: {
-          item: 'crazyae2addons:super_singularity',
+          item: 'neoecoae:computation_network_switch',
         },
         I: {
+          type: 'forge:partial_nbt',
           item: 'extendedae_plus:basic_core',
+          count: 1,
+          nbt: '{CustomModelData:2,core_stage:2}',
         },
       },
       result: {

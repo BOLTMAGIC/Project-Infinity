@@ -1,0 +1,9 @@
+#Displays your current EMC and gained EMC/s in the top-left corner.
+emcDisplay = false
+#Shows learned (✓) or unlearned (✗) indicator on item tooltips.
+enableLearnedTooltip = false
+#Enable EMC value formatting with suffixes (M/B/T...).
+formatEMC = true
+#Use short unit names (M/B/T) instead of long names (Million/Billion/Trillion).
+emcShortNames = true
+

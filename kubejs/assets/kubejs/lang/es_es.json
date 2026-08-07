@@ -1,5 +1,14 @@
 {
-  "project_infinity_01.version": "0.0.50.2",
+  "project_infinity_01.version": "0.0.51.1",
+  "item.kubejs.netherite_iron_hammer": "Martillo de hierro de Netherita",
+  "item.kubejs.netherite_gold_hammer": "Martillo de oro de Netherita",
+  "item.kubejs.netherite_emerald_hammer": "Martillo de esmeralda de Netherita",
+  "item.kubejs.netherite_diamond_hammer": "Martillo de diamante de Netherita",
+  "item.kubejs.allthemodium_hammer": "Martillo de Allthemodium",
+  "item.kubejs.vibranium_hammer": "Martillo de Vibranium",
+  "item.kubejs.unobtainium_hammer": "Martillo de Unobtainium",
+  "item.kubejs.allthemodium_alloy_hammer": "Martillo de Aleación de Allthemodium",
+
   "item.kubejs.zahraanite": "Zahraanita",
   "item.kubejs.ultimate_gem": "§dGema Definitiva",
   "item.kubejs.ultimate_prediction": "§dPredicción Definitiva",
@@ -61,6 +70,8 @@
   "item.kubejs.raw_solarmetal": "Solarmetal en Bruto",
   "item.kubejs.raw_voidmetal": "Voidmetal en Bruto",
 
+  "item.kubejs.soul_gem": "Gema del Alma",
+
   "item.kubejs.starmetal_ingot": "Lingote de Starmetal",
 
   "item.kubejs.fire_ingot": "Lingote de Fuego",
@@ -108,6 +119,8 @@
   "item.kubejs.speed_addon_4": "Módulo de Velocidad 4 (Objeto Ficticio)",
   "item.kubejs.speed_addon_5": "Módulo de Velocidad 5 (Objeto Ficticio)",
 
+  "item.kubejs.tank_token": "Ficha de tanque",
+
   "item.kubejs.wyvern_sword": "Espada Guiverno (Objeto Ficticio)",
   "item.kubejs.wyvern_pickaxe": "Pico Guiverno (Objeto Ficticio)",
   "item.kubejs.wyvern_axe": "Hacha Guiverno (Objeto Ficticio)",
@@ -148,15 +161,6 @@
   "item.kubejs.filled_zombie_soul_vial": "Frasco de alma de Zombie lleno (Objeto Ficticio)",
   "item.kubejs.filled_villager_soul_vial": "Frasco de alma de Aldeano lleno (Objeto Ficticio)",
 
-  "item.kubejs.full_nbt_remover": "Eliminador completo de nbt",
-  "item.kubejs.tank_nbt_remover": "Eliminador nbt de tanque",
-
-  "item.kubejs.nuclearcraft_copy_paste_tool": "Herramienta de copiar y pegar de Nuclearcraft",
-
-  "item.kubejs.universal_wireless_terminal_uncrafter": "Uncrafter de terminal inalámbrico universal",
-
-  "item.kubejs.extra_data_model_uncrafter": "Uncrafter de modelo de datos adicionales",
-
   "item.kubejs.compressed_enriched_redstone": "Redstone enriquecido comprimido",
   "item.kubejs.double_compressed_enriched_redstone": "Redstone enriquecido doblemente comprimido",
   "item.kubejs.compressed_enriched_carbon": "Carbón enriquecido comprimido",
@@ -179,25 +183,67 @@
   "item.kubejs.double_compressed_enriched_shining": "Brillante enriquecido doblemente comprimido",
   "item.kubejs.compressed_enriched_spectrum": "Espectro enriquecido comprimido",
   "item.kubejs.double_compressed_enriched_spectrum": "Espectro enriquecido doblemente comprimido",
+  "item.kubejs.compressed_yellow_cake_uranium": "Uranio concentrado comprimido",
 
-  "block.kubejs.compressed_block_of_gunpowder": "Bloque de Pólvora Comprimida",
+  "item.kubejs.full_nbt_remover": "Eliminador completo de NBT",
+  "item.kubejs.tank_nbt_remover": "Eliminador NBT de tanque",
+
+  "item.kubejs.nuclearcraft_copy_paste_tool": "Herramienta de copiar y pegar de Nuclearcraft",
+
+  "item.kubejs.universal_wireless_terminal_uncrafter": "Uncrafter de terminal inalámbrico universal",
+
+  "item.kubejs.extra_data_model_uncrafter": "Uncrafter de modelo de datos adicionales",
+
+  "item.kubejs.fluid_tank_token": "Token Tanque de Fluidos",
+  "item.kubejs.chemical_tank_token": "Token Tanque de Químicos",
+
+  "item.kubejs.fake_transmutation_tablet": "Tabla de Transmutación falsa",
+
+  "block.kubejs.blood_altar_tier_card_2_block": "Bloque de Tajeta Nivel 2 del Altar de Sangre",
+  "block.kubejs.blood_altar_tier_card_3_block": "Bloque de Tajeta Nivel 3 del Altar de Sangre",
+  "block.kubejs.blood_altar_tier_card_4_block": "Bloque de Tajeta Nivel 4 del Altar de Sangre",
+  "block.kubejs.blood_altar_tier_card_5_block": "Bloque de Tajeta Nivel 5 del Altar de Sangre",
+
+  "block.kubejs.blood_infused_blood_altar_tier_card_2_block": "Bloque imbuido de Tajeta Nivel 2 del Altar de Sangre",
+  "block.kubejs.blood_infused_blood_altar_tier_card_3_block": "Bloque imbuido de Tajeta Nivel 3 del Altar de Sangre",
+  "block.kubejs.blood_infused_blood_altar_tier_card_4_block": "Bloque imbuido de Tajeta Nivel 4 del Altar de Sangre",
+
+  "block.kubejs.compressed_slate": "Pizarra Comprimida",
+  "block.kubejs.double_compressed_slate": "Pizarra Doble Comprimida",
+  "block.kubejs.compressed_hellforgedparts": "Piezas forjadas en el infierno Comprimida",
+
+  "block.kubejs.pink_slime_block": "Bloque de Slime Rosa",
+
+  "block.kubejs.infinity_6_block": "Bloque de Infinito 6",
   "block.kubejs.infinity_8_block": "Bloque de Infinito 8",
   "block.kubejs.infinity_9_block": "Bloque de Infinito 9",
   "block.kubejs.infinity_10_block": "Bloque de Infinito 10",
   "block.kubejs.infinity_10_1_block": "Bloque de Infinito 10.1",
   "block.kubejs.infinity_10_2_block": "Bloque de Infinito 10.2",
-  "block.kubejs.infinity_11_block": "Bloque de Infinito 11",
-  "block.kubejs.compressed_slate": "Pizarra Comprimida",
-  "block.kubejs.double_compressed_slate": "Pizarra Doble Comprimida",
-  "block.kubejs.compressed_hellforgedparts": "Piezas forjadas en el infierno Comprimida",
-  "block.kubejs.double_compressed_iron_block": "Bloque de Hierro Doble Comprimido",
+  "block.kubejs.unfiltered_infinity_11_block": "Bloque de Infinito 11",
+
   "block.kubejs.radiance_alloy_block": "Bloque de Aleación Radiante",
   "block.kubejs.thermonuclear_alloy_block": "Bloque de Aleación Termonuclear",
   "block.kubejs.shining_alloy_block": "Bloque de Aleación Brillante",
   "block.kubejs.spectrum_alloy_block": "Bloque de Aleación del Espectro",
-  "block.kubejs.triple_compressed_iron_block": "Bloque de Hierro Triple Comprimido",
-  "block.kubejs.pink_slime_block": "Bloque de Slime Rosa",
+
+  "block.kubejs.compressed_block_of_gunpowder": "Bloque de Pólvora Comprimida",
+
+  "block.kubejs.compressed_awakened_draconium_block": "Bloque de Draconio despierto Comprimido",
+
   "block.kubejs.compressed_glass": "Vidrio Comprimido",
+
+  "block.kubejs.dust_2": "Polvo Comprimido (x2)",
+  "block.kubejs.dust_3": "Polvo Comprimido (x3)",
+  "block.kubejs.dust_4": "Polvo Comprimido (x4)",
+  "block.kubejs.dust_5": "Polvo Comprimido (x5)",
+  "block.kubejs.dust_6": "Polvo Comprimido (x6)",
+
+  "block.kubejs.blackstone_2": "Piedra negra Comprimida (x2)",
+  "block.kubejs.blackstone_3": "Piedra negra Comprimida (x3)",
+  "block.kubejs.blackstone_4": "Piedra negra Comprimida (x4)",
+  "block.kubejs.blackstone_5": "Piedra negra Comprimida (x5)",
+  "block.kubejs.blackstone_6": "Piedra negra Comprimida (x6)",
 
   "block.kubejs.chaotic_essence_block": "§5Bloque de Esencia Caótica",
   "block.kubejs.starmetal_block": "§1Bloque de Starmetal",
@@ -210,31 +256,50 @@
   "block.kubejs.block_of_en_diamond": "Bloque de Diamante Mejorado",
   "block.kubejs.block_of_en_netherite": "Bloque de Netherita Mejorada",
 
-  "block.kubejs.ferroboron_block": "Bloque de Ferroboron",
-  "block.kubejs.hard_carbon_block": "Bloque de Oro Mejorado",
-  "block.kubejs.extreme_block": "Bloque de Carbón Duro",
-  "block.kubejs.tough_alloy_block": "Bloque de Aleación Resistente",
+  "block.kubejs.triple_compressed_iron_block": "Bloque de Hierro Triple Comprimido",
+  "block.kubejs.double_compressed_iron_block": "Bloque de Hierro Doble Comprimido",
 
   "block.kubejs.arcmetal_block": "Bloque de Arcmetal",
+  "block.kubejs.solarmetal_block": "Bloque de Solarmetal",
+  "block.kubejs.voidmetal_block": "Bloque de Voidmetal",
+
+  "block.kubejs.plasteel_block": "Bloque de Plasteel",
+
   "block.kubejs.azure_electrum_block": "Bloque de Electrum Azur",
   "block.kubejs.azure_silver_block": "Bloque de Plata Azur",
   "block.kubejs.blaze_gold_block": "Bloque de Oro de Blaze",
   "block.kubejs.bunny_steel_block": "Bloque de Acero de Conejo",
   "block.kubejs.midnight_iron_block": "Bloque de Hierro de Medianoche",
-  "block.kubejs.plasteel_block": "Bloque de Plasteel",
   "block.kubejs.sculk_alloy_block": "Bloque de Aleación de Sculk",
-  "block.kubejs.solarmetal_block": "Bloque de Solarmetal",
-  "block.kubejs.voidmetal_block": "Bloque de Voidmetal",
 
   "block.kubejs.arcmetal_ore": "Mineral de Arcmetal",
-  "block.kubejs.azure_silver_ore": "Mineral de Plata Azur",
-  "block.kubejs.plasteel_ore": "Mineral de Plasteel",
   "block.kubejs.solarmetal_ore": "Mineral de Solarmetal",
   "block.kubejs.voidmetal_ore": "Mineral de Voidmetal",
+  "block.kubejs.plasteel_ore": "Mineral de Plasteel",
+  "block.kubejs.azure_silver_ore": "Mineral de Plata Azur",
+
+  "block.kubejs.ferroboron_block": "Bloque de Ferroboron",
+  "block.kubejs.hard_carbon_block": "Bloque de Oro Mejorado",
+  "block.kubejs.extreme_block": "Bloque de Carbón Duro",
+  "block.kubejs.tough_alloy_block": "Bloque de Aleación Resistente",
+
+  "block.kubejs.year_1_cake": "Tarta de 1 año",
+  "block.kubejs.year_3_cake": "Tarta de 2 año",
+  "block.kubejs.year_2_cake": "Tarta de 3 año",
+  "block.kubejs.year_4_cake": "Tarta de 4 año",
+  "block.kubejs.year_5_cake": "Tarta de 5 año",
+  "block.kubejs.year_6_cake": "Tarta de 6 año",
+  "block.kubejs.year_7_cake": "Tarta de 7 año",
+  "block.kubejs.year_8_cake": "Tarta de 8 año",
+  "block.kubejs.year_9_cake": "Tarta de 9 año",
+  "block.kubejs.year_10_cake": "Tarta de 10 año",
+  "block.kubejs.year_11_cake": "Tarta de 11 año",
+  "block.kubejs.year_12_cake": "Tarta de 12 año",
 
   "fluid.kubejs.molten_basalz": "Basalz Fundido",
   "fluid.kubejs.molten_blizz": "Blizz Fundido",
   "fluid.kubejs.molten_blitz": "Blitz Fundido",
+  "fluid.kubejs.cryotheum_coolant": "Refrigerante Cryotheum",
 
   "item.enderio.conductive_conduit": "Conducto de Energía de Aleación Conductiva",
   "item.enderio.energetic_conduit": "Conducto de Energía de Aleación Energética",
@@ -362,6 +427,7 @@
   "tooltip.industrialforegoing.addon_warning": "Este es un objeto ficticio, úsalo para fabricar el complemento real o para mejorarlo.",
 
   "tooltip.mythicbotany.wither_aconite_warning": "Si AE2 / RS no te deja autocraftearlo, fabrícalo a mano.",
+  "tooltip.botanicalmachineryextra.wither_aconite_mana_storage": "Si utilizas esta flor en un invernadero, necesitas al menos una mejora de Almacenamiento de Maná (Nivel 1) dentro del invernadero. De lo contrario, no funcionará.",
 
   "tooltip.ifeu.big_dissolution_chamber_warning_1": "No lo uses para crear objetos que tengan NBT, como los complementos que no son ficticios.",
   "tooltip.ifeu.big_dissolution_chamber_warning_2": "Puede ser un poco difícil de usar con AE2 o RS. Intenta que los Patrones sean múltiplos de 64.",
@@ -376,6 +442,7 @@
   "tooltip.kubejs.nuclearcraft_copy_paste_tool_2": "Clic derecho en una máquina de Nuclearcraft para pegar ajustes y Mejoras.",
 
   "tooltip.kubejs.compressed_material_warning": "Este objeto solo puede usarse en Fábricas de Infusión Nivel %s o superior.",
+  "tooltip.mekanism_extras.enriched_osmium": "Este artículo solo se puede usar en fábricas de compresión Ultimate o superiores.",
 
   "tooltip.exdeorum.mesh_enchant_warning": "Solo se pueden añadir 2 niveles de encantamiento a este objeto.",
 
@@ -403,5 +470,140 @@
 
   "tooltip.hostilenetworks.data_model.lord_pumpkinhead": "No puedes matarme para obtener datos; consulta las recetas de este objeto.",
 
-  "tooltip.kubejs.fake_mob_masher": "Por favor, no mires la textura. Este es un objeto ficticio usado para evitar un crasheo."
+  "tooltip.kubejs.allthemodium_template": "Encuéntrame dentro de cofres de ciudades antiguas. 2,5% de probabilidad.",
+  "tooltip.kubejs.vibranium_template": "Encuéntrame en los restos de grandes bastiones cepillando la Arena de Almas Sospechosa.",
+  "tooltip.kubejs.unobtainium_template": "Encuéntrame en las bibliotecas dentro de la \"Mazmorra\" en la dimensión \"Other\". Aparezco raramente en cofres en las salas de la biblioteca en la estructura subterránea.",
+
+  "tooltip.kubejs.fake_mob_masher": "Por favor, no mires la textura. Este es un objeto ficticio usado para evitar un crasheo.",
+
+  "tooltip.kubejs.tank_tokens_1": "Este token contiene %s mB de %s",
+  "tooltip.kubejs.tank_tokens_2": "Del mod: %s",
+
+  "tooltip.kubejs.year_1_cake_1": "¡Feliz primer aniversario de Project Infinity 0.1!",
+  "tooltip.kubejs.year_1_cake_2": "¿Puedes creerlo?",
+  "tooltip.kubejs.year_1_cake_3": "05/16/2026",
+
+  "tooltip.kubejs.year_2_cake_1": "¿2 años? ¡El tiempo vuela cuando te diviertes!",
+  "tooltip.kubejs.year_2_cake_2": "T¡El pastel es de mentira!",
+  "tooltip.kubejs.year_2_cake_3": "05/16/2027",
+
+  "tooltip.kubejs.year_3_cake_1": "¿Ya hay 3 pasteles?",
+  "tooltip.kubejs.year_3_cake_2": "¿Cuántos ha preparado con antelación?",
+  "tooltip.kubejs.year_3_cake_3": "05/16/2028",
+
+  "tooltip.kubejs.year_4_cake_1": "No, no puede ser, ¿es un cuarto pastel?",
+  "tooltip.kubejs.year_4_cake_2": "Respuesta a la pregunta anterior:",
+  "tooltip.kubejs.year_4_cake_3": "Probablemente puedas adivinarlo con solo mirar los pasteles.",
+  "tooltip.kubejs.year_4_cake_4": "05/16/2029",
+
+  "tooltip.kubejs.year_5_cake_1": "Dato curioso:",
+  "tooltip.kubejs.year_5_cake_2": "Estoy escribiendo todas esas descripciones emergentes el 7 de julio de 2026.",
+  "tooltip.kubejs.year_5_cake_3": "05/16/2030",
+
+  "tooltip.kubejs.year_6_cake_1": "¡Aquí está el sexto pastel, me pregunto cómo será el séptimo!",
+  "tooltip.kubejs.year_6_cake_2": "Si nos habéis estado siguiendo, ¡ya estamos a mitad de camino!",
+  "tooltip.kubejs.year_6_cake_3": "05/16/2031",
+
+  "tooltip.kubejs.year_7_cake_1": "Un pequeño consejo: si te preguntas dónde conseguí los huevos y la leche,",
+  "tooltip.kubejs.year_7_cake_2": "Son de la granja de pollos y vacas Emerald Grove Gateway.",
+  "tooltip.kubejs.year_7_cake_3": "05/16/2032",
+
+  "tooltip.kubejs.year_8_cake_1": "Dato curioso: (Habla Minimaxi)",
+  "tooltip.kubejs.year_8_cake_2": "Me llevó 3 días entender cómo hacer pasteles en KubeJS,",
+  "tooltip.kubejs.year_8_cake_3": "otros 2 para entender cómo hacer texturas para ellos,",
+  "tooltip.kubejs.year_8_cake_4": "Y otro 1 para hacer realmente las texturas para ellos.",
+  "tooltip.kubejs.year_8_cake_5": "05/16/2033",
+
+  "tooltip.kubejs.year_9_cake_1": "¡Aquí está el noveno pastel!",
+  "tooltip.kubejs.year_9_cake_2": "Trabajaste duro para éste, ¿eh?",
+  "tooltip.kubejs.year_9_cake_3": "05/16/2034",
+
+  "tooltip.kubejs.year_10_cake_1": "¡Ya estamos en la década de los dos dígitos, nos estamos haciendo viejos!",
+  "tooltip.kubejs.year_10_cake_2": "¡Dos pasteles para llevar!",
+  "tooltip.kubejs.year_10_cake_3": "05/16/2035",
+
+  "tooltip.kubejs.year_11_cake_1": "Datos curiosos: (Habla Minimaxi)",
+  "tooltip.kubejs.year_11_cake_2": "Esta es la primera vez que trabajo en un paquete de mods y debo decir que ha sido una experiencia muy divertida.",
+  "tooltip.kubejs.year_11_cake_3": "Lo curioso es que estos pasteles son mi segundo proyecto secreto; todavía no he terminado el primero.",
+  "tooltip.kubejs.year_11_cake_4": "05/16/2036",
+
+  "tooltip.kubejs.year_12_cake_1": "¡Felicidades!",
+  "tooltip.kubejs.year_12_cake_2": "¡Gracias por hacer este pastel y por ver este mensaje!",
+  "tooltip.kubejs.year_12_cake_3": "Si ves esto, o te diste este objeto a ti mismo o realmente estás jugando.",
+  "tooltip.kubejs.year_12_cake_4": "¡12 años después del lanzamiento del paquete de mods, lo cual es impresionante!",
+  "tooltip.kubejs.year_12_cake_5": "Espero que te hayas divertido jugando con este paquete de mods, ¡nos vemos algún día!",
+  "tooltip.kubejs.year_12_cake_6": "05/16/2037",
+
+  "painting.kubejs.project_infinity_logo_1.title": "Logo de Project Infinity",
+  "painting.kubejs.project_infinity_logo_2.title": "Logo de Project Infinity",
+  "painting.kubejs.project_infinity_logo_3.title": "Logo de Project Infinity",
+  "painting.kubejs.project_infinity_logo_4.title": "Logo de Project Infinity",
+  "painting.kubejs.project_infinity_logo_5.title": "Logo de Project Infinity",
+
+  "painting.kubejs.project_infinity_logo_1.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_2.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_3.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_4.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_5.author": "Minimaxi",
+
+  "painting.kubejs.project_infinity_logo_with_stars_1.title": "Logo con Estrellas de Project Infinity",
+  "painting.kubejs.project_infinity_logo_with_stars_2.title": "Logo con Estrellas de Project Infinity",
+  "painting.kubejs.project_infinity_logo_with_stars_3.title": "Logo con Estrellas de Project Infinity",
+  "painting.kubejs.project_infinity_logo_with_stars_4.title": "Logo con Estrellas de Project Infinity",
+  "painting.kubejs.project_infinity_logo_with_stars_5.title": "Logo con Estrellas de Project Infinity",
+
+  "painting.kubejs.project_infinity_logo_with_stars_1.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_with_stars_2.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_with_stars_3.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_with_stars_4.author": "Minimaxi",
+  "painting.kubejs.project_infinity_logo_with_stars_5.author": "Minimaxi",
+
+  "painting.kubejs.infinity_symbol_1.title": "Símbolo del infinito",
+  "painting.kubejs.infinity_symbol_2.title": "Símbolo del infinito",
+  "painting.kubejs.infinity_symbol_3.title": "Símbolo del infinito",
+
+  "painting.kubejs.infinity_symbol_1.author": "Minimaxi",
+  "painting.kubejs.infinity_symbol_2.author": "Minimaxi",
+  "painting.kubejs.infinity_symbol_3.author": "Minimaxi",
+
+  "painting.kubejs.infinity_symbol_with_stars_1.title": "Estrellas del símbolo del infinito",
+  "painting.kubejs.infinity_symbol_with_stars_2.title": "Estrellas del símbolo del infinito",
+  "painting.kubejs.infinity_symbol_with_stars_3.title": "Estrellas del símbolo del infinito",
+
+  "painting.kubejs.infinity_symbol_with_stars_1.author": "Minimaxi",
+  "painting.kubejs.infinity_symbol_with_stars_2.author": "Minimaxi",
+  "painting.kubejs.infinity_symbol_with_stars_3.author": "Minimaxi",
+
+  "painting.kubejs.project_infinity_1.title": "Project Infinity",
+  "painting.kubejs.project_infinity_2.title": "Project Infinity",
+  "painting.kubejs.project_infinity_3.title": "Project Infinity",
+
+  "painting.kubejs.project_infinity_1.author": "Minimaxi",
+  "painting.kubejs.project_infinity_2.author": "Minimaxi",
+  "painting.kubejs.project_infinity_3.author": "Minimaxi",
+
+  "painting.kubejs.project_infinity_and_credit_1.title": "Project Infinity y Créditos",
+  "painting.kubejs.project_infinity_and_credit_2.title": "Project Infinity y Créditos",
+  "painting.kubejs.project_infinity_and_credit_3.title": "Project Infinity y Créditos",
+
+  "painting.kubejs.project_infinity_and_credit_1.author": "Minimaxi",
+  "painting.kubejs.project_infinity_and_credit_2.author": "Minimaxi",
+  "painting.kubejs.project_infinity_and_credit_3.author": "Minimaxi",
+
+  "text.kubejs.red_morningstar_aoe.disabled": "El área de efecto de Red Morningstar está desactivada; para activarla, ejecute \"/ProjectInfinity red_morningstar_aoe enable\".",
+  "text.kubejs.red_morningstar_aoe.state": "El área de efecto de Red Morningstar ahora está:",
+  "text.kubejs.red_morningstar_aoe.state.disabled": "Desactivado",
+  "text.kubejs.red_morningstar_aoe.state.enabled": "Activado",
+  "text.kubejs.red_morningstar_aoe.block_break_canceled_1": "Se interrumpió %s para evitar que se anulara.",
+  "text.kubejs.red_morningstar_aoe.block_break_canceled_2": "Utiliza Red Morningstar sin carga u otra herramienta para romperla.",
+
+  "text.kubejs.pebble.state": "La recolección de guijarros ahora está:",
+  "text.kubejs.pebble.state.disabled": "Desactivado",
+  "text.kubejs.pebble.state.enabled": "Activado",
+
+  "tooltip.kubejs.fake_transmutation_tablet.warning_1": "Este objeto no se puede transformar en una mesa de transmutación.",
+  "tooltip.kubejs.fake_transmutation_tablet.warning_2": "Este artículo será consumido en sus recetas.",
+  "tooltip.kubejs.fake_transmutation_tablet.warning_3": "Debes aprender este elemento y duplicarlo.",
+
+  "tooltip.kubejs.botanicalextramachinery_catalyst_speed": "Solo puedo ser utilizado en la Fábrica de Aglomeración Industrial Avanzada/Máxima."
 }

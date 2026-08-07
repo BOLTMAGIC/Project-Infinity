@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
           item: 'powah:capacitor_nitro',
         },
         P: {
-          type: 'forge:nbt',
+          type: 'forge:partial_nbt',
           item: 'appflux:fe_256k_portable_cell',
           count: 1,
           nbt: '{power:274877906944L}',

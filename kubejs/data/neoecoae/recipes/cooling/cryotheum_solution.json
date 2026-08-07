@@ -1,0 +1,13 @@
+{
+    "type": "neoecoae:cooling",
+    "coolant": 25000,
+    "input": {
+        "amount": 100,
+        "fluid": "neoecoae:cryotheum_solution"
+    },
+    "max_overclock": 15,
+    "output": {
+        "amount": 100,
+        "fluid": "kubejs:cryotheum_coolant"
+    }
+}
