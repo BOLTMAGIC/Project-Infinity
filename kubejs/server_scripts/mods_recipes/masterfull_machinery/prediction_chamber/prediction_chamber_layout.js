@@ -77,7 +77,9 @@ MMEvents.createStructures((event) => {
           input: true,
         })
         .key('2', {
-          block: 'mm:compressed_titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 8,
         })
         .key('3', {
           block: 'mm:gigantic_energy_port_input',
@@ -161,7 +163,9 @@ MMEvents.createStructures((event) => {
           input: true,
         })
         .key('2', {
-          block: 'mm:compressed_titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 10,
         })
         .key('3', {
           block: 'mm:gigantic_energy_port_input',

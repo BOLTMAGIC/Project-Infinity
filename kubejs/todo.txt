@@ -26,7 +26,7 @@ Recipe changes and fixes:
 - removed all appliedE recipes
     - use the new ProjectCell Item
 - added loot fabrication plant tier 2
-- 
+- fix prediction chamber NBT
 ----------
 Mod changes and fixes:
 - 

@@ -36,7 +36,9 @@ MMEvents.createStructures((event) => {
           block: 'extrahnn:merger_camera',
         })
         .key('J', {
-          block: 'mm:compressed_titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 8,
         })
         .key('L', {
           portType: 'mm:item',
@@ -90,7 +92,9 @@ MMEvents.createStructures((event) => {
           block: 'extrahnn:merger_camera',
         })
         .key('J', {
-          block: 'mm:compressed_titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 10,
         })
         .key('L', {
           portType: 'mm:item',

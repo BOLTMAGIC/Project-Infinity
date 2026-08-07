@@ -100,6 +100,7 @@ function createPredictionChamberRecipes (event, mobs) {
           item: 'extrahnn:extra_data_model',
           count: 1,
           nbt_snbt: `{data_model:{data:22375,ids:["${mobHNN}","${mobHNN}","${mobHNN}","${mobHNN}"]}}`,
+          nbt_match: 'weak'
         },
         chance: 0.0,
       })
@@ -155,6 +156,7 @@ function createPredictionChamberRecipes2 (event, mobs) {
           item: 'extrahnn:extra_data_model',
           count: 1,
           nbt_snbt: `{data_model:{data:22375,ids:["${mobHNN}","${mobHNN}","${mobHNN}","${mobHNN}"]}}`,
+          nbt_match: 'weak'
         },
         chance: 0.0,
       })
