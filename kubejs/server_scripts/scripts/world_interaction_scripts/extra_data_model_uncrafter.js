@@ -18,7 +18,7 @@ BlockEvents.rightClicked('minecraft:grindstone', (event) => {
     const str = mobID.toString();
     const mobIDString = str.slice(1, -1);
     player.give(
-      item.of(
+      Item.of(
         'hostilenetworks:data_model',
         `{data_model:{data:1254,id:"${mobIDString}"}}`
       )
