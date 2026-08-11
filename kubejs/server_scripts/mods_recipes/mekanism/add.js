@@ -527,17 +527,19 @@ ServerEvents.recipes((event) => {
     );
   });
 
-  function enriching (event, item_input, item_output) {
+  function enriching (event, item_input, item_output, inputAmount, outputCount) {
     event
       .custom({
         type: 'mekanism:enriching',
         input: {
+          amount: inputAmount ? inputAmount : 1,
           ingredient: {
             item: item_input,
           },
         },
         output: {
           item: item_output,
+          count: outputCount ? outputCount : 1,
         },
       })
       .id('enriching_' + item_output.replace(/[:]/g, '_').toLowerCase());
@@ -572,7 +574,9 @@ ServerEvents.recipes((event) => {
   enriching(
     event,
     'mekanism:block_uranium',
-    'kubejs:compressed_yellow_cake_uranium'
+    'kubejs:compressed_yellow_cake_uranium',
+    1,
+    2
   );
 
   nucleosynthesizing(
@@ -664,7 +668,12 @@ ServerEvents.recipes((event) => {
           gas: gas_output,
         },
       })
-      .id('oxi_' + gas_output_amount + '_' + gas_output.replace(/[:]/g, '_').toLowerCase());
+      .id(
+        'oxi_' +
+          gas_output_amount +
+          '_' +
+          gas_output.replace(/[:]/g, '_').toLowerCase()
+      );
   }
 
   oxidizing(event, 'mekanism:ingot_osmium', 200, 'mekanism:osmium');

@@ -93,7 +93,9 @@ MMEvents.createStructures((event) => {
           block: 'mm:gigantic_energy_port_input',
         })
         .key('D', {
-          block: 'mm:titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 8,
         })
         .key('E', {
           block: 'chisel_chipped_integration:factory_blue_framed_circuit',

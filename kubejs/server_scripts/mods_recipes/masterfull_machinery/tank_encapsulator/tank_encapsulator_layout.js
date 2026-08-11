@@ -28,7 +28,9 @@ MMEvents.createStructures((event) => {
           block: 'ae2:quartz_glass',
         })
         .key('H', {
-          block: 'mm:gigantic_item_port_input',
+          portType: 'mm:item',
+          input: true,
+          minTier: 6,
         })
         .key('I', {
           block: 'mekanism_extras:absolute_fluid_tank',
@@ -37,7 +39,9 @@ MMEvents.createStructures((event) => {
           block: 'mekanism_extras:absolute_chemical_tank',
         })
         .key('K', {
-          block: 'mm:gigantic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 6,
         })
         .key('L', {
           block: 'mm:colossal_infuse_port_input',

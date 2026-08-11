@@ -1,0 +1,134 @@
+
+#General Molecular Center settings.
+[general]
+	#Number of pattern pages for Molecular Centers.
+	#Range: 1 ~ 1000
+	pattern_pages = 20
+	#Maximum structure blocks placed or removed per tick.
+	#Range: 1 ~ 256
+	build_blocks_per_tick = 32
+	#Molecular Center idle power usage in AE/t.
+	#Range: 1 ~ 4096
+	idle_power = 128
+
+#Matter sequence, entropy, and acceleration-card settings.
+[matter]
+
+	#Matter sequence and entropy storage capacities.
+	[matter.storage]
+		#Maximum stored amount for each Matter Sequence category. Arithmetic saturates at this value and Long.MAX_VALUE is supported.
+		#Range: 1 ~ 9223372036854775807
+		sequence_capacity = 9223372036854775807
+		#Maximum rewrite entropy stored by the Sequence Array.
+		#Range: 1 ~ 9223372036854775807
+		entropy_capacity = 1000000
+
+	#Entropy cooling settings.
+	[matter.entropy]
+		#Base entropy cooling per second before the installed acceleration-card multiplier.
+		#Range: 1 ~ 9223372036854775807
+		cooling_per_second = 25
+
+	#Per-tier acceleration-card processing settings.
+	[matter.speed_cards]
+
+		#Settings used with exactly 0 installed acceleration cards.
+		[matter.speed_cards.card_0]
+			#Matter operations completed per batch with 0 acceleration cards.
+			#Range: 1 ~ 4096
+			parallel_operations = 1
+			#Ticks between matter batches with 0 acceleration cards.
+			#Range: 1 ~ 1200
+			cycle_ticks = 20
+			#Entropy cooling multiplier with 0 acceleration cards.
+			#Range: 1 ~ 9223372036854775807
+			cooling_multiplier = 1
+
+		#Settings used with exactly 1 installed acceleration cards.
+		[matter.speed_cards.card_1]
+			#Matter operations completed per batch with 1 acceleration cards.
+			#Range: 1 ~ 4096
+			parallel_operations = 2
+			#Ticks between matter batches with 1 acceleration cards.
+			#Range: 1 ~ 1200
+			cycle_ticks = 10
+			#Entropy cooling multiplier with 1 acceleration cards.
+			#Range: 1 ~ 9223372036854775807
+			cooling_multiplier = 2
+
+		#Settings used with exactly 2 installed acceleration cards.
+		[matter.speed_cards.card_2]
+			#Matter operations completed per batch with 2 acceleration cards.
+			#Range: 1 ~ 4096
+			parallel_operations = 4
+			#Ticks between matter batches with 2 acceleration cards.
+			#Range: 1 ~ 1200
+			cycle_ticks = 5
+			#Entropy cooling multiplier with 2 acceleration cards.
+			#Range: 1 ~ 9223372036854775807
+			cooling_multiplier = 4
+
+		#Settings used with exactly 3 installed acceleration cards.
+		[matter.speed_cards.card_3]
+			#Matter operations completed per batch with 3 acceleration cards.
+			#Range: 1 ~ 4096
+			parallel_operations = 16
+			#Ticks between matter batches with 3 acceleration cards.
+			#Range: 1 ~ 1200
+			cycle_ticks = 2
+			#Entropy cooling multiplier with 3 acceleration cards.
+			#Range: 1 ~ 9223372036854775807
+			cooling_multiplier = 16
+
+		#Settings used with exactly 4 installed acceleration cards.
+		[matter.speed_cards.card_4]
+			#Matter operations completed per batch with 4 acceleration cards.
+			#Range: 1 ~ 4096
+			parallel_operations = 64
+			#Ticks between matter batches with 4 acceleration cards.
+			#Range: 1 ~ 1200
+			cycle_ticks = 1
+			#Entropy cooling multiplier with 4 acceleration cards.
+			#Range: 1 ~ 9223372036854775807
+			cooling_multiplier = 64
+
+#AE2 crafting planning and dispatch settings.
+[crafting]
+
+	#Crafting request size limits.
+	[crafting.order]
+		#Maximum amount allowed for a single AE2 autocrafting order. Values above Integer.MAX_VALUE use the mod's long-amount request path.
+		#Range: 1 ~ 9223372036854775807
+		max_amount = 1000000000000
+
+	#MAX_FAST crafting-plan optimizer settings.
+	[crafting.max_fast]
+		#Omni-Computation Core crafting-plan optimizer. SAFE aggregates only deterministic recipes; every unsupported branch falls back to AE2. AGGRESSIVE is retained as a compatibility alias and obeys the same safety boundaries.
+		#Allowed Values: OFF, SAFE, AGGRESSIVE
+		mode = "SAFE"
+		#Maximum unique recipe-tree nodes compiled by the Omni-Computation Core optimizer before falling back to AE2.
+		#Range: 64 ~ 65536
+		max_nodes = 8192
+		#Maximum graph compilation time in milliseconds before the Omni-Computation Core optimizer falls back to AE2.
+		#Range: 1 ~ 5000
+		compile_budget_ms = 100
+		#Log Omni-Computation Core graph aggregation successes and fallback reasons.
+		diagnostics = false
+
+	#Native multi-craft batch dispatch settings.
+	[crafting.batch_dispatch]
+		#Enable multi-craft material extraction and dispatch for explicitly compatible crafting providers.
+		enabled = true
+		#Maximum dispatch work units per Omni controller and tick. Input extraction and each provider attempt cost one unit, regardless of logical batch size.
+		#Range: 64 ~ 9223372036854775807
+		max_work_units = 2147483647
+
+	#Fallback dispatch settings for providers without the batch API.
+	[crafting.compatibility_dispatch]
+		#Hard safety ceiling for complete one-recipe provider calls shared by one Omni-Computation Core per tick. The adaptive time budget normally stops dispatch much earlier.
+		#Range: > 256
+		max_calls_per_tick = 2147483647
+		#Maximum server-wide main-thread time in microseconds used by compatibility one-recipe dispatch each tick. All active Omni cores share one deadline, which shrinks automatically as average server MSPT approaches 45.
+		#Range: 250 ~ 50000
+		max_time_us = 20000
+

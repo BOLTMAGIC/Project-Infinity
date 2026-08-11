@@ -317,4 +317,165 @@ MMEvents.createProcesses((event) => {
         count: 1,
       },
     });
+
+  //time crystal
+  event
+    .create('mm:infinity_crucible_recipe5')
+    .structureId('mm:infinity_crucible_structure')
+    .ticks(6000)
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:mekanism/gas',
+        gas: 'mekanism:antimatter',
+        amount: 250,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'justdirethings:time_crystal',
+        count: 1,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:overworld_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:nether_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:end_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:twilight_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'mekanism:basic_fluid_tank',
+        count: 1,
+        nbt_snbt:
+          '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:32000,FluidName:"justdirethings:time_fluid"}}]}}',
+        nbt_match: 'weak',
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 2147483647,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:item',
+        item: 'justdirethings:time_crystal',
+        count: 65536,
+      },
+    });
+
+  //time crystal alternative
+  event
+    .create('mm:infinity_crucible_recipe6')
+    .structureId('mm:infinity_crucible_structure')
+    .ticks(6000)
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:mekanism/gas',
+        gas: 'mekanism:antimatter',
+        amount: 250,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'justdirethings:time_crystal',
+        count: 1,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:overworld_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:nether_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:end_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'hostilenetworks:twilight_prediction',
+        count: 8192,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'kubejs:fluid_tank_token',
+        count: 1,
+        nbt_snbt: '{fluid_id:"justdirethings:time_fluid",tank_level:"basic"}',
+        nbt_match: 'weak',
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 2147483647,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:item',
+        item: 'justdirethings:time_crystal',
+        count: 65536,
+      },
+    });
 });

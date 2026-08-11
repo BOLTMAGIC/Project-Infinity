@@ -116,7 +116,7 @@ MMEvents.createProcesses((event) => {
       type: 'mm:input/consume',
       ingredient: {
         type: 'mm:item',
-        item: 'ae2omnicells:charged_ender_ingot',
+        item: 'industrialforegoing:pink_slime_ingot',
         count: 64,
       },
     },
@@ -154,7 +154,7 @@ MMEvents.createProcesses((event) => {
       type: 'mm:input/consume',
       ingredient: {
         type: 'mm:item',
-        item: 'ae2omnicells:charged_ender_ingot',
+        item: 'industrialforegoing:pink_slime_ingot',
         count: 64,
       },
     },
@@ -191,7 +191,7 @@ MMEvents.createProcesses((event) => {
       type: 'mm:input/consume',
       ingredient: {
         type: 'mm:item',
-        item: 'ae2omnicells:charged_ender_ingot',
+        item: 'industrialforegoing:pink_slime_ingot',
         count: 64,
       },
     },
@@ -229,7 +229,7 @@ MMEvents.createProcesses((event) => {
       type: 'mm:input/consume',
       ingredient: {
         type: 'mm:item',
-        item: 'ae2omnicells:charged_ender_ingot',
+        item: 'industrialforegoing:pink_slime_ingot',
         count: 64,
       },
     },

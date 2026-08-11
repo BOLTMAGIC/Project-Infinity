@@ -13,10 +13,13 @@ If you want the new EnchantmentLimiter settings you need to place the "enchantli
 Mod Info:
 - MODS ADDED:
     - ProjectCell (will replace AppliedE)
-    - OmniSequence Transfinite
+    - OmniSequence Transfinite (AE2 Addon with big endgame multiblocks)
+    - Nolijium (thx to DSans404) (you now can disabled particles again)
+    - Fastvancements (removed Icterine last update over 2.5 years ago)
+    - Collections Of Optimizations (thats really the name)
 ----------
 Recipe changes and fixes:
-- fixed ur ghast HNN model, need to kill him 2 times not 6 times
+- fixed ur-ghast HNN model, need to kill him 2 times not 6 times
 - fixed cobblestone and water recipe in the Inf Cell factory (thx to s n.)
 - fixed Applied Flux portable FE cell recipes
 - fixed cryotheum solution
@@ -27,10 +30,7 @@ Recipe changes and fixes:
     - use the new ProjectCell Item
 - added loot fabrication plant tier 2
 - fix prediction chamber NBT
-----------
-Mod changes and fixes:
-- 
+- added a recipe for time crystals
 ----------
 known bugs:
 - polymorph (changing the output for mod conflicts) is not possible with tinkers crafting station
-- ME Transmutation Module is buggy and needs to be placed again to work after a server restart

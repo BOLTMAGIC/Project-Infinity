@@ -633,6 +633,7 @@
 						"patchouli:book": "justdirethings:justdirethingsbook"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
@@ -873,6 +874,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18D85621DF45BBF3"]
 			id: "7F4F7130F783BBD6"
 			tasks: [{
 				id: "22EF4E5E4D89403F"
@@ -1912,6 +1914,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["4D8C59BDA416A437"]
 			id: "23EA6FF5B39AB1F0"
 			tasks: [{
 				id: "602700BFE08763E2"
@@ -1932,6 +1935,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["2D3128BB7337E315"]
 			id: "6844AF2103D1B724"
 			tasks: [{
 				id: "477DA27BE8110C8B"
@@ -1952,6 +1956,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["65AAFA49DA65429D"]
 			id: "2B3EA905E7124214"
 			tasks: [{
 				id: "7B74F70F25B3D812"
@@ -1972,6 +1977,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["40DEB80D9444BA35"]
 			id: "5A8A26EE1C0053BF"
 			tasks: [{
 				id: "56F158E62EEAF708"
@@ -1992,6 +1998,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["03A220BFE8E77377"]
 			id: "598544C57DDA4AA8"
 			tasks: [{
 				id: "591BE3FE3AC73532"
@@ -2012,6 +2019,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["4B6B5A62ABDF24C9"]
 			id: "251AC6C736F589D0"
 			tasks: [{
 				id: "2F8BC39A93723F57"
@@ -2072,6 +2080,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["6F785FAB9724F4CC"]
 			id: "54FD128CE7F00314"
 			tasks: [{
 				id: "4AE128238F44807A"
@@ -2092,6 +2101,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["0552D3B85AEEEDCF"]
 			id: "4A339CDF1401A211"
 			tasks: [{
 				id: "604F37A10AEF6055"
@@ -2272,6 +2282,17 @@
 			}]
 			x: -0.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["7F4F7130F783BBD6"]
+			id: "3351562F8189A59A"
+			tasks: [{
+				id: "2B3E4B878456AB03"
+				item: "justdirethings:raw_eclipsealloy"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.chapter.justdirethings.title}"

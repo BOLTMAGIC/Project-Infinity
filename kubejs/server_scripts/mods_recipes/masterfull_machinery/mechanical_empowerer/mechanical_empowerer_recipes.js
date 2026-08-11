@@ -471,6 +471,7 @@ function enderio_recipe1 (event, input, output) {
         item: 'enderio:filled_soul_vial',
         count: 1,
         nbt_snbt: `{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:${input}"}}}}`,
+        nbt_match: 'weak'
       },
     })
     .input({

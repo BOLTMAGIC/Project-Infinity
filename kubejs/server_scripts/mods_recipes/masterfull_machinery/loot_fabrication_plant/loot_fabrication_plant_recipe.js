@@ -421,6 +421,7 @@
           item: PRED_ITEM,
           count: MULT,
           nbt_snbt: `{data_model:{id:"${mobHNN}"}}`,
+          nbt_match: 'weak',
         },
       })
       .output({

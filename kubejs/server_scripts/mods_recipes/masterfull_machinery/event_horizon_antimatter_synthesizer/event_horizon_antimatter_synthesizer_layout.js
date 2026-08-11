@@ -91,10 +91,12 @@ MMEvents.createStructures((event) => {
           block: 'mm:colossal_gas_port_output',
         })
         .key('I', {
-          block: 'mm:gigantic_fluid_port_output',
+          portType: 'mm:fluid',
+          input: false,
         })
         .key('J', {
-          block: 'mm:gigantic_fluid_port_input',
+          portType: 'mm:fluid',
+          input: true,
         });
     });
 });

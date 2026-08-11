@@ -444,4 +444,7 @@ ServerEvents.recipes((event) => {
     '#silentgems:glowroses',
     '#minecraft:leaves',
   ]);
+
+  //#region AppliedE
+  shapeless(event, 'projectcell:emc_storage_cell', ['appliede:emc_module']);
 });

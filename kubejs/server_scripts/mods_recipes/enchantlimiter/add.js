@@ -1,3 +1,4 @@
+//requires: enchantlimiter
 ServerEvents.recipes((event) => {
   create3x3(event, 'enchantlimiter:rare_crystal', [
     'enchantlimiter:uncommon_crystal',

@@ -1,0 +1,14 @@
+
+[Optimizations]
+	#Enable container menu slot tracking optimizations.
+	enableContainerMenuOptimization = true
+	#Enable optimized inventory change triggers.
+	enableInventoryChangeOptimization = true
+	#Enable optimized location and tick triggers.
+	enableLocationTickOptimization = true
+	#Ticks to skip between location/tick checks. Vanilla is 0 (Default: 10).
+	#Range: 0 ~ 1200
+	locationTickSkipTicks = 10
+	#Enable fast item predicate matching for advancements.
+	enableFastItemMatching = true
+

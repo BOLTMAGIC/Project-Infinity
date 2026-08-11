@@ -264,7 +264,9 @@ MMEvents.createStructures((event) => {
           input: true,
         })
         .key('5', {
-          block: 'mm:titanic_item_port_output',
+          portType: 'mm:item',
+          input: false,
+          minTier: 8,
         })
         .key('6', {
           block: 'mekanism_extras:infinite_purifying_factory',

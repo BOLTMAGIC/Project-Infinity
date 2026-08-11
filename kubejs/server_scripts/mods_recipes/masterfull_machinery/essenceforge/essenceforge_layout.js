@@ -141,7 +141,9 @@ MMEvents.createStructures((event) => {
           input: true,
         })
         .key('G', {
-          block: 'mm:compressed_titanic_item_port_output'
+          portType: 'mm:item',
+          input: false,
+          minTier: 9,
         })
         .key('H', {
           block: 'chisel_chipped_integration:factory_blue_framed_circuit',
@@ -212,7 +214,9 @@ MMEvents.createStructures((event) => {
           input: true,
         })
         .key('G', {
-          block: 'mm:compressed_titanic_item_port_output'
+          portType: 'mm:item',
+          input: false,
+          minTier: 9,
         })
         .key('H', {
           block: 'chisel_chipped_integration:factory_blue_framed_circuit',
