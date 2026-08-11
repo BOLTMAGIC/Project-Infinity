@@ -376,10 +376,10 @@ MMEvents.createProcesses((event) => {
       type: 'mm:input/consume',
       ingredient: {
         type: 'mm:item',
-        item: 'mekanism:basic_fluid_tank',
+        item: 'mekanism_extras:absolute_fluid_tank',
         count: 1,
         nbt_snbt:
-          '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:32000,FluidName:"justdirethings:time_fluid"}}]}}',
+          '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:4096000,FluidName:"justdirethings:time_fluid"}}]}}',
         nbt_match: 'weak',
       },
     })
@@ -459,7 +459,7 @@ MMEvents.createProcesses((event) => {
         type: 'mm:item',
         item: 'kubejs:fluid_tank_token',
         count: 1,
-        nbt_snbt: '{fluid_id:"justdirethings:time_fluid",tank_level:"basic"}',
+        nbt_snbt: '{fluid_id:"justdirethings:time_fluid",tank_level:"absolute"}',
         nbt_match: 'weak',
       },
     })

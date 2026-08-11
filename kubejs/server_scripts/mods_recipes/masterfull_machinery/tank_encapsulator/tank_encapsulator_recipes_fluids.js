@@ -94,7 +94,7 @@ MMEvents.createProcesses((event) => {
   fluidTankEncapsulator('basic', 'exdeorum:witch_water');
   fluidTankEncapsulator('basic', 'cyclic:magma');
   fluidTankEncapsulator('basic', 'thermal_extra:paraffin_wax');
-  fluidTankEncapsulator('basic', 'justdirethings:time_fluid');
+  fluidTankEncapsulator('absolute', 'justdirethings:time_fluid');
   fluidTankEncapsulator('ultimate', 'pneumaticcraft:lpg');
   fluidTankEncapsulator('ultimate', 'kubejs:cryotheum_coolant');
   fluidTankEncapsulator('basic', 'woot_revived:mob_tears_fluid');
