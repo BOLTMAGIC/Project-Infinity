@@ -27,8 +27,8 @@
 		},
 		// List of heat source blocks used under Thermo Generator.
 		"heat_blocks": {
-			"powah:blazing_crystal_block": 2800,
 			"minecraft:lava": 1000,
+			"powah:blazing_crystal_block": 2800,
 			"minecraft:magma_block": 800,
 			"avaritia:infinity": 250000
 		},
@@ -243,13 +243,13 @@
 		},
 		"ender_cells": {
 			"transfer_rates": {
-				"starter": 1000,
-				"basic": 4000,
-				"hardened": 10000,
-				"blazing": 40000,
-				"niotic": 100000,
-				"spirited": 400000,
-				"nitro": 2000000
+				"starter": 2000,
+				"basic": 10000,
+				"hardened": 50000,
+				"blazing": 200000,
+				"niotic": 1000000,
+				"spirited": 10000000,
+				"nitro": 200000000
 			},
 			"channels": {
 				"starter": 1,
@@ -263,13 +263,13 @@
 		},
 		"ender_gates": {
 			"transfer_rates": {
-				"starter": 500,
-				"basic": 2000,
-				"hardened": 5000,
-				"blazing": 20000,
-				"niotic": 50000,
-				"spirited": 200000,
-				"nitro": 1000000
+				"starter": 2000,
+				"basic": 10000,
+				"hardened": 50000,
+				"blazing": 200000,
+				"niotic": 1000000,
+				"spirited": 10000000,
+				"nitro": 200000000
 			},
 			"channels": {
 				"starter": 1,

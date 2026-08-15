@@ -3,13 +3,13 @@
 [general]
 	#Number of pattern pages for Molecular Centers.
 	#Range: 1 ~ 1000
-	pattern_pages = 20
+	pattern_pages = 200
 	#Maximum structure blocks placed or removed per tick.
 	#Range: 1 ~ 256
 	build_blocks_per_tick = 32
 	#Molecular Center idle power usage in AE/t.
 	#Range: 1 ~ 4096
-	idle_power = 128
+	idle_power = 4096
 
 #Matter sequence, entropy, and acceleration-card settings.
 [matter]
@@ -21,13 +21,13 @@
 		sequence_capacity = 9223372036854775807
 		#Maximum rewrite entropy stored by the Sequence Array.
 		#Range: 1 ~ 9223372036854775807
-		entropy_capacity = 1000000
+		entropy_capacity = 2147483647
 
 	#Entropy cooling settings.
 	[matter.entropy]
 		#Base entropy cooling per second before the installed acceleration-card multiplier.
 		#Range: 1 ~ 9223372036854775807
-		cooling_per_second = 25
+		cooling_per_second = 500
 
 	#Per-tier acceleration-card processing settings.
 	[matter.speed_cards]

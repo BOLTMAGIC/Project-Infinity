@@ -17,7 +17,7 @@
       "megacells:cable_mega_pattern_provider"
     ]
   },
-  
+
   // The amount of mana used in alfheim market to trade items [Default: 500]
   "AlfheimMarket": {
   

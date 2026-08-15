@@ -924,6 +924,524 @@
         "crystal": 0,
         "organic": 0
       }
+    },
+    "kubejs:infinity_1": {
+      "deconstruct": {
+        "metal": 150000000,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 200000000,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "advancednetherite:netherite_iron_ingot": {
+      "deconstruct": {
+        "metal": 36864,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 49152,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "advancednetherite:netherite_gold_ingot": {
+      "deconstruct": {
+        "metal": 61440,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 81920,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "advancednetherite:netherite_emerald_ingot": {
+      "deconstruct": {
+        "metal": 172032,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 229376,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "advancednetherite:netherite_diamond_ingot": {
+      "deconstruct": {
+        "metal": 294912,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 393216,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:allthemodium_ingot": {
+      "deconstruct": {
+        "metal": 491520,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 655360,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:vibranium_ingot": {
+      "deconstruct": {
+        "metal": 1376256,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 1835008,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:unobtainium_ingot": {
+      "deconstruct": {
+        "metal": 2752512,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 3670016,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:unobtainium_allthemodium_alloy_ingot": {
+      "deconstruct": {
+        "metal": 11010048,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 14680064,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:unobtainium_vibranium_alloy_ingot": {
+      "deconstruct": {
+        "metal": 12582912,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 16777216,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "allthemodium:vibranium_allthemodium_alloy_ingot": {
+      "deconstruct": {
+        "metal": 6291456,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 8388608,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "ae2omnicells:ender_ingot": {
+      "deconstruct": {
+        "metal": 344064,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 458752,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "ae2omnicells:charged_ender_ingot": {
+      "deconstruct": {
+        "metal": 688128,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 917504,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "armorplus:en_gold": {
+      "deconstruct": {
+        "metal": 30720,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 40960,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "armorplus:en_iron": {
+      "deconstruct": {
+        "metal": 18432,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 24576,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "armorplus:en_netherite": {
+      "deconstruct": {
+        "metal": 245760,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 327680,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botania:manasteel_ingot": {
+      "deconstruct": {
+        "metal": 9216,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 12288,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botania:terrasteel_ingot": {
+      "deconstruct": {
+        "metal": 245760,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 327680,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botania:elementium_ingot": {
+      "deconstruct": {
+        "metal": 86016,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 114688,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botania:gaia_ingot": {
+      "deconstruct": {
+        "metal": 983040,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 1310720,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botanicalextramachinery:malachite_ingot": {
+      "deconstruct": {
+        "metal": 172032,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 229376,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botanicalextramachinery:saffron_ingot": {
+      "deconstruct": {
+        "metal": 344064,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 458752,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botanicalextramachinery:shadow_ingot": {
+      "deconstruct": {
+        "metal": 688128,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 917504,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "botanicalextramachinery:crimson_ingot": {
+      "deconstruct": {
+        "metal": 786432,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 1048576,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "dimensionalpocketsii:dimensional_ingot": {
+      "deconstruct": {
+        "metal": 491520,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 655360,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "dimensionalpocketsii:dimensional_ingot_enhanced": {
+      "deconstruct": {
+        "metal": 1966080,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 2621440,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "draconicevolution:draconium_ingot": {
+      "deconstruct": {
+        "metal": 344064,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 458752,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "draconicevolution:awakened_draconium_ingot": {
+      "deconstruct": {
+        "metal": 2752512,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 3670016,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:copper_alloy_ingot": {
+      "deconstruct": {
+        "metal": 4608,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 6144,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:energetic_alloy_ingot": {
+      "deconstruct": {
+        "metal": 15360,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 20480,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:vibrant_alloy_ingot": {
+      "deconstruct": {
+        "metal": 43008,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 57344,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:redstone_alloy_ingot": {
+      "deconstruct": {
+        "metal": 10752,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 14336,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:conductive_alloy_ingot": {
+      "deconstruct": {
+        "metal": 7680,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 10240,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:pulsating_alloy_ingot": {
+      "deconstruct": {
+        "metal": 10752,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 14336,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:dark_steel_ingot": {
+      "deconstruct": {
+        "metal": 18432,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 24576,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:soularium_ingot": {
+      "deconstruct": {
+        "metal": 30720,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 40960,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "enderio:end_steel_ingot": {
+      "deconstruct": {
+        "metal": 61440,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 81920,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
     }
   }
 }

@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
           item: 'kubejs:thermonuclear_alloy_block',
         },
         F: {
-          item: 'voidminers:azurine_miner',
+          item: 'voidminers:solar_azurine_panel',
         },
         G: {
           item: 'minecraft:obsidian',
@@ -151,7 +151,7 @@ ServerEvents.recipes((event) => {
           item: 'silentgems:white_diamond',
         },
         G: {
-          item: 'voidminers:caerium_miner',
+          item: 'voidminers:solar_caerium_panel',
         },
         H: {
           item: 'voidminers:solar_amethystine_block',
@@ -285,7 +285,7 @@ ServerEvents.recipes((event) => {
           item: 'ifeu:dragon_star_block',
         },
         E: {
-          item: 'voidminers:amethystine_miner',
+          item: 'voidminers:solar_amethystine_panel',
         },
         F: {
           item: 'cataclysm:essence_of_the_storm',

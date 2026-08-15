@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
           item: 'ae2:vibration_chamber',
         },
         H: {
-          item: 'neoecoae:computation_network_switch',
+          item: 'neoecoae:energy_cell_l4',
         },
         I: {
           type: 'forge:partial_nbt',

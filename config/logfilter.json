@@ -788,7 +788,7 @@
       "name": "Suppress",
       "enabled": true,
       "type": "MESSAGE_REGEX",
-      "pattern": "[FANCYMENU] Failed to enumerate client resources in namespace",
+      "pattern": "Failed to enumerate",
       "action": "DENY"
     }
   ]

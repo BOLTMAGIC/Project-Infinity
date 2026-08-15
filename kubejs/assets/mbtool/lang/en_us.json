@@ -85,5 +85,8 @@
     "mbtool.structure.blood_altar_tier_card_5_block_structure": "Blood Altar Tier Card 5 Block Structure",
     "mbtool.structure.blood_magic_altar_6": "Blood Magic Tier 6",
     "mbtool.structure.omni_computer_multiblock": "Omni Computer Multiblock",
-    "mbtool.structure.sequence_array_multiblock": "Sequence Array Multiblock"
+    "mbtool.structure.sequence_array_multiblock": "Sequence Array Multiblock",
+    "mbtool.structure.neoeco_c9_computation_controller": "NeoEco C9 Computation Multiblock",
+    "mbtool.structure.neoeco_f9_crafting_controller": "NeoEco F9 Crafting Multiblock",
+    "mbtool.structure.neoeco_l9_storage_controller": "NeoEco L9 Storage Multiblock"
 }
