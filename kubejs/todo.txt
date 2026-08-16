@@ -4,24 +4,11 @@ finish quests high prio
 rf tools recipes
 LUMINOUS (Overworld/ Nether/ Beasts) and Mekanism FuryBorn in the Artifacts
 ----------
-changelog v. 0.0.51.3
+changelog v. 0.0.51.3 HOTFIX
 
 MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
 
-If you want the new EnchantmentLimiter settings you need to place the "enchantlimiter-server.toml" from defaultconfig into your saves serverconfig folder
-
-Mod Info:
-- MODS ADDED:
-    - Team ProjectE Fork (from me its replacing the original mod Team ProjectE) (TPS saving)
-----------
 Recipe changes and fixes:
-- fixed miner and solar panels recipe voidminer (thx to droxowo)
-- changed pattern sites in the sequence array multiblock from 20 to 200
-- changed recipe for reaction chamber (way easier)
-----------
-Mod changes and fixes:
-- Masterful Machinery fixed priority setter and improved energy consumption handling
-- reenabled entity acceleration card 1-4 for the ECO - Integrated Working Station
-----------
-known bugs:
-- 
+- fixed JEI crash
+- blockboosters cant tick solar flux or EMC flowers now
+- changed recipe for Bulk Item Cells

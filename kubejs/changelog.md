@@ -1,3 +1,14 @@
+%#red%**Version 0.0.51.3 HOTFIX**%#%
+
+MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
+
+Recipe changes and fixes:
+- fixed JEI crash
+- blockboosters cant tick solar flux or EMC flowers now
+- changed recipe for Bulk Item Cells
+----------
+----------
+----------
 %#red%**Version 0.0.51.3**%#%
 
 MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!

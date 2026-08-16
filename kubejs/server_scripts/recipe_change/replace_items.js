@@ -140,15 +140,20 @@ ServerEvents.recipes((event) => {
     '#c:gears/iron',
     'allthemodium:unobtainium_gear'
   );
-    event.replaceInput(
+  event.replaceInput(
     { output: 'molecularmanipulator:molecular_center_controller' },
     'minecraft:netherite_block',
     'kubejs:infinity_4'
   );
-    event.replaceInput(
+  event.replaceInput(
     { output: 'molecularmanipulator:omni_computation_controller' },
     'advanced_ae:quantum_processor',
     'kubejs:infinity_4'
+  );
+  event.replaceInput(
+    { output: 'megacells:bulk_item_cell' },
+    'megacells:cell_component_1m',
+    'ae2:cell_component_1k'
   );
   event.replaceInput(
     { output: 'thermal:device_water_gen' },
