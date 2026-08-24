@@ -1,0 +1,57 @@
+#Post a vanilla crafting event (ItemCraftedEvent) when the Crafting System finishes a recipe.
+#May introduce extra event/listener overhead; can be more noticeable with mods like Balm installed.
+postCraftingEvent = false
+#Number of 63-slot pages available in each smart crafting pattern bus.
+#Range: 1-8. Changes are fully applied after re-entering the world or restarting the server.
+#Range: 1 ~ 8
+craftingPatternBusPages = 2
+#Increase ECO Storage Matrix capacity.
+#Defaults to true when GregTech Modern/GTCEu is loaded, otherwise false.
+#false keeps the old capacity.
+#true changes ECO Storage Matrix capacity to L4=256MiB, L6=4GiB, L9=64GiB and multiplies computation flash capacity by 16.
+#Changing this config is fully applied after re-entering the world or restarting the server.
+increaseStorageCellCapacity = false
+
+#Multiblock structure size limits.
+[structure]
+	#Maximum length (in blocks) allowed for the Crafting System multiblock.
+	#Higher values allow longer expansions but may increase structure check cost.
+	#Range: > 5
+	craftingSystemMaxLength = 15
+	#Maximum length (in blocks) allowed for the Computation System multiblock.
+	#Higher values allow longer expansions but may increase structure check cost.
+	#Range: > 5
+	computationSystemMaxLength = 15
+	#Maximum length (in blocks) allowed for the Storage System multiblock.
+	#Higher values allow longer expansions but may increase structure check cost.
+	#Range: > 4
+	storageSystemMaxLength = 15
+
+#ECO crafting planner diagnostic options.
+#Enable these only while investigating crafting-plan problems.
+[debug]
+	#Log the stage, reason, request, solver state and fallback details for ECO planning failures.
+	#Messages are deduplicated and rate-limited; enable only while diagnosing planning issues.
+	#Set JVM property -Dneoecoae.debugECOPlanner=true to force-enable this without editing the config.
+	debugECOPlanner = false
+
+#ECO AE2 fast path cache and batch crafting diagnostics.
+#Disable Fast Path to use the compatible slow path for all crafting hosts and networks.
+[fastPath]
+	#Enable ECO AE2 fast-path batch crafting cache.
+	#Disable to fall back to the slow path if a modpack has recipe compatibility issues.
+	#Fast Path is automatically disabled when Post Crafting Event is enabled to preserve event semantics.
+	ecoAe2FastPathEnabled = true
+	#Log Fast Path cache statistics and fallback diagnostics.
+	#Enable only while diagnosing Fast Path compatibility problems.
+	debugEcoFastPath = false
+	#Maximum crafting operations a CPU may schedule per tick.
+	#This is a safety cap for both batch fast paths and regular paths; the effective value is still limited by available co-processors.
+	#Range: 1 ~ 393216
+	ecoCpuPushTickLimit = 393216
+	#Maximum recipe entries kept in each ECO fast path cache.
+	#Set JVM property -Dneoecoae.ecoFastPathCacheSize=<value> to override this config.
+	#Changes fully apply to newly created caches after re-entering the world or restarting the server.
+	#Range: 16 ~ 16384
+	ecoFastPathCacheSize = 512
+

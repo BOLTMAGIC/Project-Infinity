@@ -315,4 +315,42 @@ MMEvents.createProcesses((event) => {
         amount: 16000,
       },
     });
+
+  //Energized Crystal Dust
+  event
+    .create('mm:energized_crystal_dust_recipe1')
+    .structureId('mm:fire_attuned_structure1')
+    .ticks(8)
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'neoecoae:flawed_budding_energized_crystal',
+        count: 16,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'justdirethings:time_fluid',
+        amount: 64000,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 320000000,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:item',
+        item: 'neoecoae:energized_crystal_dust',
+        count: 128,
+      },
+    });
 });

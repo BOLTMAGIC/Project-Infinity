@@ -137,6 +137,8 @@ ServerEvents.tags('block', (event) => {
     'mysticalagriculture:lithium_crop',
   ]);
 
+  event.remove('minecraft:dirt', 'industrialforegoing:hydroponic_bed');
+
   event.add('minecraft:beacon_base_blocks', [
     'allthemodium:vibranium_allthemodium_alloy_block',
     'allthemodium:unobtainium_allthemodium_alloy_block',

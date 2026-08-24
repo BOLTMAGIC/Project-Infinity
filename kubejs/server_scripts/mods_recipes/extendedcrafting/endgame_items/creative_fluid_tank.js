@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
           item: 'mm:gigantic_fluid_port_input',
         },
         C: {
-          item: 'ifeu:fluid_transfer',
+          item: 'industrialforegoing:fluid_sieving_machine',
         },
         D: {
           type: 'forge:partial_nbt',
@@ -214,7 +214,7 @@ ServerEvents.recipes((event) => {
           item: 'mm:gigantic_fluid_port_input',
         },
         C: {
-          item: 'ifeu:fluid_transfer',
+          item: 'industrialforegoing:fluid_sieving_machine',
         },
         D: {
           type: 'forge:partial_nbt',

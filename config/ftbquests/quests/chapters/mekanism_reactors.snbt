@@ -7,7 +7,7 @@
 	group: "5255C8D5C49409ED"
 	icon: "mekanism:supercharged_coil"
 	id: "10AE6C1C9FCEF5F3"
-	order_index: 5
+	order_index: 6
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [ ]

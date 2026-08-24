@@ -7,7 +7,7 @@
     },
     "max_overclock": 15,
     "output": {
-        "amount": 100,
+        "amount": 10000,
         "fluid": "kubejs:cryotheum_coolant"
     }
 }

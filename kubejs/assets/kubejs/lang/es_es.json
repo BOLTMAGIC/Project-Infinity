@@ -1,5 +1,5 @@
 {
-  "project_infinity_01.version": "0.0.51.3 HOTFIX",
+  "project_infinity_01.version": "0.0.52.0",
   "item.kubejs.netherite_iron_hammer": "Martillo de hierro de Netherita",
   "item.kubejs.netherite_gold_hammer": "Martillo de oro de Netherita",
   "item.kubejs.netherite_emerald_hammer": "Martillo de esmeralda de Netherita",
@@ -428,9 +428,6 @@
 
   "tooltip.mythicbotany.wither_aconite_warning": "Si AE2 / RS no te deja autocraftearlo, fabrícalo a mano.",
   "tooltip.botanicalmachineryextra.wither_aconite_mana_storage": "Si utilizas esta flor en un invernadero, necesitas al menos una mejora de Almacenamiento de Maná (Nivel 1) dentro del invernadero. De lo contrario, no funcionará.",
-
-  "tooltip.ifeu.big_dissolution_chamber_warning_1": "No lo uses para crear objetos que tengan NBT, como los complementos que no son ficticios.",
-  "tooltip.ifeu.big_dissolution_chamber_warning_2": "Puede ser un poco difícil de usar con AE2 o RS. Intenta que los Patrones sean múltiplos de 64.",
 
   "tooltip.kubejs.full_nbt_remover_1": "Si haces clic derecho con este objeto mirando a una Afiladora, el objeto en tu mano secundaria perderá sus datos NBT.",
   "tooltip.kubejs.full_nbt_remover_2": "¡Ten mucho cuidado, no hay forma de restaurar los datos NBT perdidos!",

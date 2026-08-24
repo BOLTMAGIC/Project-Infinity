@@ -1,0 +1,987 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 350
+	default_quest_shape: ""
+	filename: "ae2_addons"
+	group: "5255C8D5C49409ED"
+	icon: "neoecoae:eco_quantum_omni_cell_256m"
+	id: "107A90B2BE1AB3FC"
+	images: [
+		{
+			height: 5.0d
+			image: "kubejs:block/screen/advanced_ae_multiblock"
+			rotation: 0.0d
+			width: 5.0d
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			height: 5.0d
+			image: "kubejs:block/screen/extended_ae_multiblock"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: -7.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description1}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description2}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description3}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description4}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description5}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description6}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description7}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description8}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description9}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description10}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description11}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description12}"
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description13}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description14}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description15}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description16}"
+			]
+			icon: "advanced_ae:quantum_core"
+			id: "0B737B8EE54BAB03"
+			min_width: 400
+			rewards: [{
+				id: "78ADFAA221AC66A9"
+				item: "kubejs:infused_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D6D5093FFE581D9"
+					item: "advanced_ae:quantum_core"
+					type: "item"
+				}
+				{
+					id: "248108B91BF48336"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "advanced_ae:quantum_storage_128"
+								}
+								{
+									Count: 1b
+									id: "advanced_ae:quantum_storage_256"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "067B8F5FC22B2CDD"
+					item: "advanced_ae:quantum_structure"
+					type: "item"
+				}
+				{
+					id: "204AB21904D58EE2"
+					item: "advanced_ae:data_entangler"
+					type: "item"
+				}
+				{
+					id: "653D0EF918DA55FB"
+					item: "advanced_ae:quantum_multi_threader"
+					type: "item"
+				}
+				{
+					id: "6393A727D515FA47"
+					item: "advanced_ae:quantum_accelerator"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.title}"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"This tab gathers the &bmost important&r AE2 addons for advanced automation, storage, and crafting."
+				"Use it as a &dquick reference&r for what each mod adds and how they &aenhance&r your &9ME Network&r."
+				""
+				"Special focus lies on &5&lmultiblocks&r that define the late-game AE2 experience."
+			]
+			id: "3E7BA0C70B5569D4"
+			optional: true
+			rewards: [{
+				id: "32EDB7FBCEC39F55"
+				type: "xp"
+				xp: 10
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "6D9F7615BA3221F1"
+				type: "checkmark"
+			}]
+			title: "&bAE2 Addons&r"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description1}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description2}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description3}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description4}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description5}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description6}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description7}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description8}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description9}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description10}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description11}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description12}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description13}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description14}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description15}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description16}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description17}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description18}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description19}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description20}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description21}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description22}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description23}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description24}"
+				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description25}"
+			]
+			id: "5750DF0292AEB823"
+			min_width: 400
+			rewards: [{
+				id: "3803B912D8CC66C3"
+				item: "kubejs:infused_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "561F5E79DE5B02B5"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "17D86A37187C9B1E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "expatternprovider:assembler_matrix_wall"
+								}
+								{
+									Count: 1b
+									id: "expatternprovider:assembler_matrix_glass"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.323231805323170957.title}"
+					type: "item"
+				}
+				{
+					id: "23F8B424E1321A4D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "expatternprovider:assembler_matrix_pattern"
+								}
+								{
+									Count: 1b
+									id: "extendedae_plus:assembler_matrix_pattern_plus"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.1946419708754787241.title}"
+					type: "item"
+				}
+				{
+					id: "187C9F4EFEEA6851"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "expatternprovider:assembler_matrix_crafter"
+								}
+								{
+									Count: 1b
+									id: "extendedae_plus:assembler_matrix_crafter_plus"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.2071717347688163457.title}"
+					type: "item"
+				}
+				{
+					id: "56B33AEA07D6A8BA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "expatternprovider:assembler_matrix_speed"
+								}
+								{
+									Count: 1b
+									id: "extendedae_plus:assembler_matrix_speed_plus"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.8175533383354653458.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.title}"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5750DF0292AEB823"
+				"6AC49CA40C6B2AC5"
+			]
+			description: [
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description1}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description2}"
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description3}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description4}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description5}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description6}"
+				""
+				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description7}"
+			]
+			id: "0EB492FCD3747F13"
+			rewards: [{
+				id: "1500CB195950C9CA"
+				item: "kubejs:apotheotic_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D119F52E12AB973"
+				item: "extendedae_plus:assembler_matrix_upload_core"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.title}"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			id: "1DA472E0ED358975"
+			tasks: [{
+				id: "72B966EC3D94BFB7"
+				item: "ae2omnicells:ender_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			id: "199EC93801890683"
+			tasks: [{
+				id: "2771A2AE328FEDC0"
+				item: "molecularmanipulator:molecular_center_controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "7BA1FBD221BE9C32"
+			size: 1.25d
+			tasks: [{
+				id: "7679EEF03C524428"
+				item: "projectcell:emc_storage_cell"
+				type: "item"
+			}]
+			x: -8.56547619047619d
+			y: 4.011904761904766d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			icon: "ae2:fluix_glass_cable"
+			id: "188E19A8DFF4F494"
+			size: 2.0d
+			tasks: [{
+				id: "37719F8BBF5C1945"
+				title: "Nice to have"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			description: ["[ \"Quest for \", { \"text\": \"CrazyAE2\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2E66DFDA5014FCD7\" } }, \" <-- Click me\" ]"]
+			icon: "crazyae2addons:super_singularity"
+			id: "37C1E9E74F83826F"
+			rewards: [{
+				id: "30DD2EEEA18841C7"
+				type: "xp"
+				xp: 1
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "0FFCA7FFEB122AE9"
+				title: "CrazyAE2"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			description: [
+				"The &5&lAssembler Matrix&r is a scalable multiblock crafter that combines pattern storage and molecular assembling into one structure."
+				""
+				"Extended AE also adds:"
+				"- &3Infinity Cells&r"
+				"- &3Extended Export Bus &rand &3Extended Import Bus&r"
+				"- &3Pattern Access Terminal&r"
+				"- &3ME Wireless Connector &rand &3ME Wireless Hub &r(single-dimension)"
+				"- &3ME Ingredient Buffer&r"
+				"- &3Circuit Slicer&r"
+				"- &3ME Oversized Interface&r"
+				"- &3Extended Inscriber&r"
+				""
+				"Extended AE Plus adds:"
+				"- &5Wireless Transceiver &r(cross-dimension)"
+				"- &5Mirror Pattern Provider&r"
+				"- &54x–1024x Crafting Accelerators&r"
+			]
+			icon: "expatternprovider:assembler_matrix_frame"
+			id: "6AC49CA40C6B2AC5"
+			size: 2.0d
+			tasks: [{
+				id: "181A82700BAF08C5"
+				title: "ExtendedAE"
+				type: "checkmark"
+			}]
+			title: "&6Extended AE &r+ &6Extended AE Plus&r"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			description: [
+				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description1}"
+				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description2}"
+				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description3}"
+			]
+			icon: "advanced_ae:quantum_alloy"
+			id: "32317607D34C7CA5"
+			size: 2.0d
+			tasks: [{
+				id: "2A5DE0CA82F5C03F"
+				title: "AdvancedAE"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			description: [
+				"The &2Neo ECO AE Extension&r adds three powerful multiblock systems that massively expand your AE2 capabilities."
+				""
+				"The &2Storage System &rprovides huge ME storage with ECO cells up to 256MB, integrated high-density energy storage, and three tiers: &bL4&r, &6L6&r, and &5L9&r."
+				""
+				"The &2Computation System &rreplaces vanilla crafting CPUs with a scalable cluster that supports many parallel crafting threads and massive acceleration across &bC4&r, &6C6&r, and &5C9&r tiers."
+				""
+				"The &2Crafting System &racts as an advanced pattern provider with high parallelism, overclocking, active cooling, and three performance tiers: &bF4&r, &6F6&r, and &5F9&r."
+				""
+				"All multiblocks can be built manually or with the &2Structure Terminal&r, which shows a preview, checks materials, and places missing blocks automatically."
+				""
+				"The &aEnergized Budding Crystal &ris a key material for many components and can be obtained via lightning strikes."
+				""
+				"The &aIntegrated Working Station &rcombines multiple AE2 device functions and is essential for crafting advanced components and multiblock controllers."
+				""
+				"Higher tiers (&b4&r → &66&r → &59&r) give more capacity, speed, and efficiency, but require rarer materials and more power."
+			]
+			icon: "neoecoae:energized_crystal"
+			id: "2A8BE548681A5CD5"
+			size: 2.0d
+			tasks: [{
+				id: "4ABC918EFB8B409D"
+				title: "Neo Eco AE Extension"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			icon: "ae2omnicells:charged_ender_ingot"
+			id: "35693ED4BCB29DFA"
+			size: 2.0d
+			tasks: [{
+				id: "3C074690BB134F29"
+				title: "AE Omni Cells"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			icon: "molecularmanipulator:molecular_center_controller"
+			id: "294448C926744049"
+			size: 2.0d
+			tasks: [{
+				id: "290E6367CCBE1364"
+				title: "OmniSequence Transfinite"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			icon: {
+				Count: 1
+				id: "megacells:item_storage_cell_1m"
+				tag: { }
+			}
+			id: "709EEC95F59AF7C1"
+			size: 2.0d
+			tasks: [{
+				id: "60C27F4744C9DAB8"
+				title: "All the cells"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3Infinity Cells&r provide infinite amounts of basic resources directly in your ME system."
+				""
+				"The &3Infinity Water Cell &rgives unlimited water, and the &3Infinity Cobblestone Cell &rgives unlimited cobblestone, removing the need for external generators."
+			]
+			id: "7F9EFE01915D6BB4"
+			tasks: [{
+				id: "1E75BA9826CD4C96"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:f"
+										id: "minecraft:water"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:f"
+										id: "minecraft:lava"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:cobblestone"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "ae2:matter_ball"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:gravel"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:sand"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "exdeorum:dust"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:dirt"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:netherrack"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:blackstone"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:end_stone"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "minecraft:soul_sand"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:infinity_cell"
+								tag: {
+									record: {
+										"#c": "ae2:i"
+										id: "mysticalagriculture:prosperity_shard"
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Infinity Cells"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3Extended Import Bus &rand &3Extended Export Bus&r offer higher throughput and more upgrade slots than vanilla AE2 buses."
+				""
+				"They operate &38× faster &rby default and support &38 upgrade slots&r instead of 5, allowing more acceleration, capacity, and control cards."
+			]
+			id: "25531495682B5C7C"
+			tasks: [
+				{
+					id: "68D03F8C2112F787"
+					item: "expatternprovider:ex_import_bus_part"
+					type: "item"
+				}
+				{
+					id: "6A46B55747C8CC1E"
+					item: "expatternprovider:ex_export_bus_part"
+					type: "item"
+				}
+			]
+			title: "ME Extended Import \\& Export Bus"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3ME Extended Pattern Access Terminal &rprovides a searchable overview of all pattern providers on your ME network."
+				""
+				"It shows patterns with their inputs and outputs, lets you filter by item or fluid, and can highlight the actual pattern provider block in the world."
+			]
+			id: "72DFA70BEBBA7A13"
+			tasks: [{
+				id: "735344A88B0970C2"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3ME Wireless Hub &racts as a central hub that can connect up to 8 wireless connectors or hubs, distributing up to 32 channels total."
+				"Both require the &3ME Wireless Setup Kit &rto bind connections and only work within a single dimension."
+				""
+				"The &3ME Wireless Connector &rcreates a wireless link between two points in the same dimension, transmitting up to 32 channels without cables."
+			]
+			id: "6EFF07C8B2647AC4"
+			tasks: [
+				{
+					id: "7BCB2FDCCE1268F6"
+					item: "expatternprovider:wireless_hub"
+					type: "item"
+				}
+				{
+					id: "346D1BFF15EC798D"
+					item: "expatternprovider:wireless_connect"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3ME Ingredient Buffer &rstores items and fluids in one block and can be paired with a Pattern Provider to automate complex recipes."
+				""
+				"This setup allows you to automate multiblocks like the &5Antimatter Protomolecular Transmutator (APT) &rand the &5Fire Attuned Multiblock&r by buffering all required ingredients in one place."
+			]
+			id: "5D3C1D51D721CD9A"
+			tasks: [{
+				id: "721C2BD363A61046"
+				item: "expatternprovider:ingredient_buffer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3Circuit Slicer &rconverts whole blocks directly into printed circuits without needing inscriber presses."
+				""
+				"It processes materials like gold, diamond, silicon, and entro blocks into multiple circuit prints at once, making it much faster than vanilla inscribers."
+			]
+			id: "14AA0A797643E635"
+			tasks: [{
+				id: "3C53DF93B1A8D4B9"
+				item: "expatternprovider:circuit_cutter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3ME Oversized Interface &rextends the vanilla interface with more slots and higher stack limits."
+				""
+				"It offers 4 rows of slots (32 total) and supports stack sizes up to 1024, making it ideal for high-throughput item and fluid buffering."
+				""
+				"Use it to keep large ingredient buffers for multiblocks or machines that consume resources faster than a normal interface can supply."
+			]
+			id: "45EFBBB707F48607"
+			tasks: [{
+				id: "29B13F923A8DDC55"
+				item: "expatternprovider:oversize_interface"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &3Extended Inscriber &rcombines four inscriber operations into a single block, running up to four jobs simultaneously."
+				""
+				"It has four separate job pages, each with its own press and input slots, allowing you to produce different circuits or processors in one machine."
+				""
+				"This makes it ideal for compact processor factories, though for late-game circuits the &3Circuit Slicer &rand &3Crystal Assembler &rare often faster alternatives."
+			]
+			id: "7C1E0996C1FF18C1"
+			tasks: [{
+				id: "59E467EED4BBADAE"
+				item: "expatternprovider:ex_inscriber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &5Wireless Transceiver &rcreates a wireless ME channel link that works across any distance and even across dimensions."
+				""
+				"Place one transceiver on your main ME Controller and another at your remote base, then set both to the same channel frequency to link them."
+				""
+				"Unlike the ME Wireless Connector, the &5Wireless Transceiver &rdoes not require a setup kit and supports full cross-dimension networks."
+				""
+				"The chunk containing the main transceiver must be chunk-loaded for the connection to remain active."
+			]
+			id: "2E3C4ECC926E9FE1"
+			tasks: [{
+				id: "0C8D15FC28DF44E8"
+				item: "extendedae_plus:wireless_transceiver"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &5Mirror Pattern Provider &rlets you mirror the patterns of other Pattern Providers or Extended Pattern Providers using the &5Mirror Binding Tool&r."
+				""
+				"Once linked, it acts as a remote copy of the original provider's patterns, allowing you to distribute crafting logic across your base without re-encoding everything."
+				""
+				"&4Sidenote&r: Don't place too many Mirror Pattern Providers, as they can become laggy when overused."
+			]
+			id: "61770BE75E7C81D9"
+			tasks: [{
+				id: "03F807523811F3AC"
+				item: "extendedae_plus:mirror_pattern_provider"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &54x, 16x, 64x, 256x, and 1024x Crafting Accelerators&r are multiblock components that massively increase the crafting speed of your AE2 Crafting CPUs."
+				""
+				"Place them inside a Crafting CPU multiblock alongside Crafting Storage and Co-Processors to reduce the time required for complex or large-scale autocrafting jobs."
+				""
+				"Higher-tier accelerators provide exponentially faster crafting, but also consume significantly more power per tick."
+				""
+				"Use them to push your autocrafting system far beyond vanilla AE2 limits, especially when combined with high-speed machines and pattern providers."
+			]
+			id: "6ABCE5A68448E852"
+			tasks: [{
+				id: "37A2C78550F5784C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "extendedae_plus:4x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "extendedae_plus:16x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "extendedae_plus:64x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "extendedae_plus:256x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "extendedae_plus:1024x_crafting_accelerator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "2E9D3FA1D22EE22D"
+			tasks: [{
+				id: "3FDF5F9927D573F3"
+				item: "ifsoulsdisks:souls_cell_housing"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "59EF3B0D6CC9BE7E"
+			tasks: [{
+				id: "0B81CE93E4BEDB4E"
+				item: {
+					Count: 1
+					id: "appflux:fe_1k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "1E95A43B267A4AD8"
+			tasks: [{
+				id: "1E21C968A89EE972"
+				item: {
+					Count: 1
+					id: "appmek:chemical_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "4790165DC741EC13"
+			tasks: [{
+				id: "5F3A118372999091"
+				item: {
+					Count: 1
+					id: "appbot:mana_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "7DCF9AB911585354"
+			tasks: [{
+				id: "2C52C58BF870B766"
+				item: {
+					Count: 1
+					id: "megacells:item_storage_cell_1m"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["709EEC95F59AF7C1"]
+			id: "720CEC8D97AA713D"
+			tasks: [{
+				id: "5CBF210FE7A4FCFF"
+				item: {
+					Count: 1
+					id: "crazyae2addons:mob_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			id: "3C7F23F868B28983"
+			tasks: [
+				{
+					id: "41C58D1F8D40F32A"
+					item: "ae2insertexportcard:insert_card"
+					type: "item"
+				}
+				{
+					id: "28F2C0F9FE3FB709"
+					item: "ae2insertexportcard:export_card"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			id: "19BD61575C69EC60"
+			tasks: [{
+				id: "6E4BE7565EFFB224"
+				item: "mae2:pattern_p2p_tunnel"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.5d
+		}
+	]
+	title: "AE2 Addons"
+}

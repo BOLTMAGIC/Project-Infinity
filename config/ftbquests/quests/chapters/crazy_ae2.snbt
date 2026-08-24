@@ -70,7 +70,7 @@
 			image: "kubejs:block/screen/penrose2"
 			rotation: 0.0d
 			width: 6.7d
-			x: -5.5d
+			x: -6.0d
 			y: -8.0d
 		}
 		{

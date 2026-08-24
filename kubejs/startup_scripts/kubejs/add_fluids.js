@@ -15,7 +15,8 @@ StartupEvents.registry('fluid', (event) => {
     .create('molten_blitz')
     .thickTexture(0xedfdff)
     .noBucket()
-    .displayName('Molten Blitz');
+    .displayName('Molten Blitz')
+    .tag('kubejs:molten_blitz');
 
   event
     .create('cryotheum_coolant')

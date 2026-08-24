@@ -5,7 +5,7 @@
 	group: "5255C8D5C49409ED"
 	icon: "fluxnetworks:flux_point"
 	id: "42510D445257E239"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{

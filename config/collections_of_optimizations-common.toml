@@ -17,6 +17,8 @@
 	fastEquippedItemMiss = true
 	#Answer ICuriosItemHandler#findFirstCurio(Item) from the same per-tick set instead of walking every slot handler.
 	fastFindFirstMiss = true
+	#Hand out one reusable unmodifiable view of an entity's curio slot map instead of wrapping the map again on every single call.
+	reuseCurioMapView = true
 
 #Artifacts patches.
 [artifacts]
@@ -41,7 +43,7 @@
 [justdirethings]
 	#Read the item entity's block state through getChunkNow instead of the loading getChunk.
 	avoidChunkTickets = true
-	#Stop the area preview renderer copying every block entity of all 169 nearby chunks into a fresh list every frame.
+	#Stop the area preview renderer copying every block entity of all 169 nearby chunks into a fresh list every frame, and skip the whole 169 chunk sweep for the rest of a tick once that tick's first frame found no area affecting block at all. A preview switched on part way through a tick shows up on the next one.
 	leanAreaPreviewScan = true
 
 #Goety's Delight patches.
@@ -92,6 +94,8 @@
 [immediatelyfast]
 	#Find a render layer's buffer with one map lookup instead of a contains check plus a get.
 	singleBufferLookup = true
+	#End only the render layers that were actually drawn into instead of walking every fixed buffer on each flush.
+	skipIdleLayers = true
 
 #FancyMenu patches.
 [fancymenu]
@@ -100,6 +104,8 @@
 	seamlessCaptureInterval = 30
 	#Skip FancyMenu's ThreadLocal render scale write when the value is unchanged. Stock writes it on every PoseStack push, pop and scale.
 	skipRedundantScaleWrites = true
+	#Hold FancyMenu's render scale, translation and rotation in plain fields for the render thread instead of in ThreadLocals. Stock reads or writes three ThreadLocals on every PoseStack push, pop, scale, translate and mulPose, which the profiler puts at 2.6 percent of the client thread. Other threads keep the stock ThreadLocal. Client.
+	pinRenderStateToRenderThread = true
 
 #Entity Model Features patches.
 [emf]
@@ -374,6 +380,10 @@
 	leanScaleTick = true
 	#Work out an entity's interaction box scales once a tick instead of twice for every entity walked by every AABB query. A scale set part way through a tick is seen on the next one.
 	memoInteractionBoxScales = true
+	#Let Pehkui keep its already existing per tick scale cache on the client too. Pehkui only fills that cache on the server, so every client side scale read walks the whole modifier chain again. WARNING: if a mod changes an entity's scale without going through Pehkui's own setters, the visual size can lag by one tick. Turn this off if you see entities stuck at the wrong size.
+	cacheClientScales = true
+	#Remember which scale type a typed scale modifier points at instead of calling its supplier again on every single scale read. WARNING: a mod that swaps the type a modifier resolves to at runtime will be pinned to the first answer.
+	memoModifierType = true
 
 #Tons Of Enchants patches.
 [tonsofenchants]
@@ -535,12 +545,26 @@
 	memoCameraFluid = true
 	#Work out the sky colour once per camera position per frame. Fog setup, the sky renderer and shader uniform packs each ask for it separately and every call samples 27 biomes.
 	memoSkyColour = true
+	#Resolve a rendered string's font set once instead of once per glyph.
+	memoGlyphFontSet = true
+	#Blend biome colours from a cached, incrementally summed grid instead of resampling the biome under every block in the blend square. Vanilla resamples the full square for every block, which is up to 225 biome lookups per block at the default blend radius. Output is identical.
+	fastBiomeBlend = true
+	#Multiplier for the four thresholds the server uses to reject a movement packet: the 100 and 300 blocks per tick squared speed caps in handleMovePlayer, the 100 in handleMoveVehicle, and the 0.0625 desync tolerance in both. At the default of 100 a player may cover 100 blocks in a tick and land 2.5 blocks away from where the server simulated them before anything is rejected, which is what stops elytra, mounts, teleports and scaled entities getting rubberbanded on a loaded server. The block clipping checks are untouched, so a client still cannot walk into a wall. Set to 1 for vanilla behaviour.
+	#Range: 1.0 ~ 1.0E9
+	movementCheckSlack = 100.0
+	#Stop the server kicking a player with "Flying is not enabled on this server" after 80 ticks of unsupported hovering. The check only ever arms when allow-flight is false in server.properties, which cannot be changed without a restart, and it fires on anything that keeps you off the ground without the fly ability: elytra stalls, jetpacks, grappling hooks, scaled entities, riding a laggy vehicle. Nothing else in the game reads that setting, so turning this on leaves no other behaviour changed, and it skips a block scan on every accepted movement packet.
+	disableFlyingKick = true
+	#Every five seconds, drop dead player copies that another mod left registered as chunk loaders. Such ghosts keep hundreds of chunks loaded and spawning mobs at wherever they died until restart.
+	purgeGhostPlayers = true
 
 #Xaero's World Map patches.
 [xaeroworldmap]
 	#Milliseconds between the map limiter's free VRAM query, which stock fires a blocking glGetIntegerv for on every single frame. 0 restores the stock every frame behaviour. Client.
 	#Range: 0 ~ 60000
 	vramPollInterval = 500
+	#Milliseconds between map processing passes. Stock runs the whole write, cache and texture upload sweep once per frame, so at 1000 fps it runs 1000 times a second to keep up with a player walking at 4 blocks a second. The default of 10 gives a machine above 100 fps exactly the amount of map work a 100 fps machine already gets. The map's own screens are never throttled. 0 restores the stock every frame behaviour. WARNING: raising this a lot makes the map fill in more slowly after a long teleport. Client.
+	#Range: 0 ~ 1000
+	renderProcessInterval = 10
 
 #L_Ender's Cataclysm patches.
 [cataclysm]
@@ -575,4 +599,78 @@
 [gnetum]
 	#Answer gnetum's per element caching question once per tick instead of once per element per frame. Each ask is a set lookup plus a guava cache lookup and there are dozens of elements.
 	memoCacheSettings = true
+
+#Supplementaries patches.
+[supplementaries]
+	#Skip the enderman skull's 64 block look ray when no player is aiming anywhere near it.
+	leanEndermanSkullWatch = true
+	#Only run Supplementaries' antique ink chunk sync for signs instead of every block entity in every chunk sent.
+	skipNonSignCapSync = true
+	#Cache the tinted map block lookup instead of walking five tags per map pixel per tick.
+	memoMapTintLookup = true
+
+#Amendments patches.
+[amendments]
+	#Stop wall lanterns broadcasting a sway packet every tick for entities that are not moving.
+	skipIdleSwaySync = true
+
+#Relics patches.
+[relics]
+	#Cap the homing speed of the Holy Locket death and life essences. Their arc step scales with both the distance to the target and their own age, so an essence that misses for long enough accelerates without bound until its query box overflows the entity section index and crashes the game.
+	clampEssenceSpeed = true
+	#Upper bound in blocks per tick for that cap. The step is also never allowed to exceed the remaining distance to the target, so the essence stops overshooting and converges instead.
+	#Range: 0.5 ~ 64.0
+	essenceMaxSpeed = 4.0
+
+#More Hitboxes patches.
+[morehitboxes]
+	#Skip More Hitboxes' multipart pass over the result of every entity box query when the result holds no multipart. The pass allocates a hash set and re-tests the predicate for each hit, and almost every query returns none.
+	skipAbsentMultiPartFilter = true
+
+#More Relics patches.
+[morerelics]
+	#Build the combined curio inventory once per equipped relic scan instead of twice for every single slot. More Relics calls getEquippedCurios() inside both the loop condition and the loop body, so a thirty slot player allocates sixty throwaway inventory wrappers per relic overlay per frame.
+	hoistEquippedCurios = true
+
+#Cosmetic Armor Reworked patches.
+[cosmeticarmor]
+	#Keep each player's armour restore queue on the player instead of in a weak keyed Guava cache. The cache is looked up twice per rendered player per frame plus twice more for the held item and the arm, and every lookup pays a hash and a segment read.
+	perPlayerRestoreQueue = true
+
+#Create: Copycats+ patches.
+[copycats]
+	#Remember each block state's occlusion answer instead of re-running Copycats+' holder and instanceof checks on every canOcclude call.
+	memoStateOcclusion = true
+	#Skip the config lookup, registry lookup and string building Copycats+ runs for every block entity and structure block that is not a copycat.
+	fastMigrationChecks = true
+	#Read the two Copycats+ client model settings at most once per second instead of twice per copycat model query.
+	cachedModelConfig = true
+	#Replace the lambda and platform lookups Copycats+ runs on every Create block entity update with one cached class check.
+	leanVirtualWorldCheck = true
+
+#Oh The Biomes We've Gone patches.
+[biomeswevegone]
+	#Skip the Crag Gardens and Basalt Barrera terrain passes in chunks that contain neither biome. Both passes run on every chunk generated in every dimension and build four noise generators, two weighted state providers and 512 biome lookups before they ever check whether the biome is present.
+	skipForeignChunkTerrain = true
+
+#Terra Curio patches.
+[terracurio]
+	#Answer Terra Curio's 'is this accessory equipped' questions from the shared per-tick curio presence set instead of walking every curio slot handler again. CuriosUtils#noSameCurio runs once per living entity per tick out of LivingEntity#getFrictionInfluencedSpeed, and about ten more times per damage event, and almost every one of those is a miss.
+	cachedCurioLookup = true
+	#Read Terra Curio's custom attribute remap table from a plain map instead of the synchronised Hashtable it lives in. The table is filled once during setup and never written again, but ModAttributes#hasCustomAttribute is called for every living entity every tick on both the client and the server thread, so every one of those calls takes a monitor on the same shared object.
+	leanAttributeMap = true
+
+#MCreator mod patches.
+[mcreator]
+	#Hand MCreator mods one shared empty player variables object instead of allocating a throwaway on every single variable read. Procedures that read variables per tick or per frame can otherwise churn hundreds of megabytes of garbage. This rewrites the mods' classes as they load, so a change here only takes effect from the next launch.
+	shareDefaultPlayerVariables = true
+
+#Distant Horizons patches.
+[distanthorizons]
+	#Drop Distant Horizons' biome wrapper caches when it unloads its world. Those caches are static, are never cleared, and are keyed on the biome registry objects the server hands out on join, so every world you leave keeps its whole biome registry alive for the rest of the session. It also means the LOD tint colours after a world change are still resolved against the previous world's biomes.
+	clearBiomeCachesOnUnload = true
+	#Remember the last biome colour while Distant Horizons blends the biome tint of an LOD block. At the default blend radius of three the blend samples forty nine neighbours per tinted block and looks each one's colour up through three concurrent hash maps, and neighbouring blocks are almost always in the same biome. Result is identical.
+	memoBiomeBlendColors = true
+	#Remember the last biome while Distant Horizons converts a chunk column into an LOD. Biomes are stored per four blocks but the converter asks for one per block going down the whole column, so three out of four lookups repeat the previous answer. Result is identical.
+	cacheChunkBiomeLookup = true
 

@@ -488,20 +488,6 @@
       }
     );
 
-    event.addAdvanced(
-      ['ifeu:big_dissolution_chamber'],
-      (item, advanced, text) => {
-        text.add(
-          1,
-          Text.translate('tooltip.ifeu.big_dissolution_chamber_warning_1')
-        );
-        text.add(
-          2,
-          Text.translate('tooltip.ifeu.big_dissolution_chamber_warning_2')
-        );
-      }
-    );
-
     event.addAdvanced(['kubejs:full_nbt_remover'], (item, advanced, text) => {
       text.add(1, Text.translate('tooltip.kubejs.full_nbt_remover_1'));
       text.add(2, Text.translate('tooltip.kubejs.full_nbt_remover_2').red());

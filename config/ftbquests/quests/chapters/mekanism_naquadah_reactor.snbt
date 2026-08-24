@@ -5,7 +5,7 @@
 	group: "29543B666C58207C"
 	icon: "mekanism_extras:ingot_naquadah"
 	id: "1C56534AF0B1FECE"
-	order_index: 9
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{

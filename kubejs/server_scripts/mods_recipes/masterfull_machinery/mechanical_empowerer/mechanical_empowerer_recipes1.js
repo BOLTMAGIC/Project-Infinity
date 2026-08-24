@@ -6,63 +6,63 @@ const EMPOWERED_ENERGY = 400000;
 
 MMEvents.createProcesses((event) => {
   // Actually Additions Blocks
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:iron_block',
     'actuallyadditions:enori_crystal_block'
   );
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:redstone_block',
     'actuallyadditions:restonia_crystal_block'
   );
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:lapis_block',
     'actuallyadditions:palis_crystal_block'
   );
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:diamond_block',
     'actuallyadditions:diamatine_crystal_block'
   );
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:coal_block',
     'actuallyadditions:void_crystal_block'
   );
-  createSimple1(
+  createSimple11(
     event,
     'minecraft:emerald_block',
     'actuallyadditions:emeradic_crystal_block'
   );
-  createSimple1(event, 'minecraft:red_mushroom', 'minecraft:nether_wart');
-  createSimple1(event, 'minecraft:sand', 'minecraft:soul_sand');
-  createSimple1(
+  createSimple11(event, 'minecraft:red_mushroom', 'minecraft:nether_wart');
+  createSimple11(event, 'minecraft:sand', 'minecraft:soul_sand');
+  createSimple11(
     event,
     'armorplus:frost_crystal',
     'armorplus:infused_frost_crystal'
   );
 
-  createSimple2(
+  createSimple21(
     event,
     'minecraft:iron_ingot',
     'minecraft:glowstone_dust',
     'armorplus:en_iron'
   );
-  createSimple2(
+  createSimple21(
     event,
     'minecraft:gold_ingot',
     'minecraft:glowstone_dust',
     'armorplus:en_gold'
   );
-  createSimple2(
+  createSimple21(
     event,
     'minecraft:netherite_ingot',
     'minecraft:glowstone_dust',
     'armorplus:en_netherite'
   );
-  createSimple2(
+  createSimple21(
     event,
     'minecraft:diamond',
     'minecraft:glowstone_dust',
@@ -70,7 +70,7 @@ MMEvents.createProcesses((event) => {
   );
 
   // Actually Additions Empowered Blocks
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:enori_crystal_block',
@@ -82,7 +82,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_enori_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:restonia_crystal_block',
@@ -94,7 +94,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_restonia_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:palis_crystal_block',
@@ -106,7 +106,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_palis_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:diamatine_crystal_block',
@@ -118,7 +118,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_diamatine_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:void_crystal_block',
@@ -130,7 +130,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_void_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'actuallyadditions:emeradic_crystal_block',
@@ -142,7 +142,7 @@ MMEvents.createProcesses((event) => {
     'actuallyadditions:empowered_emeradic_crystal_block'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'enderio:double_layer_capacitor',
@@ -154,7 +154,7 @@ MMEvents.createProcesses((event) => {
     'enderio:octadic_capacitor'
   );
 
-  createEmpowered(
+  createEmpowered1(
     event,
     [
       'mekanism:dust_coal',
@@ -166,7 +166,7 @@ MMEvents.createProcesses((event) => {
     'enderio:double_layer_capacitor'
   );
 
-  createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'redstone_arsenal:flux_gem', count: 64 },
@@ -179,7 +179,7 @@ MMEvents.createProcesses((event) => {
     64
   );
 
-    createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'armorplus:en_diamond', count: 64 },
@@ -192,7 +192,7 @@ MMEvents.createProcesses((event) => {
     64
   );
 
-  createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'mysticalagriculture:fire_essence', count: 40 },
@@ -201,7 +201,7 @@ MMEvents.createProcesses((event) => {
     'kubejs:fire_ingot',
     1
   );
-  createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'mysticalagriculture:air_essence', count: 40 },
@@ -210,7 +210,7 @@ MMEvents.createProcesses((event) => {
     'kubejs:air_ingot',
     1
   );
-  createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'mysticalagriculture:water_essence', count: 40 },
@@ -219,7 +219,7 @@ MMEvents.createProcesses((event) => {
     'kubejs:water_ingot',
     1
   );
-  createRecipe2(
+  createRecipe21(
     event,
     [
       { item: 'mysticalagriculture:earth_essence', count: 40 },
@@ -230,7 +230,7 @@ MMEvents.createProcesses((event) => {
   );
 
   // Black Lotus Botania
-  createRecipe(
+  createRecipe1(
     event,
     [
       'minecraft:black_dye',
@@ -243,36 +243,36 @@ MMEvents.createProcesses((event) => {
   );
 
   //EnderIO Soul Vial Recipes
-  enderio_recipe1(event, 'witch', 'kubejs:filled_witch_soul_vial');
-  enderio_recipe1(event, 'enderman', 'kubejs:filled_enderman_soul_vial');
-  enderio_recipe1(event, 'shulker', 'kubejs:filled_shulker_soul_vial');
-  enderio_recipe1(event, 'zombie', 'kubejs:filled_zombie_soul_vial');
-  enderio_recipe1(event, 'villager', 'kubejs:filled_villager_soul_vial');
-  enderio_recipe2(
+  enderio_recipe11(event, 'witch', 'kubejs:filled_witch_soul_vial');
+  enderio_recipe11(event, 'enderman', 'kubejs:filled_enderman_soul_vial');
+  enderio_recipe11(event, 'shulker', 'kubejs:filled_shulker_soul_vial');
+  enderio_recipe11(event, 'zombie', 'kubejs:filled_zombie_soul_vial');
+  enderio_recipe11(event, 'villager', 'kubejs:filled_villager_soul_vial');
+  enderio_recipe21(
     event,
     'kubejs:filled_witch_soul_vial',
     'enderio:ender_resonator',
     'enderio:sentient_ender'
   );
-  enderio_recipe2(
+  enderio_recipe21(
     event,
     'kubejs:filled_enderman_soul_vial',
     'enderio:vibrant_crystal',
     'enderio:ender_crystal'
   );
-  enderio_recipe2(
+  enderio_recipe21(
     event,
     'kubejs:filled_shulker_soul_vial',
     'enderio:vibrant_crystal',
     'enderio:prescient_crystal'
   );
-  enderio_recipe2(
+  enderio_recipe21(
     event,
     'kubejs:filled_zombie_soul_vial',
     'enderio:z_logic_controller',
     'enderio:frank_n_zombie'
   );
-  enderio_recipe2(
+  enderio_recipe21(
     event,
     'kubejs:filled_villager_soul_vial',
     'enderio:dark_steel_grinding_ball',
@@ -280,11 +280,11 @@ MMEvents.createProcesses((event) => {
   );
 });
 
-function createSimple1 (event, input, output) {
+function createSimple11 (event, input, output) {
   const sanitizedOutput = output.replace(':', '_');
   event
-    .create(`mm:mechanical_empowerer_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS)
     .input({
       type: 'mm:input/consume',
@@ -311,11 +311,11 @@ function createSimple1 (event, input, output) {
     });
 }
 
-function createSimple2 (event, input1, input2, output) {
+function createSimple21 (event, input1, input2, output) {
   const sanitizedOutput = output.replace(':', '_');
   event
-    .create(`mm:mechanical_empowerer_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS)
     .input({
       type: 'mm:input/consume',
@@ -350,11 +350,11 @@ function createSimple2 (event, input1, input2, output) {
     });
 }
 
-function createEmpowered (event, inputs, output) {
+function createEmpowered1 (event, inputs, output) {
   const sanitizedOutput = output.replace(':', '_');
   const recipe = event
-    .create(`mm:mechanical_empowerer_empowered_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_empowered_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS);
 
   inputs.forEach((item) => {
@@ -386,11 +386,11 @@ function createEmpowered (event, inputs, output) {
   });
 }
 
-function createRecipe (event, inputs, output, outputCount) {
+function createRecipe1 (event, inputs, output, outputCount) {
   const sanitizedOutput = output.replace(':', '_');
   const recipe = event
-    .create(`mm:mechanical_empowerer_empowered_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_empowered_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS);
 
   inputs.forEach((item) => {
@@ -422,11 +422,11 @@ function createRecipe (event, inputs, output, outputCount) {
   });
 }
 
-function createRecipe2 (event, inputs, output, outputCount) {
+function createRecipe21 (event, inputs, output, outputCount) {
   const sanitizedOutput = output.replace(':', '_');
   const recipe = event
-    .create(`mm:mechanical_empowerer_empowered_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_empowered_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(1);
 
   inputs.forEach((input) => {
@@ -458,11 +458,11 @@ function createRecipe2 (event, inputs, output, outputCount) {
   });
 }
 
-function enderio_recipe1 (event, input, output) {
+function enderio_recipe11 (event, input, output) {
   const sanitizedOutput = output.replace(':', '_');
   event
-    .create(`mm:mechanical_empowerer_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS)
     .input({
       type: 'mm:input/consume',
@@ -471,7 +471,7 @@ function enderio_recipe1 (event, input, output) {
         item: 'enderio:filled_soul_vial',
         count: 1,
         nbt_snbt: `{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:${input}"}}}}`,
-        nbt_match: 'weak'
+        nbt_match: 'weak',
       },
     })
     .input({
@@ -491,11 +491,11 @@ function enderio_recipe1 (event, input, output) {
     });
 }
 
-function enderio_recipe2 (event, input1, input2, output) {
+function enderio_recipe21 (event, input1, input2, output) {
   const sanitizedOutput = output.replace(':', '_');
   event
-    .create(`mm:mechanical_empowerer_${sanitizedOutput}`)
-    .structureId('mm:mechanical_empowerer_structure')
+    .create(`mm:me_1_${sanitizedOutput}`)
+    .structureId('mm:mechanical_empowerer_structure1')
     .ticks(TICKS)
     .input({
       type: 'mm:input/consume',

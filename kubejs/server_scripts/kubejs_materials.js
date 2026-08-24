@@ -20,6 +20,9 @@ ServerEvents.recipes((event) => {
   ]);
   shapeless(event, 'kubejs:infinity_8', ['kubejs:infinity_8_block']);
 
+  shapeless(event, 'kubejs:infinity_4_block', ['kubejs:infinity_4']);
+  shapeless(event, 'kubejs:infinity_4', ['kubejs:infinity_4_block']);
+
   shapeless(event, 'kubejs:infinity_6_block', ['9x kubejs:infinity_6']);
   shapeless(event, '9x kubejs:infinity_6', ['kubejs:infinity_6_block']);
 

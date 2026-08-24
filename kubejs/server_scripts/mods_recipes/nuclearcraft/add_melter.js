@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
     event,
     input_item,
     output_amount,
-    output_fluid_tag,
+    output_fluid,
     powerModifier,
     radiation,
     timeModifier
@@ -23,14 +23,14 @@ ServerEvents.recipes((event) => {
         outputFluids: [
           {
             amount: output_amount,
-            tag: output_fluid_tag
+            fluid: output_fluid
           }
         ],
         powerModifier: powerModifier,
         radiation: radiation,
         timeModifier: timeModifier
       })
-      .id('melting_' + output_fluid_tag.replace(/:/g, '_'));
+      .id('melting_' + output_fluid.replace(/:/g, '_'));
   }
 
   melter(event, 'thermal:basalz_rod', 1000, 'kubejs:molten_basalz');

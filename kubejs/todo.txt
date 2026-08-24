@@ -2,13 +2,30 @@
 //main
 finish quests high prio
 rf tools recipes
-LUMINOUS (Overworld/ Nether/ Beasts) and Mekanism FuryBorn in the Artifacts
+LUMINOUS (Overworld/ Nether/ Beasts)
 ----------
-changelog v. 0.0.51.3 HOTFIX
+changelog v. 0.0.52.0
 
 MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
 
+Mod Info:
+- MODS ADDED:
+    - 
+----------
 Recipe changes and fixes:
-- fixed JEI crash
-- blockboosters cant tick solar flux or EMC flowers now
-- changed recipe for Bulk Item Cells
+- fixed blizz, blitz and basalz recipe in the melter (nuclearcraft) (thx to CLISHÉ)
+- changed layout for the Loot Fabrication Plant Tier 1 (need crimson dragonstone block and V1 and not V4 ExtraHNN blocks)
+- added a new mechanical empowerer tier 2 (needs infinity 4 block)
+    - added reaction chamber recipes to the mechanical empowerer multiblock Tier 2
+- removed recipe for ifeu big dissolution chamber
+- changed values for matter in the sequence array multiblock
+- added a recipe in the Fire Attuned Multiblock to get liquid malic acid (thx to nogweii)
+- changed woot magmator to use T1 for T2 and so on (thx to SilverSoul)
+- changed creative fluid tank recipe (from ifeu fluid_transfer to industrialforegoing fluid sieving) (thx to Edward)
+- added a recipe in the fire attuned multiblock for energized crystal dust
+----------
+Mod changes and fixes:
+- 
+----------
+known bugs:
+- 

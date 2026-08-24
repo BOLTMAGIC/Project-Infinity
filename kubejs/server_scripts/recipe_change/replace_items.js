@@ -152,8 +152,28 @@ ServerEvents.recipes((event) => {
   );
   event.replaceInput(
     { output: 'megacells:bulk_item_cell' },
-    'megacells:cell_component_1m',
-    'ae2:cell_component_1k'
+    'megacells:bulk_cell_component',
+    'megacells:cell_component_1m'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_magmator' },
+    'minecraft:magma_block',
+    'woot_revived:copper_magmator'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_magmator' },
+    'minecraft:magma_block',
+    'woot_revived:iron_magmator'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_magmator' },
+    'minecraft:magma_block',
+    'woot_revived:gold_magmator'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_magmator' },
+    'minecraft:magma_block',
+    'woot_revived:diamond_magmator'
   );
   event.replaceInput(
     { output: 'thermal:device_water_gen' },

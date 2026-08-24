@@ -590,7 +590,7 @@ const removeItemsbyID = [
   'appliede:transmutation_terminal',
   'appliede:learning_card',
   'appliede:ae2wtlib/wireless_transmutation_terminal',
-  '',
+  'ifeu:shaped/big_dissolution_chamber',
   '',
   '',
   '',

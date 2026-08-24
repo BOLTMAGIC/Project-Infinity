@@ -23,23 +23,6 @@
 			x: 0.0d
 			y: 0.0d
 		}
-		{
-			height: 5.0d
-			image: "kubejs:block/screen/extended_ae_multiblock"
-			order: 1
-			rotation: 0.0d
-			width: 5.0d
-			x: 13.5d
-			y: 1.0d
-		}
-		{
-			height: 5.0d
-			image: "kubejs:block/screen/advanced_ae_multiblock"
-			rotation: 0.0d
-			width: 5.0d
-			x: 13.5d
-			y: 5.0d
-		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -1220,6 +1203,7 @@
 				"{ftbquests.chapter.applied_energistics_2.quest7F3123DDC2948BC4.description2}"
 			]
 			id: "7F3123DDC2948BC4"
+			invisible: true
 			optional: true
 			tasks: [{
 				id: "00DD0AD43AF4F1D9"
@@ -1756,28 +1740,19 @@
 				"46844D4E57821B05"
 				"21F6DAE21CB20EF6"
 			]
-			description: [
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description1}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description2}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description3}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description4}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description5}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description6}"
-			]
+			description: ["[ \"There are a lot of \", { \"text\": \"AE2 Addons\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3E7BA0C70B5569D4\" } }, \" <-- Click me\" ]"]
 			id: "6EE4B174356FB915"
 			optional: true
 			rewards: [{
 				id: "3E61DCE1F6F426A6"
 				type: "xp"
-				xp: 10
+				xp: 1
 			}]
 			tasks: [{
 				id: "40FDC0A339B993D4"
-				title: "{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.task.4683110994815849428.title}"
+				title: "AE2 Addons and more"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.title}"
 			x: 7.5d
 			y: 3.0d
 		}
@@ -1920,13 +1895,13 @@
 				{
 					count: 2L
 					id: "67131D6F882D2D6D"
-					item: { Count: 2, id: "ae2:quantum_link" }
+					item: "ae2:quantum_link"
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "5E68687837ADF28C"
-					item: { Count: 2, id: "ae2:quantum_entangled_singularity" }
+					item: "ae2:quantum_entangled_singularity"
 					type: "item"
 				}
 			]
@@ -2095,264 +2070,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["6EE4B174356FB915"]
-			description: [
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description1}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description2}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description3}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description4}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description5}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description6}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description7}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description8}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description9}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description10}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description11}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description12}"
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description13}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description14}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description15}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description16}"
-			]
-			icon: "advanced_ae:quantum_core"
-			id: "32A2624C78A14A38"
-			min_width: 400
-			rewards: [{
-				id: "15C6C14E703C1888"
-				item: "kubejs:infused_coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "74608F728A76FA1E"
-					item: "advanced_ae:quantum_core"
-					type: "item"
-				}
-				{
-					id: "200B5DDA8B9BCB5C"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "advanced_ae:quantum_storage_128"
-								}
-								{
-									Count: 1b
-									id: "advanced_ae:quantum_storage_256"
-								}
-							]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3EC4FEF23997F35A"
-					item: "advanced_ae:quantum_structure"
-					type: "item"
-				}
-				{
-					id: "19C29BD797BA3D3D"
-					item: "advanced_ae:data_entangler"
-					type: "item"
-				}
-				{
-					id: "5552494FF4FB7FA6"
-					item: "advanced_ae:quantum_multi_threader"
-					type: "item"
-				}
-				{
-					id: "0103C11AF62AE89C"
-					item: "advanced_ae:quantum_accelerator"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.title}"
-			x: 8.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6EE4B174356FB915"]
-			description: [
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description1}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description2}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description3}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description4}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description5}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description6}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description7}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description8}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description9}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description10}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description11}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description12}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description13}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description14}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description15}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description16}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description17}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description18}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description19}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description20}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description21}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description22}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description23}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description24}"
-				"{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.description25}"
-			]
-			id: "4D529BF135A82201"
-			min_width: 400
-			rewards: [{
-				id: "2456A4F89B9D9E57"
-				item: "kubejs:infused_coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "26D44795977486A4"
-					item: "expatternprovider:assembler_matrix_frame"
-					type: "item"
-				}
-				{
-					id: "047C599D4865548D"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "expatternprovider:assembler_matrix_wall"
-								}
-								{
-									Count: 1b
-									id: "expatternprovider:assembler_matrix_glass"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.323231805323170957.title}"
-					type: "item"
-				}
-				{
-					id: "1B0312699C25FBA9"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "expatternprovider:assembler_matrix_pattern"
-								}
-								{
-									Count: 1b
-									id: "extendedae_plus:assembler_matrix_pattern_plus"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.1946419708754787241.title}"
-					type: "item"
-				}
-				{
-					id: "1CC037F387F7A881"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "expatternprovider:assembler_matrix_crafter"
-								}
-								{
-									Count: 1b
-									id: "extendedae_plus:assembler_matrix_crafter_plus"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.2071717347688163457.title}"
-					type: "item"
-				}
-				{
-					id: "7175544BDC339B12"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "expatternprovider:assembler_matrix_speed"
-								}
-								{
-									Count: 1b
-									id: "extendedae_plus:assembler_matrix_speed_plus"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.task.8175533383354653458.title}"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.title}"
-			x: 8.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["4D529BF135A82201"]
-			description: [
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description1}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description2}"
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description3}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description4}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description5}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description6}"
-				""
-				"{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.description7}"
-			]
-			id: "62226CF7455EC7E8"
-			rewards: [{
-				id: "449DF9DC63D6D0E7"
-				item: "kubejs:apotheotic_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "35F46CE05A180C15"
-				item: "extendedae_plus:assembler_matrix_upload_core"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.title}"
-			x: 10.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["6D899457C59B4562"]
 			description: [
 				"{ftbquests.chapter.applied_energistics_2.quest427048DE91F255C6.description1}"
@@ -2421,6 +2138,53 @@
 			}]
 			x: -3.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["594FF6D489C9989A"]
+			id: "02B2CF2C2BE1FE0F"
+			rewards: [
+				{
+					id: "4B3ACD7CDE895084"
+					item: "kubejs:apotheotic_coin"
+					type: "item"
+				}
+				{
+					id: "7866F478F70424D3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0BEB52229D4A6B6E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:damaged_budding_quartz"
+							}
+							{
+								Count: 1b
+								id: "ae2:chipped_budding_quartz"
+							}
+							{
+								Count: 1b
+								id: "ae2:flawed_budding_quartz"
+							}
+							{
+								Count: 1b
+								id: "ae2:flawless_budding_quartz"
+							}
+						]
+					}
+				}
+				title: "Any Budding Certus Quartz"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
 		}
 	]
 	title: "{ftbquests.chapter.applied_energistics_2.title}"

@@ -360,4 +360,87 @@ MMEvents.createProcesses((event) => {
         amount: 64000,
       },
     });
+
+  //Liquid Malic Acid
+  event
+    .create('mm:liquid_malic_acid_recipe1')
+    .structureId('mm:fire_attuned_structure2')
+    .ticks(1)
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:item',
+        item: 'minecraft:apple',
+        count: 512,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'industrialforegoing:ether_gas',
+        amount: 6400,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 768000,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'ifeu:liquid_malic_acid',
+        amount: 640,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:item',
+        item: 'ifeu:apple_core',
+        count: 512,
+      },
+    });
+
+      //Energized Crystal Dust
+  event
+    .create('mm:energized_crystal_dust_recipe2')
+    .structureId('mm:fire_attuned_structure2')
+    .ticks(1)
+    .input({
+      type: 'mm:input/consume',
+      chance: 0.0,
+      ingredient: {
+        type: 'mm:item',
+        item: 'neoecoae:flawless_budding_energized_crystal',
+        count: 8,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:fluid',
+        fluid: 'justdirethings:time_fluid',
+        amount: 128000,
+      },
+    })
+    .input({
+      type: 'mm:input/consume',
+      ingredient: {
+        type: 'mm:energy',
+        amount: 2100000000,
+      },
+    })
+    .output({
+      type: 'mm:output/simple',
+      ingredient: {
+        type: 'mm:item',
+        item: 'neoecoae:energized_crystal_dust',
+        count: 2048,
+      },
+    });
 });

@@ -108,6 +108,15 @@ StartupEvents.registry('block', (event) => {
 
   //#region infinity
   event
+    .create('infinity_4_block')
+    .displayName('Infinity 4 Block')
+    .soundType('metal')
+    .hardness(0.7)
+    .resistance(1.0)
+    .tag('minecraft:mineable/pickaxe')
+    .textureAll('kubejs:block/infinity/infinity_4_block');
+
+  event
     .create('infinity_6_block')
     .displayName('Infinity 6 Block')
     .soundType('metal')

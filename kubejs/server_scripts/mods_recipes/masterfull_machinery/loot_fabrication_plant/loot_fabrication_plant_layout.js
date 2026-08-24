@@ -8,7 +8,7 @@ MMEvents.createStructures((event) => {
       a.portsAnywhere(true);
       a.layer(['ABBBBBA', 'BEEEEEB', 'BEEOEEB', 'BEEEEEB', 'ABBBBBA'])
         .layer(['ADEEEDA', 'DF   GD', 'E     E', 'DH   ID', 'ADENEDA'])
-        .layer(['MDEEEDM', 'D     D', 'E     E', 'D     D', 'MDEEEDM'])
+        .layer(['MDEEEDM', 'D     D', 'E  P  E', 'D     D', 'MDEEEDM'])
         .layer(['ADEEEDA', 'DF   GD', 'E     E', 'DH   ID', 'ALECEJA'])
         .layer(['ABBBBBA', 'BBBBBBB', 'BBBBBBB', 'BBBBBBB', 'ABBBBBA'])
         .key('A', {
@@ -24,10 +24,10 @@ MMEvents.createStructures((event) => {
           block: 'ae2:quartz_glass',
         })
         .key('F', {
-          block: 'extrahnn:ultimate_loot_fabricator_v4',
+          block: 'extrahnn:ultimate_loot_fabricator_v1',
         })
         .key('G', {
-          block: 'extrahnn:ultimate_sim_chamber_v4',
+          block: 'extrahnn:ultimate_sim_chamber_v1',
         })
         .key('H', {
           block: 'extrahnn:simulator_modeling',
@@ -53,6 +53,9 @@ MMEvents.createStructures((event) => {
         })
         .key('O', {
           block: 'mekanism:block_refined_glowstone',
+        })
+        .key('P', {
+          block: 'botanicalextramachinery:crimson_dragonstone_block',
         });
     });
 
@@ -94,7 +97,7 @@ MMEvents.createStructures((event) => {
         .key('J', {
           portType: 'mm:item',
           input: false,
-          minTier: 10,
+          minTier: 9,
         })
         .key('L', {
           portType: 'mm:item',
