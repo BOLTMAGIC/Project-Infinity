@@ -9,13 +9,19 @@ ServerEvents.recipes(event => {
 
     let model = grid.find(Item.of('hostilenetworks:data_model'));
 
+    if(model.nbt.data_model.data < 1254) {
+      return Item.of('kubejs:wither_token', {
+        data_model: {
+          data: model.nbt.data_model.data,
+          id: "hostilenetworks:wither",
+          iterations: model.nbt.data_model.iterations
+        },
+        self_aware: false,
+      })
+    }
+
     return Item.of('kubejs:wither_token', {
-      data_model: {
-        data: model.nbt.data_model.data,
-        id: model.nbt.data_model.id,
-        iterations: model.nbt.data_model.iterations
-      },
-      self_aware: model.nbt.data_model.data >= 1254,
+      self_aware: true,
     })
   })
 
@@ -32,10 +38,20 @@ ServerEvents.recipes(event => {
       return result;
     }
 
+    if(token.nbt.self_aware) {
+      return Item.of('hostilenetworks:data_model', {
+        data_model: {
+          data: 1254,
+          id: "hostilenetworks:wither",
+          iterations: 0
+        }
+      })
+    }
+
     return Item.of('hostilenetworks:data_model', {
       data_model: {
         data: token.nbt.data_model.data,
-        id: token.nbt.data_model.id,
+        id: "hostilenetworks:wither",
         iterations: token.nbt.data_model.iterations
       }
     })
