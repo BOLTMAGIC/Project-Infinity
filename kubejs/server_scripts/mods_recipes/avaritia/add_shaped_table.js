@@ -73,7 +73,10 @@ ServerEvents.recipes((event) => {
         item: 'avaritia:denser_neutron_collector',
       },
       Y: {
-        item: 'extendedcrafting:ultimate_singularity',
+        type: 'forge:nbt',
+        item: 'extendedcrafting:singularity',
+        count: 1,
+        nbt: "{Id:'extendedcrafting:black_iron_ingot'}",
       },
     },
     pattern: [

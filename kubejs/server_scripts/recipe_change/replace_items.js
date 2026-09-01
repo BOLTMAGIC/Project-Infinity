@@ -156,6 +156,167 @@ ServerEvents.recipes((event) => {
     'megacells:cell_component_1m'
   );
   event.replaceInput(
+    { output: 'woot_revived:copper_xp_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_xp_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_xp_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_xp_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_xp_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+
+  event.replaceInput(
+    { output: 'woot_revived:copper_rate_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_rate_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_rate_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_rate_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_rate_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:copper_mass_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_mass_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_mass_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_mass_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_mass_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:copper_looting_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_looting_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_looting_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_looting_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_looting_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:copper_efficiency_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_efficiency_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_efficiency_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_efficiency_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_efficiency_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:copper_decapitate_upgrade' },
+    'minecraft:copper_ingot',
+    'woot_revived:copper_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:iron_decapitate_upgrade' },
+    'minecraft:iron_ingot',
+    'woot_revived:iron_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:gold_decapitate_upgrade' },
+    'minecraft:gold_ingot',
+    'woot_revived:gold_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:diamond_decapitate_upgrade' },
+    'minecraft:diamond',
+    'woot_revived:diamond_shard'
+  );
+  event.replaceInput(
+    { output: 'woot_revived:netherite_decapitate_upgrade' },
+    'minecraft:netherite_ingot',
+    'woot_revived:netherite_shard'
+  );
+  event.replaceInput(
+    { output: 'rftoolsdim:researcher' },
+    'minecraft:redstone',
+    'mekanism_extras:alloy_thermonuclear'
+  );
+  event.replaceInput(
+    { output: 'rftoolsdim:enscriber' },
+    'minecraft:crafting_table',
+    'botanicalextramachinery:mazarine_dragonstone_block'
+  );
+  event.replaceInput(
     { output: 'woot_revived:iron_magmator' },
     'minecraft:magma_block',
     'woot_revived:copper_magmator'

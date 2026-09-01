@@ -400,12 +400,9 @@
                 ["ae2:formation_core", 64]
             ],
             [
-                ["mekanism:hdpe_pellet", 16],
                 ["mekanism:hdpe_pellet", 16]
             ],
-            [["mekanism:pellet_polonium", 16]],
-            [["mekanism:pellet_plutonium", 8]],
-            [["mekanism:pellet_antimatter", 1]]
+            [["mekanism:pellet_polonium", 1]]
         ]
     },
     "nature": {

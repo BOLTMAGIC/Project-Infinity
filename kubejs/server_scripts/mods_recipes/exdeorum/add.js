@@ -10,6 +10,15 @@ ServerEvents.recipes((event) => {
     ])
     .damageIngredient('#exdeorum:hammers', 1);
 
+  event.shapeless('thermal:steel_ingot', [
+    'minecraft:iron_ingot',
+    'minecraft:coal',
+    'minecraft:coal',
+    'minecraft:coal',
+    'minecraft:coal',
+    '#exdeorum:hammers2',
+  ]);
+
   create2x2same(event, 'common_ore_library:zinc_ore', [
     'exdeorum:zinc_ore_chunk',
   ]);

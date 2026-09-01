@@ -35,28 +35,28 @@ StartupEvents.registry('item', event => {
     
     event.create('allthemodium_hammer', 'pickaxe')
         .tier('netherite')
-        .tag('exdeorum:hammers')
+        .tag('exdeorum:hammers2')
         .modifyTier(tier => {
             tier.uses = -1;
         });
         
     event.create('vibranium_hammer', 'pickaxe')
         .tier('netherite')
-        .tag('exdeorum:hammers')
+        .tag('exdeorum:hammers2')
         .modifyTier(tier => {
             tier.uses = -1;
         })
         
     event.create('unobtainium_hammer', 'pickaxe')
         .tier('netherite')
-        .tag('exdeorum:hammers')
+        .tag('exdeorum:hammers2')
         .modifyTier(tier => {
             tier.uses = -1;
         })
         
     event.create('allthemodium_alloy_hammer', 'pickaxe')
         .tier('netherite')
-        .tag('exdeorum:hammers')
+        .tag('exdeorum:hammers2')
         .modifyTier(tier => {
             tier.uses = -1;
         })

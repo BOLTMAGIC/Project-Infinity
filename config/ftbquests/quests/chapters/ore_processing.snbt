@@ -51,7 +51,7 @@
 			y: 3.0d
 		}
 	]
-	order_index: 18
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -70,7 +70,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["4BECE8AF5B50F536"]
 			id: "4BA4515CB267D171"
 			rewards: [{
 				id: "51B2BA72F32C642A"
@@ -86,7 +85,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["606B181B5E0B8CCB"]
 			description: ["You can skip this quest by clicking the checkmark"]
 			icon: "ironfurnaces:silver_furnace"
 			id: "1FA9521B9806B8C0"
@@ -111,7 +109,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["257B32BDB6B96F3D"]
 			id: "7C281D7355B27EB3"
 			rewards: [{
 				id: "0078D323D48BC165"
@@ -127,7 +124,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["345C131CB732DCC1"]
 			id: "3CA9B4DF51592159"
 			rewards: [{
 				id: "52279188BDD752AD"
@@ -143,7 +139,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["21B120B6A7FE11F8"]
 			description: ["You can skip this quest by clicking the checkmark"]
 			icon: "ironfurnaces:crystal_furnace"
 			id: "4E00C79525A04463"
@@ -168,7 +163,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["12D5DC6C4C1E3CF2"]
 			id: "5303B6EEF14635DF"
 			rewards: [{
 				id: "432960D8B6A99BAF"
@@ -184,7 +178,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["5442707A729A609F"]
 			id: "612F7925F103F800"
 			rewards: [{
 				id: "1011F9F10BE2D294"
@@ -200,7 +193,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["256DF8EF5190A2A2"]
 			id: "400C913E61BFB9F5"
 			rewards: [{
 				id: "49580E484B7B316D"
@@ -216,10 +208,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"17F3D880D58F4737"
-				"74F6FB46AD12D33E"
-			]
+			dependencies: ["74F6FB46AD12D33E"]
 			id: "72793833CDF0A3B9"
 			rewards: [{
 				id: "222FEAC33F549251"
@@ -235,7 +224,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["7002CC832A3DE836"]
 			id: "27338E7C4902F576"
 			rewards: [{
 				id: "769216A091F94391"
@@ -251,7 +239,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["01DD94BA907B8DB4"]
 			id: "0894031DECD5C0A6"
 			rewards: [{
 				id: "006D80C56B9CB04F"
@@ -282,7 +269,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6443130AA8F2A9E8"]
 			id: "656A17C87E70E3FC"
 			rewards: [{
 				id: "7BCDAA5F5E650278"
@@ -298,7 +284,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["223C35426CB6C9A9"]
 			id: "5B78D23CF512B055"
 			rewards: [{
 				id: "385B8F3CEE5AE220"
@@ -314,7 +299,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["605DFA537EF37A6C"]
 			id: "7A333016634DACAF"
 			rewards: [{
 				id: "7AE334891E729852"
@@ -330,7 +314,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["14E5799BD38284A1"]
 			id: "7CC1E3063FC6986E"
 			rewards: [{
 				id: "246D3DAE5FFBAECD"
@@ -346,7 +329,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["034AF9BFDFD911A7"]
 			id: "37636C6C7A5590BE"
 			rewards: [{
 				id: "31D9B828996A31DA"
@@ -362,7 +344,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["0A34B05D4AD2E57A"]
 			id: "17D0B691BF8CCCB2"
 			rewards: [{
 				id: "501BE31EFE5184FF"
@@ -378,7 +359,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7D5F725ED73D2ACC"]
 			id: "5AA97C9682D3954E"
 			rewards: [{
 				id: "6346BB344891E519"
@@ -394,7 +374,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["39308278555762F5"]
 			id: "2B2C3D48AD742BD7"
 			rewards: [{
 				id: "3386F1D9FAF59A84"
@@ -440,7 +419,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["6B83C6DAD9040951"]
 			id: "409DD04641EE5FC9"
 			rewards: [{
 				id: "413BB6E32AAB3649"
@@ -486,7 +464,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["06C28E5A32BE125C"]
 			id: "0DB64E9B4341744C"
 			rewards: [{
 				id: "368763661DF26FD2"
@@ -622,20 +599,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"7002CC832A3DE836"
-				"4BECE8AF5B50F536"
-				"12D5DC6C4C1E3CF2"
-				"21B120B6A7FE11F8"
-				"256DF8EF5190A2A2"
-				"345C131CB732DCC1"
-				"5442707A729A609F"
-				"257B32BDB6B96F3D"
-				"54CA72D7003470FF"
-				"01DD94BA907B8DB4"
-				"345C131CB732DCC1"
-				"606B181B5E0B8CCB"
-			]
 			hide_dependency_lines: true
 			id: "355EE30B097B4FA3"
 			tasks: [{
@@ -670,7 +633,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["02231815F0555296"]
 			id: "5857F8726AC9ED45"
 			rewards: [{
 				id: "7A6B7F398AEDA391"
@@ -686,7 +648,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3BD7A5546C0C2B9A"]
 			id: "7D845F80E4AB770E"
 			rewards: [{
 				id: "55BB52DD7B4D1C3D"
@@ -702,7 +663,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["01E1C2880E2C4C88"]
 			id: "00CE80AB1C4A5E23"
 			rewards: [{
 				id: "6F8250D37E1F222E"
@@ -718,7 +678,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["6FC9CE38A5A4074B"]
 			id: "6C3F7DA2985E2758"
 			rewards: [{
 				id: "7D394B98F098CCAB"
@@ -734,7 +693,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["4DC28F1F8526BE39"]
 			id: "29877D24C5E8AFC5"
 			rewards: [{
 				id: "042DAAC8C8A246D2"
@@ -750,7 +708,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["73FC2A537BFE3C11"]
 			id: "7CF78297FC121252"
 			rewards: [{
 				id: "74C84743151776A1"
@@ -811,7 +768,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["1A1E62EF73389C58"]
 			id: "1D4F12E46268BC0F"
 			rewards: [{
 				id: "01F134EA797B0B9A"

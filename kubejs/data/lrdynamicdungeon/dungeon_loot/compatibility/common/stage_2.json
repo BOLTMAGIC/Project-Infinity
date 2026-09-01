@@ -457,7 +457,7 @@
         ]
     },
     "component": {
-        "weight": 2,
+        "weight": 1,
         "loot": [
             [["ae2:quartz_block", 64]],
             [["ae2:certus_quartz_dust", 32]],
@@ -471,8 +471,7 @@
                 ["ae2:formation_core", 4]
             ],
             [["mekanism:hdpe_pellet", 2]],
-            [["mekanism:pellet_polonium", 2]],
-            [["mekanism:pellet_plutonium", 1]]
+            [["mekanism:pellet_polonium", 1]]
         ]
     },
     "nature": {

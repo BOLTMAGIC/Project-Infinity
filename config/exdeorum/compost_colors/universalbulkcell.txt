@@ -1,0 +1,3 @@
+// Compost colors for universalbulkcell. You may add your own colors, change existing ones, or remove colors that aren't needed.
+universal_bulk_cell, #403d47
+universal_bulk_component, #7c5b86

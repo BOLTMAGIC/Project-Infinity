@@ -10,8 +10,44 @@
 	#The side for information rendered on the HUD. Ex: LEFT, RIGHT
 	#Allowed Values: LEFT, RIGHT
 	overlaySide = "LEFT"
-	#If this option is enabled, then show the structures that have been searched in the past.
-	showHaveFound = true
-	#If true, a new Xaero's Map way point will be add when you have search successfully
-	newWayPoint = true
+	#How much the compass says about itself in its own tooltip. COMPACT keeps it to what the compass is doing and what follows from that, with the rest a held shift key away; FULL shows all of it at once; NONE leaves the tooltip empty. Whether the coordinates are among what it may show is the server's to decide, not this. Ex: NONE, COMPACT, FULL
+	#Allowed Values: NONE, COMPACT, FULL
+	tooltipDetail = "COMPACT"
+	#Attempts to translate biome names before fixing the unlocalized names. Unlike structures, almost every biome is named by the game itself or by the mod that adds it, so there is rarely anything left to fix up.
+	translateBiomeNames = true
+	#Creates a waypoint in Xaero's Minimap for each located structure. Has no effect when that mod is not installed.
+	createXaeroWaypoints = true
+	#The color of the waypoints created in Xaero's Minimap, as an index into its own color list.
+	#Range: 0 ~ 15
+	xaeroWaypointColor = 6
+	#Keeps the panel of compass information on the HUD while the compass is only carried, rather than only while one is held. A carried compass reports what it is doing exactly as a held one does: how far the search it is running has got, where the place it points at lies, or that its last search came back empty. Where several are carried, the one pointing at a place located in this dimension is the one the panel speaks for.
+	showOverlayWhileCarried = false
+	#Draws the compass information on the HUD on a panel of its own, which keeps it legible against a bright sky or a snowy landscape. Turn this off for plain text.
+	overlayBackground = true
+	#Fills in the strip along the top of the compass screens, which holds the title, the filter field and the filters in force. Turn this off to have it outlined but see through.
+	guiHeaderBackground = true
+	#Fills in the column of controls beside the list on the compass screens. Turn this off to have it outlined but see through.
+	guiSidebarBackground = true
+	#Fills in the bar along the bottom of the structure screen, which reports what the compass is doing. Turn this off to have it outlined but see through.
+	guiStatusBarBackground = true
+	#Displays a compass strip at the top of the screen marking the direction of the located structure.
+	showDirectionBar = true
+	#Keeps the direction strip on the HUD while the compass is only carried, rather than only while one is held, so long as the carried one is pointing at a place located in this dimension. Turn this off to have the strip appear only while the compass is in hand. What the panel of compass information does while one is only carried is showOverlayWhileCarried's to say.
+	showDirectionBarWhileCarried = true
+	#How far down from the top of the screen the direction strip is drawn.
+	#Range: 0 ~ 200
+	directionBarY = 4
+	#How wide the direction strip is, in pixels of the scaled interface. A strip wider than the screen is cut down to it, so any large value here makes the strip span the whole width of whatever screen it is drawn on.
+	#Range: 60 ~ 4096
+	directionBarWidth = 240
+	#How much of the horizon the direction strip covers, in degrees. Lower values spread the marks further apart and make small changes in direction easier to see, higher values keep more of the horizon in view at once. Pair a full width strip with a large span to have the whole horizon on screen at once.
+	#Range: 60 ~ 360
+	directionBarSpan = 120
+	#Draws the direction strip on a panel of its own. Turn this off to leave only the marks, the compass points and the readout, with nothing behind them: they carry their own shadows, and fade out towards the ends of the strip on their own.
+	directionBarBackground = true
+	#Turns a structure preview slowly on its own, so that it is seen from more than one side without being dragged around. The button on the preview screen switches this on and off as well.
+	structurePreviewAutoSpin = true
+	#How many cells a structure preview may hold before it is drawn as coloured blocks instead of real ones. Both are one cell to one block; what the coloured tier gives up is the textures, not the detail. Real blocks take far longer to assemble into a model, so a large structure is shown as its shape and its colours rather than after a long wait. Raise this to see real blocks on larger structures, at the cost of that wait when a preview opens; set it to 0 to always show colours.
+	#Range: 0 ~ 400000
+	structurePreviewDetailLimit = 20000
 

@@ -620,9 +620,7 @@
                 ["ae2:formation_core", 64]
             ],
             [["mekanism:hdpe_pellet", 8]],
-            [["mekanism:pellet_polonium", 2]],
-            [["mekanism:pellet_plutonium", 1]],
-            [["mekanism:pellet_antimatter", 1]]
+            [["mekanism:pellet_polonium", 1]]
         ]
     },
     "power": {

@@ -591,7 +591,7 @@ const removeItemsbyID = [
   'appliede:learning_card',
   'appliede:ae2wtlib/wireless_transmutation_terminal',
   'ifeu:shaped/big_dissolution_chamber',
-  '',
+  'justdirethings:playeraccessor',
   '',
   '',
   '',
@@ -616,7 +616,6 @@ const removeItemsbyID = [
 const removeItemsbyType = [
   'cyclic:crusher',
   'cyclic:packager',
-  //'cyclic:solidifier',
   'thermal:insolator',
   'thermal:insolator_catalyst',
   'exdeorum:compressed_sieve',
@@ -646,6 +645,10 @@ ServerEvents.recipes((event) => {
   });
   event.remove({
     mod: 'libraryferret',
+  });
+  // TODO: Remove this when the mod is removed from the pack 0.0.52.2
+  event.remove({
+    mod: 'molecularmanipulator',
   });
   event.remove({
     input: 'mysticalagriculture:saltpeter_essence',

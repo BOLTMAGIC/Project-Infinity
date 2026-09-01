@@ -844,24 +844,11 @@
 				"{ftbquests.chapter.endgame.quest7DE8DFF661A344B5.description2}"
 			]
 			id: "7DE8DFF661A344B5"
-			rewards: [
-				{
-					id: "79B4DFC47701B8A9"
-					item: {
-						Count: 1
-						id: "avaritia:infinity_sword"
-						tag: {
-							mode: { }
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "37E751579F282272"
-					item: "avaritia:infinity_shield"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "37E751579F282272"
+				item: "avaritia:infinity_shield"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [

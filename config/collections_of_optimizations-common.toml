@@ -53,6 +53,10 @@
 	cakeScanInterval = 4
 	#Skip the per-frame walk over every entity in the level while no entity carries a visual effect. The walk re-arms as soon as one is added or synced.
 	skipIdleVisualEffects = true
+	#Test the log tag against the item itself instead of building a throwaway ItemStack for every item in the registry on every boat plate result lookup.
+	leanLogScan = true
+	#Keep the boat plate log list instead of rescanning the whole item registry on every result lookup. Rebuilt whenever tags reload.
+	cacheLogItems = true
 
 #Better Combat patches.
 [bettercombat]
@@ -143,7 +147,7 @@
 
 #Xaero's Minimap patches.
 [xaerominimap]
-	#Maximum times per second the minimap redraws its map contents.
+	#Maximum times per second the minimap redraws its map contents. Anything below the client frame rate leaves a visibly stale minimap, so this is off by default. 0 restores the stock every frame behaviour. Client.
 	#Range: 0 ~ 260
 	renderFpsCap = 30
 
@@ -252,6 +256,8 @@
 	skipHiddenMinimapWork = false
 	#Copy a map region's five images straight into their pixel arrays instead of making 1.3 million per pixel setRGB calls on the calling thread.
 	fastRegionWrite = true
+	#Reuse the region and its image across the 225 chunk tiles of one minimap rebuild instead of taking the shared map lock for every tile.
+	memoMinimapRegions = true
 
 #Punchy patches.
 [punchy]
@@ -556,15 +562,24 @@
 	disableFlyingKick = true
 	#Every five seconds, drop dead player copies that another mod left registered as chunk loaders. Such ghosts keep hundreds of chunks loaded and spawning mobs at wherever they died until restart.
 	purgeGhostPlayers = true
+	#Remember which bone of a model a given name belongs to instead of walking the whole model tree again for every bone of every keyframe animation. Vanilla answers that question with a recursive stream over every part of the model, once per animated bone per entity per frame, and every walk allocates a few objects per part it visits. Result is identical.
+	cacheModelPartLookups = true
+	#Run keyframe animations with plain loops. Vanilla allocates two capturing lambdas per animated bone and one more per animation channel, every entity every frame, which is a large part of the garbage the render thread produces. Output is identical, but a mod injecting into the middle of KeyframeAnimations.animate will not run while this is on.
+	leanKeyframeAnimation = true
 
 #Xaero's World Map patches.
 [xaeroworldmap]
 	#Milliseconds between the map limiter's free VRAM query, which stock fires a blocking glGetIntegerv for on every single frame. 0 restores the stock every frame behaviour. Client.
 	#Range: 0 ~ 60000
 	vramPollInterval = 500
-	#Milliseconds between map processing passes. Stock runs the whole write, cache and texture upload sweep once per frame, so at 1000 fps it runs 1000 times a second to keep up with a player walking at 4 blocks a second. The default of 10 gives a machine above 100 fps exactly the amount of map work a 100 fps machine already gets. The map's own screens are never throttled. 0 restores the stock every frame behaviour. WARNING: raising this a lot makes the map fill in more slowly after a long teleport. Client.
-	#Range: 0 ~ 1000
+	#Client ticks between world map background processing passes while no screen is open. Stock runs the whole map writer, texture upload and cave scan once per rendered frame, so at high frame rates it repeats work dozens of times over for world data that only changes twenty times a second. 0 restores the stock every frame behaviour. Client.
+	#Range: 0 ~ 20
 	renderProcessInterval = 10
+	#Wait out the world map screen's frame budget by parking instead of spinning. While the map screen is open Xaero busy loops on System.nanoTime until 1.6ms of the frame has passed, which burns a whole core for most of every map frame. Pacing is unchanged, the thread just idles instead.
+	idleMapFrameWait = true
+	#Microseconds of the world map frame budget still spent spinning, so the wait ends on time even though the operating system wakes a parked thread late. Raise it if the map screen feels choppier than before, lower it to give the core back sooner.
+	#Range: 0 ~ 1600
+	mapFrameSpinTail = 200
 
 #L_Ender's Cataclysm patches.
 [cataclysm]
@@ -596,9 +611,12 @@
 	#Run the camera shake and dynamic zoom entity scans once per tick instead of once per frame. Client.
 	cacheShakeScan = true
 
+#Gnetum patches.
 [gnetum]
 	#Answer gnetum's per element caching question once per tick instead of once per element per frame. Each ask is a set lookup plus a guava cache lookup and there are dozens of elements.
 	memoCacheSettings = true
+	#Resolve an event handler's mod id with one map lookup instead of a containsKey followed by a get.
+	singleModIdLookup = true
 
 #Supplementaries patches.
 [supplementaries]
@@ -659,6 +677,10 @@
 	cachedCurioLookup = true
 	#Read Terra Curio's custom attribute remap table from a plain map instead of the synchronised Hashtable it lives in. The table is filled once during setup and never written again, but ModAttributes#hasCustomAttribute is called for every living entity every tick on both the client and the server thread, so every one of those calls takes a monitor on the same shared object.
 	leanAttributeMap = true
+	#Skip Terra Curio's aggro retarget pass while no online player carries a non zero aggro value. The handler runs on every LivingChangeTargetEvent, and each run streams every player in the dimension with a distance and canAttack check, even though the result can only differ from vanilla when some player has actually modified aggro. The player scan is cached once per dimension per tick.
+	skipIdleAggroScan = true
+	#Only write Terra Curio's onPosIsIce flag when it actually changes. Ice Skates, Frostspark Boots and Terraspark Boots rewrite the flag onto the stack every single tick, which marks the stack dirty, so Curios resyncs the accessory to the client and reapplies its attribute modifiers every tick for as long as the boots are worn.
+	skipUnchangedIceFlag = true
 
 #MCreator mod patches.
 [mcreator]
@@ -673,4 +695,86 @@
 	memoBiomeBlendColors = true
 	#Remember the last biome while Distant Horizons converts a chunk column into an LOD. Biomes are stored per four blocks but the converter asks for one per block going down the whole column, so three out of four lookups repeat the previous answer. Result is identical.
 	cacheChunkBiomeLookup = true
+
+#ModernFix patches.
+[modernfix]
+	#Work out which creative tabs JEI covers by indexing its item list once, instead of asking every tab whether it holds every item. Stock compares each item against each tab, and each comparison hashes the item's NBT, so the first creative search freezes for as long as it takes. Client.
+	fastRepresentedTabs = true
+
+#Biolith patches.
+[biolith]
+	#Re-tag the biome source with its dimension after another mod swaps it. MCreator biome mods replace the overworld MultiNoiseBiomeSource on ServerAboutToStart, and the replacement never passes through LevelStem, so Biolith loses track of which dimension it is and silently stops applying every biome replacement and sub-biome it was asked for.
+	restampSwappedBiomeSource = true
+	#Hand Biolith the registries at the start of WorldStem instead of the end. BCLib asks every vanilla biome source for its biome list from inside that constructor, which is before Biolith has a registry to look biomes up in, and Biolith throws.
+	earlyRegistryCapture = true
+	#Return Biolith's cached biome list without entering its lock. Biolith synchronizes on the biome source on every single biome lookup, and world generation runs those lookups on several threads at once.
+	reuseBiomeEntries = true
+
+#Skarrier Mobs patches.
+[skarriermobs]
+	#Skip Skarrier Mobs' 17 way instanceof chain for entities that are not its own.
+	skipForeignEntityAnimations = true
+	#Stop the daylight burn handler from rebuilding its entity tag key for every living entity every tick.
+	leanDaylightBurnScan = true
+	#Stop the Resisteel tool handler from rebuilding its item tag key for every living entity every tick.
+	leanResisteelToolScan = true
+	#Stop the Resisteel sword handler from firing a MobEffectEvent.Remove at every living entity every tick.
+	leanResisteelSwordScan = true
+	#Stop the Resisteel set handler from writing five NBT values into every living entity every tick.
+	leanResisteelSetTracking = true
+	#Replace fourteen sorted region scans that only ask whether a mob's own target is close by with one box test.
+	leanTargetProximityScans = true
+	#Narrow the rest of the mob region scans to the players, owners, monsters or flore heads their loop bodies actually use.
+	narrowRegionScans = true
+
+#Industrial Foregoing patches.
+[industrialforegoing]
+	#Stop the Stasis Chamber tick filter from reading, and thereby creating, a ForgeData compound on every mob in the world.
+	skipStasisTagChurn = true
+
+#Enigmatic Addons patches.
+[enigmaticaddons]
+	#Stop the Annihilating Sword, Violence Scroll and Extradimensional Scepter tick handlers from reading, and thereby creating, a ForgeData compound on every entity in the world. Also removes the UUID parse and ImmutableMultimap build the sword did for every living entity every tick.
+	skipUnsetPersistentData = true
+
+#Enigmatic Delicacy patches.
+[enigmaticdelicacy]
+	#Stop the Slicing enchantment tick handler from reading, and thereby creating, a ForgeData compound on every entity on both sides every tick.
+	skipUnsetPersistentData = true
+
+#Traveloptics patches.
+[traveloptics]
+	#Check for the Spider Aspect effect before walking every living entity's curios inventory every tick.
+	leanClimbCurioScan = true
+	#Check that the entity is a spell casting mob before reading its effect map in the Blackout and Casting handlers.
+	leanCastEffectChecks = true
+
+#Celestial Enchantments patches.
+[celestialenchantments]
+	#Skip the seven map, two array clone enchantment scan for living entities that have nothing enchanted equipped.
+	skipUnenchantedTick = true
+	#Skip the per slot enchantment map allocation for equipment slots that hold nothing enchanted.
+	leanSlotEnchScan = true
+
+#Unique Accessories patches.
+[uniqueaccessories]
+	#Answer the Waist Warmer curios lookup from the shared per tick curio presence cache instead of walking the inventory for every living entity every tick.
+	leanWaistWarmerScan = true
+	#Stop the Suspicious Mushroom and Rose of Temptation handlers from attaching an empty ForgeData tag to every entity in the world.
+	skipUnsetPersistentData = true
+
+#Regions Unexplored patches.
+[regionsunexplored]
+	#Remember what the furnace fuel handler decided for an item instead of walking its 1100 branch block comparison chain again.
+	cacheFurnaceBurnTimes = true
+
+#Ending Library patches.
+[endinglibrary]
+	#Skip building the capability name fallback on every camera capability lookup when the registered capability is already resolved.
+	leanCameraCapLookup = true
+
+#Create: Solar patches.
+[createsolar]
+	#Look up Create's goggles check once instead of once per frame. Create: Solar reflects for a method that this Create version does not have, so every single frame it builds and throws a NoSuchMethodException, fills in its stack trace and gives up. The overlay it was going to draw is dead either way, this just stops it costing anything.
+	memoGogglesLookup = true
 

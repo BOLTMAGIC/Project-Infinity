@@ -1,9 +1,12 @@
 {
-  "format": 1,
+  "format": 4,
   "_comment": [
     "Keys are item IDs. Keys beginning with # are item tags; a final * matches a tag prefix.",
     "deconstruct values are the exact sequence amounts produced per item.",
     "rewrite values are the exact sequence amounts consumed per copied item.",
+    "Entropy per deconstructed item is max(1, floor(the saturated sum of all four values / 64)).",
+    "Entropy per rewritten item is max(1, floor(the saturated sum of all four values / 16)).",
+    "Matter capacity, entropy capacity, cooling and acceleration-card tiers are configurable in omnisequence-transfinite-server.toml.",
     "Omit deconstruct or rewrite to disable that operation. An exact empty item rule overrides tag rules.",
     "Changes are loaded when a server or single-player world starts."
   ],
@@ -29,7 +32,7 @@
         "organic": 0
       }
     },
-    "minecraft:spruce_log": {
+    "minecraft:jungle_log": {
       "deconstruct": {
         "metal": 0,
         "mineral": 0,
@@ -43,301 +46,49 @@
         "organic": 256
       }
     },
-    "minecraft:wheat": {
+    "ae2:quartz_block": {
       "deconstruct": {
         "metal": 0,
+        "mineral": 489,
+        "crystal": 1958,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 576,
+        "crystal": 2304,
+        "organic": 0
+      }
+    },
+    "minecraft:iron_nugget": {
+      "deconstruct": {
+        "metal": 27,
         "mineral": 0,
         "crystal": 0,
-        "organic": 108
+        "organic": 0
       },
       "rewrite": {
-        "metal": 0,
+        "metal": 32,
         "mineral": 0,
         "crystal": 0,
-        "organic": 128
-      }
-    },
-    "molecularmanipulator:molecular_center_casing": {
-      "deconstruct": {
-        "metal": 870,
-        "mineral": 217,
-        "crystal": 435,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1024,
-        "mineral": 256,
-        "crystal": 512,
         "organic": 0
       }
     },
-    "minecraft:stone": {
+    "ae2:quartz_vibrant_glass": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 68,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 80,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "minecraft:netherite_ingot": {
-      "deconstruct": {
-        "metal": 5222,
-        "mineral": 870,
+        "mineral": 326,
         "crystal": 870,
         "organic": 0
       },
       "rewrite": {
-        "metal": 6144,
-        "mineral": 1024,
+        "metal": 0,
+        "mineral": 384,
         "crystal": 1024,
         "organic": 0
       }
     },
-    "ae2:fluix_crystal": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 652,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 768,
-        "organic": 0
-      }
-    },
-    "ae2:silicon": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 163,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 192,
-        "organic": 0
-      }
-    },
-    "molecularmanipulator:molecular_center_glass": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 217,
-        "crystal": 652,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 256,
-        "crystal": 768,
-        "organic": 0
-      }
-    },
-    "ae2:charged_certus_quartz_crystal": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 489,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 576,
-        "organic": 0
-      }
-    },
-    "minecraft:oak_log": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 217
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 256
-      }
-    },
-    "ae2:sky_dust": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 163,
-        "crystal": 108,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 192,
-        "crystal": 128,
-        "organic": 0
-      }
-    },
-    "minecraft:birch_log": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 217
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 256
-      }
-    },
-    "minecraft:sand": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 40,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 48,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "minecraft:coal": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 0,
-        "organic": 81
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 0,
-        "organic": 96
-      }
-    },
-    "molecularmanipulator:molecular_center_coil": {
-      "deconstruct": {
-        "metal": 435,
-        "mineral": 217,
-        "crystal": 870,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 512,
-        "mineral": 256,
-        "crystal": 1024,
-        "organic": 0
-      }
-    },
-    "minecraft:leather": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 217
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 256
-      }
-    },
-    "minecraft:diamond": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 217,
-        "crystal": 3481,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 256,
-        "crystal": 4096,
-        "organic": 0
-      }
-    },
-    "minecraft:gold_block": {
-      "deconstruct": {
-        "metal": 4406,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 5184,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "minecraft:deepslate": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "minecraft:glass": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 27,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 32,
-        "organic": 0
-      }
-    },
-    "minecraft:emerald": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 217,
-        "crystal": 2611,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 256,
-        "crystal": 3072,
-        "organic": 0
-      }
-    },
-    "minecraft:gold_nugget": {
-      "deconstruct": {
-        "metal": 54,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 64,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "minecraft:lapis_lazuli": {
+    "minecraft:amethyst_shard": {
       "deconstruct": {
         "metal": 0,
         "mineral": 54,
@@ -351,105 +102,161 @@
         "organic": 0
       }
     },
-    "minecraft:cobbled_deepslate": {
+    "ae2:fluix_dust": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 68,
+        "mineral": 81,
+        "crystal": 544,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 640,
+        "organic": 0
+      }
+    },
+    "minecraft:copper_ingot": {
+      "deconstruct": {
+        "metal": 217,
+        "mineral": 0,
         "crystal": 0,
         "organic": 0
       },
       "rewrite": {
-        "metal": 0,
-        "mineral": 80,
+        "metal": 256,
+        "mineral": 0,
         "crystal": 0,
         "organic": 0
       }
     },
-    "minecraft:netherite_scrap": {
-      "deconstruct": {
-        "metal": 870,
-        "mineral": 217,
-        "crystal": 217,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1024,
-        "mineral": 256,
-        "crystal": 256,
-        "organic": 0
-      }
-    },
-    "minecraft:quartz": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 54,
-        "crystal": 217,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 64,
-        "crystal": 256,
-        "organic": 0
-      }
-    },
-    "minecraft:charcoal": {
+    "minecraft:redstone": {
       "deconstruct": {
         "metal": 0,
         "mineral": 27,
-        "crystal": 0,
-        "organic": 136
+        "crystal": 81,
+        "organic": 0
       },
       "rewrite": {
         "metal": 0,
         "mineral": 32,
-        "crystal": 0,
-        "organic": 160
+        "crystal": 96,
+        "organic": 0
       }
     },
-    "ae2:certus_quartz_crystal": {
+    "molecularmanipulator:molecular_center_stabilizer": {
+      "deconstruct": {
+        "metal": 217,
+        "mineral": 217,
+        "crystal": 870,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 256,
+        "mineral": 256,
+        "crystal": 1024,
+        "organic": 0
+      }
+    },
+    "minecraft:iron_block": {
+      "deconstruct": {
+        "metal": 2203,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 2592,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "minecraft:dark_oak_log": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 217
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 256
+      }
+    },
+    "minecraft:gold_ingot": {
+      "deconstruct": {
+        "metal": 489,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 576,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "ae2:fluix_block": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 734,
+        "crystal": 5875,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 864,
+        "crystal": 6912,
+        "organic": 0
+      }
+    },
+    "minecraft:cobblestone": {
       "deconstruct": {
         "metal": 0,
         "mineral": 54,
-        "crystal": 326,
+        "crystal": 0,
         "organic": 0
       },
       "rewrite": {
         "metal": 0,
         "mineral": 64,
-        "crystal": 384,
-        "organic": 0
-      }
-    },
-    "minecraft:copper_block": {
-      "deconstruct": {
-        "metal": 1958,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 2304,
-        "mineral": 0,
         "crystal": 0,
         "organic": 0
       }
     },
-    "minecraft:obsidian": {
+    "ae2:certus_quartz_dust": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 652,
-        "crystal": 217,
+        "mineral": 54,
+        "crystal": 272,
         "organic": 0
       },
       "rewrite": {
         "metal": 0,
-        "mineral": 768,
-        "crystal": 256,
+        "mineral": 64,
+        "crystal": 320,
         "organic": 0
       }
     },
-    "minecraft:acacia_log": {
+    "minecraft:slime_ball": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 27,
+        "organic": 163
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 32,
+        "organic": 192
+      }
+    },
+    "minecraft:cherry_log": {
       "deconstruct": {
         "metal": 0,
         "mineral": 0,
@@ -477,7 +284,7 @@
         "organic": 256
       }
     },
-    "minecraft:cherry_log": {
+    "minecraft:acacia_log": {
       "deconstruct": {
         "metal": 0,
         "mineral": 0,
@@ -491,161 +298,35 @@
         "organic": 256
       }
     },
-    "minecraft:slime_ball": {
+    "minecraft:obsidian": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 0,
-        "crystal": 27,
-        "organic": 163
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 32,
-        "organic": 192
-      }
-    },
-    "ae2:certus_quartz_dust": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 54,
-        "crystal": 272,
+        "mineral": 652,
+        "crystal": 217,
         "organic": 0
       },
       "rewrite": {
         "metal": 0,
-        "mineral": 64,
-        "crystal": 320,
+        "mineral": 768,
+        "crystal": 256,
         "organic": 0
       }
     },
-    "minecraft:cobblestone": {
+    "minecraft:copper_block": {
       "deconstruct": {
-        "metal": 0,
-        "mineral": 54,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 64,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "ae2:fluix_block": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 734,
-        "crystal": 5875,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 864,
-        "crystal": 6912,
-        "organic": 0
-      }
-    },
-    "minecraft:gold_ingot": {
-      "deconstruct": {
-        "metal": 489,
+        "metal": 1958,
         "mineral": 0,
         "crystal": 0,
         "organic": 0
       },
       "rewrite": {
-        "metal": 576,
+        "metal": 2304,
         "mineral": 0,
         "crystal": 0,
         "organic": 0
       }
     },
-    "minecraft:dark_oak_log": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 217
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 256
-      }
-    },
-    "minecraft:iron_block": {
-      "deconstruct": {
-        "metal": 2203,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 2592,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "molecularmanipulator:molecular_center_stabilizer": {
-      "deconstruct": {
-        "metal": 217,
-        "mineral": 217,
-        "crystal": 870,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 256,
-        "mineral": 256,
-        "crystal": 1024,
-        "organic": 0
-      }
-    },
-    "minecraft:redstone": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 27,
-        "crystal": 81,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 32,
-        "crystal": 96,
-        "organic": 0
-      }
-    },
-    "minecraft:copper_ingot": {
-      "deconstruct": {
-        "metal": 217,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 256,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "ae2:fluix_dust": {
-      "deconstruct": {
-        "metal": 0,
-        "mineral": 81,
-        "crystal": 544,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 0,
-        "mineral": 96,
-        "crystal": 640,
-        "organic": 0
-      }
-    },
-    "minecraft:amethyst_shard": {
+    "ae2:certus_quartz_crystal": {
       "deconstruct": {
         "metal": 0,
         "mineral": 54,
@@ -659,49 +340,371 @@
         "organic": 0
       }
     },
-    "ae2:quartz_vibrant_glass": {
+    "minecraft:charcoal": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 326,
+        "mineral": 27,
+        "crystal": 0,
+        "organic": 136
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 32,
+        "crystal": 0,
+        "organic": 160
+      }
+    },
+    "minecraft:quartz": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 54,
+        "crystal": 217,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 64,
+        "crystal": 256,
+        "organic": 0
+      }
+    },
+    "minecraft:netherite_scrap": {
+      "deconstruct": {
+        "metal": 870,
+        "mineral": 217,
+        "crystal": 217,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 1024,
+        "mineral": 256,
+        "crystal": 256,
+        "organic": 0
+      }
+    },
+    "minecraft:cobbled_deepslate": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 68,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 80,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "minecraft:lapis_lazuli": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 54,
+        "crystal": 326,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 64,
+        "crystal": 384,
+        "organic": 0
+      }
+    },
+    "minecraft:gold_nugget": {
+      "deconstruct": {
+        "metal": 54,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 64,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "minecraft:emerald": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 217,
+        "crystal": 2611,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 256,
+        "crystal": 3072,
+        "organic": 0
+      }
+    },
+    "minecraft:glass": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 27,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 32,
+        "organic": 0
+      }
+    },
+    "minecraft:deepslate": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "minecraft:gold_block": {
+      "deconstruct": {
+        "metal": 4406,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 5184,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "minecraft:diamond": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 217,
+        "crystal": 3481,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 256,
+        "crystal": 4096,
+        "organic": 0
+      }
+    },
+    "minecraft:leather": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 217
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 256
+      }
+    },
+    "molecularmanipulator:molecular_center_coil": {
+      "deconstruct": {
+        "metal": 435,
+        "mineral": 217,
         "crystal": 870,
         "organic": 0
       },
       "rewrite": {
-        "metal": 0,
-        "mineral": 384,
+        "metal": 512,
+        "mineral": 256,
         "crystal": 1024,
         "organic": 0
       }
     },
-    "minecraft:iron_nugget": {
+    "minecraft:coal": {
       "deconstruct": {
-        "metal": 27,
-        "mineral": 0,
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 0,
+        "organic": 81
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 0,
+        "organic": 96
+      }
+    },
+    "minecraft:sand": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 40,
         "crystal": 0,
         "organic": 0
       },
       "rewrite": {
-        "metal": 32,
-        "mineral": 0,
+        "metal": 0,
+        "mineral": 48,
         "crystal": 0,
         "organic": 0
       }
     },
-    "ae2:quartz_block": {
+    "minecraft:birch_log": {
       "deconstruct": {
         "metal": 0,
-        "mineral": 489,
-        "crystal": 1958,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 217
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 256
+      }
+    },
+    "ae2:sky_dust": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 163,
+        "crystal": 108,
         "organic": 0
       },
       "rewrite": {
         "metal": 0,
-        "mineral": 576,
-        "crystal": 2304,
+        "mineral": 192,
+        "crystal": 128,
         "organic": 0
       }
     },
-    "minecraft:jungle_log": {
+    "minecraft:oak_log": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 217
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 256
+      }
+    },
+    "ae2:charged_certus_quartz_crystal": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 489,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 576,
+        "organic": 0
+      }
+    },
+    "molecularmanipulator:molecular_center_glass": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 217,
+        "crystal": 652,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 256,
+        "crystal": 768,
+        "organic": 0
+      }
+    },
+    "ae2:silicon": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 163,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 192,
+        "organic": 0
+      }
+    },
+    "ae2:fluix_crystal": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 81,
+        "crystal": 652,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 96,
+        "crystal": 768,
+        "organic": 0
+      }
+    },
+    "minecraft:netherite_ingot": {
+      "deconstruct": {
+        "metal": 5222,
+        "mineral": 870,
+        "crystal": 870,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 6144,
+        "mineral": 1024,
+        "crystal": 1024,
+        "organic": 0
+      }
+    },
+    "minecraft:stone": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 68,
+        "crystal": 0,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 80,
+        "crystal": 0,
+        "organic": 0
+      }
+    },
+    "molecularmanipulator:molecular_center_casing": {
+      "deconstruct": {
+        "metal": 870,
+        "mineral": 217,
+        "crystal": 435,
+        "organic": 0
+      },
+      "rewrite": {
+        "metal": 1024,
+        "mineral": 256,
+        "crystal": 512,
+        "organic": 0
+      }
+    },
+    "minecraft:wheat": {
+      "deconstruct": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 108
+      },
+      "rewrite": {
+        "metal": 0,
+        "mineral": 0,
+        "crystal": 0,
+        "organic": 128
+      }
+    },
+    "minecraft:spruce_log": {
       "deconstruct": {
         "metal": 0,
         "mineral": 0,
@@ -921,524 +924,6 @@
       "rewrite": {
         "metal": 0,
         "mineral": 64,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "kubejs:infinity_1": {
-      "deconstruct": {
-        "metal": 150000000,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 200000000,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "advancednetherite:netherite_iron_ingot": {
-      "deconstruct": {
-        "metal": 368,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 491,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "advancednetherite:netherite_gold_ingot": {
-      "deconstruct": {
-        "metal": 614,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 819,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "advancednetherite:netherite_emerald_ingot": {
-      "deconstruct": {
-        "metal": 172,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 229,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "advancednetherite:netherite_diamond_ingot": {
-      "deconstruct": {
-        "metal": 294,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 393,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:allthemodium_ingot": {
-      "deconstruct": {
-        "metal": 491,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 655,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:vibranium_ingot": {
-      "deconstruct": {
-        "metal": 137,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 183,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:unobtainium_ingot": {
-      "deconstruct": {
-        "metal": 275,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 367,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:unobtainium_allthemodium_alloy_ingot": {
-      "deconstruct": {
-        "metal": 1101,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1468,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:unobtainium_vibranium_alloy_ingot": {
-      "deconstruct": {
-        "metal": 1258,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1677,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "allthemodium:vibranium_allthemodium_alloy_ingot": {
-      "deconstruct": {
-        "metal": 6291,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 8388,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "ae2omnicells:ender_ingot": {
-      "deconstruct": {
-        "metal": 344,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 458,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "ae2omnicells:charged_ender_ingot": {
-      "deconstruct": {
-        "metal": 688,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 917,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "armorplus:en_gold": {
-      "deconstruct": {
-        "metal": 307,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 409,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "armorplus:en_iron": {
-      "deconstruct": {
-        "metal": 184,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 245,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "armorplus:en_netherite": {
-      "deconstruct": {
-        "metal": 245,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 327,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botania:manasteel_ingot": {
-      "deconstruct": {
-        "metal": 92,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 122,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botania:terrasteel_ingot": {
-      "deconstruct": {
-        "metal": 245,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 327,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botania:elementium_ingot": {
-      "deconstruct": {
-        "metal": 860,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1146,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botania:gaia_ingot": {
-      "deconstruct": {
-        "metal": 983,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1310,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botanicalextramachinery:malachite_ingot": {
-      "deconstruct": {
-        "metal": 172,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 229,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botanicalextramachinery:saffron_ingot": {
-      "deconstruct": {
-        "metal": 344,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 458,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botanicalextramachinery:shadow_ingot": {
-      "deconstruct": {
-        "metal": 688,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 917,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "botanicalextramachinery:crimson_ingot": {
-      "deconstruct": {
-        "metal": 786,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 1048,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "dimensionalpocketsii:dimensional_ingot": {
-      "deconstruct": {
-        "metal": 491,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 655,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "dimensionalpocketsii:dimensional_ingot_enhanced": {
-      "deconstruct": {
-        "metal": 196,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 262,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "draconicevolution:draconium_ingot": {
-      "deconstruct": {
-        "metal": 344,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 458,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "draconicevolution:awakened_draconium_ingot": {
-      "deconstruct": {
-        "metal": 2752,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 3670,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:copper_alloy_ingot": {
-      "deconstruct": {
-        "metal": 460,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 614,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:energetic_alloy_ingot": {
-      "deconstruct": {
-        "metal": 153,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 204,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:vibrant_alloy_ingot": {
-      "deconstruct": {
-        "metal": 430,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 573,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:redstone_alloy_ingot": {
-      "deconstruct": {
-        "metal": 107,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 143,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:conductive_alloy_ingot": {
-      "deconstruct": {
-        "metal": 76,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 102,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:pulsating_alloy_ingot": {
-      "deconstruct": {
-        "metal": 107,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 143,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:dark_steel_ingot": {
-      "deconstruct": {
-        "metal": 184,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 245,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:soularium_ingot": {
-      "deconstruct": {
-        "metal": 307,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 409,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      }
-    },
-    "enderio:end_steel_ingot": {
-      "deconstruct": {
-        "metal": 614,
-        "mineral": 0,
-        "crystal": 0,
-        "organic": 0
-      },
-      "rewrite": {
-        "metal": 819,
-        "mineral": 0,
         "crystal": 0,
         "organic": 0
       }

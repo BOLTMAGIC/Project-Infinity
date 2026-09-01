@@ -560,7 +560,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["55ED711EFD438FC3"]
 			description: ["{ftbquests.chapter.avaritia.quest42DF944251E8538F.description1}"]
 			id: "42DF944251E8538F"
 			rewards: [{
@@ -783,114 +782,6 @@
 		}
 		{
 			dependencies: ["2C53C8A3322CAB88"]
-			description: ["{ftbquests.chapter.avaritia.quest1B7A6E394D17A5F9.description1}"]
-			id: "1B7A6E394D17A5F9"
-			rewards: [
-				{
-					id: "7AF915D430B198DA"
-					type: "xp_levels"
-					xp_levels: 200
-				}
-				{
-					count: 6
-					id: "6FF89BDC162EECAB"
-					item: "avaritia:infinity_catalyst"
-					type: "item"
-				}
-			]
-			subtitle: "{ftbquests.chapter.avaritia.quest1B7A6E394D17A5F9.subtitle}"
-			tasks: [{
-				id: "7693959B8E016C97"
-				item: "avaritia:infinity_helmet"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2C53C8A3322CAB88"]
-			description: ["{ftbquests.chapter.avaritia.quest4E4080F0A6E29532.description1}"]
-			id: "4E4080F0A6E29532"
-			rewards: [
-				{
-					id: "00FEC87A8E0A2487"
-					type: "xp_levels"
-					xp_levels: 200
-				}
-				{
-					count: 6
-					id: "2F9E21E159C7B1FA"
-					item: "avaritia:infinity_catalyst"
-					type: "item"
-				}
-			]
-			subtitle: "{ftbquests.chapter.avaritia.quest4E4080F0A6E29532.subtitle}"
-			tasks: [{
-				id: "14744B4644031618"
-				item: "avaritia:infinity_chestplate"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2C53C8A3322CAB88"]
-			description: [
-				"{ftbquests.chapter.avaritia.quest8FBA6F89454D23D.description1}"
-				""
-				"{ftbquests.chapter.avaritia.quest8FBA6F89454D23D.description2}"
-			]
-			id: "08FBA6F89454D23D"
-			rewards: [
-				{
-					id: "2B1E3EF20C36EF41"
-					type: "xp_levels"
-					xp_levels: 200
-				}
-				{
-					count: 6
-					id: "4C193A52EAE79E49"
-					item: "avaritia:infinity_catalyst"
-					type: "item"
-				}
-			]
-			subtitle: "{ftbquests.chapter.avaritia.quest8FBA6F89454D23D.subtitle}"
-			tasks: [{
-				id: "4DB1EE3CF1DEA987"
-				item: "avaritia:infinity_pants"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2C53C8A3322CAB88"]
-			description: ["{ftbquests.chapter.avaritia.quest598E3ECE201D52C2.description1}"]
-			id: "598E3ECE201D52C2"
-			rewards: [
-				{
-					id: "0A35637715E5708A"
-					type: "xp_levels"
-					xp_levels: 200
-				}
-				{
-					count: 6
-					id: "5B2B8A4BAB2950F4"
-					item: "avaritia:infinity_catalyst"
-					type: "item"
-				}
-			]
-			subtitle: "{ftbquests.chapter.avaritia.quest598E3ECE201D52C2.subtitle}"
-			tasks: [{
-				id: "5D5CAE9D3C33F415"
-				item: "avaritia:infinity_boots"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["2C53C8A3322CAB88"]
 			description: ["{ftbquests.chapter.avaritia.quest2CA7B7158BE3A3D4.description1}"]
 			id: "2CA7B7158BE3A3D4"
 			rewards: [
@@ -1054,7 +945,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["2C53C8A3322CAB88"]
 			description: ["{ftbquests.chapter.avaritia.quest3035A949E710CCCB.description1}"]
 			id: "3035A949E710CCCB"
 			rewards: [
@@ -1075,11 +965,10 @@
 				item: "avaritia:upgrade_smithing_template"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["2C53C8A3322CAB88"]
 			description: ["{ftbquests.chapter.avaritia.quest1A250921FB4E8EA.description1}"]
 			id: "01A250921FB4E8EA"
 			rewards: [
@@ -1100,8 +989,8 @@
 				item: "avaritia:enhancement_core"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			description: ["{ftbquests.chapter.avaritia.quest623B6948CC6BEE3B.description1}"]
@@ -1139,12 +1028,10 @@
 		}
 		{
 			dependencies: [
-				"55ED711EFD438FC3"
 				"3035A949E710CCCB"
 				"01A250921FB4E8EA"
 			]
 			description: ["{ftbquests.chapter.avaritia.quest3416441A94958EA1.description1}"]
-			hide_dependency_lines: true
 			id: "3416441A94958EA1"
 			rewards: [
 				{
@@ -1167,7 +1054,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3416441A94958EA1"]

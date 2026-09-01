@@ -358,7 +358,7 @@
         ]
     },
     "component": {
-        "weight": 2,
+        "weight": 1,
         "loot": [
             [["ae2:certus_quartz_crystal", 64]],
             [["ae2:certus_quartz_dust", 16]],

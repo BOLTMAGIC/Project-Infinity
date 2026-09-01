@@ -12,8 +12,8 @@
 			image: "kubejs:block/screen/advanced_ae_multiblock"
 			rotation: 0.0d
 			width: 5.0d
-			x: 5.0d
-			y: -5.0d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
 			height: 5.0d
@@ -21,14 +21,23 @@
 			order: 1
 			rotation: 0.0d
 			width: 5.0d
-			x: -0.5d
+			x: 0.5d
 			y: -7.0d
+		}
+		{
+			height: 8.018181818181818d
+			image: "kubejs:block/screen/extendedae_plus_super_assembler_matrix"
+			rotation: 0.0d
+			width: 7.0d
+			x: -4.5d
+			y: -7.5d
 		}
 	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["32317607D34C7CA5"]
 			description: [
 				"{ftbquests.chapter.applied_energistics_2.quest32A2624C78A14A38.description1}"
 				""
@@ -86,6 +95,7 @@
 							]
 						}
 					}
+					title: "Quantum Computer Storage"
 					type: "item"
 				}
 				{
@@ -274,7 +284,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.applied_energistics_2.quest4D529BF135A82201.title}"
-			x: -2.5d
+			x: -1.5d
 			y: -2.0d
 		}
 		{
@@ -308,28 +318,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.applied_energistics_2.quest62226CF7455EC7E8.title}"
-			x: -3.5d
+			x: -2.5d
 			y: -2.0d
-		}
-		{
-			id: "1DA472E0ED358975"
-			tasks: [{
-				id: "72B966EC3D94BFB7"
-				item: "ae2omnicells:ender_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 8.0d
-		}
-		{
-			id: "199EC93801890683"
-			tasks: [{
-				id: "2771A2AE328FEDC0"
-				item: "molecularmanipulator:molecular_center_controller"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 9.5d
 		}
 		{
 			dependencies: ["709EEC95F59AF7C1"]
@@ -378,7 +368,7 @@
 		{
 			dependencies: ["3E7BA0C70B5569D4"]
 			description: [
-				"The &5&lAssembler Matrix&r is a scalable multiblock crafter that combines pattern storage and molecular assembling into one structure."
+				"The &5&lAssembler Matrix&r and &5&lUltimate Super Assembler Matrix&r are scalable multiblock crafters that combine pattern storage and molecular assembling into one structure."
 				""
 				"Extended AE also adds:"
 				"- &3Infinity Cells&r"
@@ -394,13 +384,16 @@
 				"- &5Wireless Transceiver &r(cross-dimension)"
 				"- &5Mirror Pattern Provider&r"
 				"- &54x–1024x Crafting Accelerators&r"
+				"- &5Super Circuit Cutter&r"
+				"- &5Ultimate Super Assembler Matrix&r"
 			]
+			hide_dependent_lines: true
 			icon: "expatternprovider:assembler_matrix_frame"
 			id: "6AC49CA40C6B2AC5"
 			size: 2.0d
 			tasks: [{
 				id: "181A82700BAF08C5"
-				title: "ExtendedAE"
+				title: "ExtendedAE and Plus"
 				type: "checkmark"
 			}]
 			title: "&6Extended AE &r+ &6Extended AE Plus&r"
@@ -411,8 +404,7 @@
 			dependencies: ["3E7BA0C70B5569D4"]
 			description: [
 				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description1}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description2}"
-				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description3}"
+				"{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description2}{ftbquests.chapter.applied_energistics_2.quest6EE4B174356FB915.description3}"
 			]
 			icon: "advanced_ae:quantum_alloy"
 			id: "32317607D34C7CA5"
@@ -443,6 +435,8 @@
 				"The &aIntegrated Working Station &rcombines multiple AE2 device functions and is essential for crafting advanced components and multiblock controllers."
 				""
 				"Higher tiers (&b4&r → &66&r → &59&r) give more capacity, speed, and efficiency, but require rarer materials and more power."
+				""
+				"[ \"---> \", { \"text\": \"Click ME\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"340776B18E840067\" } }, \" <---\" ]"
 			]
 			icon: "neoecoae:energized_crystal"
 			id: "2A8BE548681A5CD5"
@@ -466,19 +460,6 @@
 				type: "checkmark"
 			}]
 			x: 3.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["3E7BA0C70B5569D4"]
-			icon: "molecularmanipulator:molecular_center_controller"
-			id: "294448C926744049"
-			size: 2.0d
-			tasks: [{
-				id: "290E6367CCBE1364"
-				title: "OmniSequence Transfinite"
-				type: "checkmark"
-			}]
-			x: -1.0d
 			y: 8.0d
 		}
 		{
@@ -649,7 +630,7 @@
 				title: "Infinity Cells"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -673,7 +654,7 @@
 				}
 			]
 			title: "ME Extended Import \\& Export Bus"
-			x: -0.5d
+			x: 0.5d
 			y: -2.0d
 		}
 		{
@@ -689,7 +670,7 @@
 				item: "expatternprovider:ex_pattern_access_part"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -713,7 +694,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -729,7 +710,7 @@
 				item: "expatternprovider:ingredient_buffer"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
@@ -745,7 +726,7 @@
 				item: "expatternprovider:circuit_cutter"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -4.0d
 		}
 		{
@@ -763,7 +744,7 @@
 				item: "expatternprovider:oversize_interface"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -4.0d
 		}
 		{
@@ -781,7 +762,7 @@
 				item: "expatternprovider:ex_inscriber"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -4.0d
 		}
 		{
@@ -801,7 +782,7 @@
 				item: "extendedae_plus:wireless_transceiver"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -3.5d
 			y: -2.0d
 		}
 		{
@@ -819,7 +800,7 @@
 				item: "extendedae_plus:mirror_pattern_provider"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -3.5d
 			y: -3.0d
 		}
 		{
@@ -864,9 +845,10 @@
 						]
 					}
 				}
+				title: "Crafting Accelerators"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -2.5d
 			y: -4.0d
 		}
 		{
@@ -981,6 +963,216 @@
 			}]
 			x: -6.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["3E7BA0C70B5569D4"]
+			id: "13A47F2EB18B8951"
+			size: 2.0d
+			tasks: [{
+				id: "7CB4DC0079B27013"
+				title: "AE2 Lightning Tech"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &dUltimate Super Assembler Matrix Builder &ris a special tool from &2Extended AE Plus &rthat places and instantly forms the complete &dUltimate Super Assembler &rmultiblock structure."
+				""
+				"After you select an origin by right-clicking a block face, the builder shows a &bpreview &rof the entire matrix; hold &bCtrl &rwhile previewing to see the individual structure parts."
+				""
+				"You can change the origin at any time by sneak-right-clicking another block, or cancel the selection by sneak-right-clicking air."
+				""
+				"When you right-click with an origin selected, the builder checks every required block position first; it will not overwrite existing blocks, and a failed placement leaves the world unchanged."
+				""
+				"You must first bind the builder to an &3ME Interface &rby sneak-right-clicking it; the tool then simulates the full material cost in that ME network before building."
+				""
+				"If all required items are available, the builder extracts them and places the complete multiblock; if not, the chat lists every missing item and amount, and no materials are consumed."
+				""
+				"{@pagebreak}"
+				"The &6Super Assembler Matrix &ris a powerful multiblock crafting provider for &2AE2 &rthat integrates directly into your normal autocrafting system."
+				""
+				"Once formed, you connect any active matrix block to your &3ME Network&r and can then use its stored crafting patterns through the standard AE2 autocrafting interface."
+				""
+				"The structure is built as a sealed cuboid between &b3×3×3 &rand &b9×9×9 &rblocks, with &6Matrix Frames &ron every outer edge and &6Matrix Walls &r(or compatible glass) on the remaining outer surfaces."
+				""
+				"All internal positions must be filled with &6Super Assembler Matrix Hybrid Cores&r; original ExtendedAE matrix cores cannot be used in this structure."
+				""
+				"Each &6Hybrid Core &rcombines the effects of a Pattern Core, Crafting Core, and Speed Core: it provides &b72 pattern slots&r, &b512 crafting jobs&r, and the speed bonus of &bfive regular Speed Cores&r."
+				""
+				"Only AE2 molecular-assembler compatible crafting patterns can be inserted into the matrix; other pattern types are not supported."
+				""
+				"For endgame bases, the &dUltimate Super Assembler Matrix &ris a fixed &b14×16×14 &rstructure with 312 Hybrid Cores and 4 Upload Cores, offering &b22,464 pattern slots &rand effectively unlimited parallel crafting capacity."
+			]
+			id: "6B0F9F8E8E2CC938"
+			tasks: [
+				{
+					id: "7A4B71A15CA3306A"
+					item: "extendedae_plus:ultimate_super_assembler_matrix_builder"
+					type: "item"
+				}
+				{
+					id: "6E52F046DBA215FB"
+					item: "extendedae_plus:super_assembler_matrix_wall"
+					type: "item"
+				}
+				{
+					id: "315411EB1A401853"
+					item: "extendedae_plus:super_assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "1CCF1CF1AFDDF097"
+					item: "extendedae_plus:assembler_matrix_hybrid_plus"
+					type: "item"
+				}
+			]
+			title: "Ultimate Super Assembler Matrix"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AC49CA40C6B2AC5"]
+			description: [
+				"The &6Super Circuit Cutter &ris an advanced machine from &2Extended AE Plus &rthat processes circuit-cutter recipes with up to &b8 parallels &rin a single cycle."
+				""
+				"It works like a normal circuit cutter, but instead of one recipe at a time, it can run up to &b8 copies &rof the same recipe simultaneously, as long as it has enough items, fluid, and output space."
+				""
+				"To use it, insert the required &3item &rand &9fluid &rinto the machine; it will automatically choose how many parallels (1–8) it can run based on available inputs and AE power."
+				""
+				"Each parallel operation consumes its own share of &6AE, items, and fluid&r, and all outputs are combined into the machine’s output slot."
+				""
+				"If the output slot cannot hold a full batch, the machine automatically reduces the number of parallels instead of wasting resources."
+				""
+				"The &6Super Circuit Cutter &rhas an internal buffer of &b64,000 AE &rand supports up to &b4 AE2 Speed Cards&r, which reduce processing time but do not increase the 8-recipe parallel limit."
+				""
+				"Enable &aAuto-Export &rin the machine interface to automatically send finished circuits to adjacent inventories for easier integration into your production lines."
+			]
+			id: "756B51C99CFFB4D3"
+			tasks: [{
+				id: "0DDD636C45CE264A"
+				item: "extendedae_plus:circuit_cutter_plus"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			id: "532419E05A7BFBC8"
+			tasks: [{
+				id: "3B50B2E9154EB214"
+				item: "advanced_ae:throughput_monitor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			id: "4FEA0AA812165276"
+			tasks: [
+				{
+					id: "67391EAB7B138FC9"
+					item: "advanced_ae:adv_pattern_encoder"
+					type: "item"
+				}
+				{
+					id: "78BC3928A8FCA974"
+					item: "advanced_ae:small_adv_pattern_provider"
+					type: "item"
+				}
+				{
+					id: "3EF00F0AA0176C80"
+					item: "advanced_ae:adv_pattern_provider"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			id: "18D37D619C74F0BA"
+			tasks: [{
+				id: "1343A9D04D38260A"
+				item: "advanced_ae:quantum_crafter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			id: "310D634B9A2589F5"
+			tasks: [
+				{
+					id: "2CDAEB26DE0BB8E8"
+					item: "advanced_ae:stock_export_bus_part"
+					type: "item"
+				}
+				{
+					id: "4B89C354E99EF0C1"
+					item: "advanced_ae:import_export_bus_part"
+					type: "item"
+				}
+				{
+					id: "29995BB6A4918E06"
+					item: "advanced_ae:advanced_io_bus_part"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "7CFE99E7CA2C7347"
+			tasks: [
+				{
+					id: "01665880B25ABAD6"
+					item: {
+						Count: 1
+						id: "advanced_ae:quantum_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E5E03EF8A0C24A0"
+					item: {
+						Count: 1
+						id: "advanced_ae:quantum_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C4770B515573635"
+					item: {
+						Count: 1
+						id: "advanced_ae:quantum_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B210630D60B6F30"
+					item: {
+						Count: 1
+						id: "advanced_ae:quantum_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -4.0d
 		}
 	]
 	title: "AE2 Addons"

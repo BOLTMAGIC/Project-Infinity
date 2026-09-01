@@ -10,7 +10,12 @@ MAKE A BACKUP AND UPDATE TO A NEW INSTANCE!!!
 
 Mod Info:
 - MODS ADDED:
-    - 
+    - Universal Bulk Storage Cell (thy Kyo)
+    - Advanced Core Info (ACI) (Dependency of ALI)
+    - replaced Explorers Compass Edited with Explorers Compass Enhance (same item ID)
+    - replaced ProjectCell with ProjectCell Reforked (my fork)
+-MODS GETTING REMOVED in 0.0.52.2:
+    - OmniSequence
 ----------
 Recipe changes and fixes:
 - fixed blizz, blitz and basalz recipe in the melter (nuclearcraft) (thx to CLISHÉ)
@@ -23,6 +28,14 @@ Recipe changes and fixes:
 - changed woot magmator to use T1 for T2 and so on (thx to SilverSoul)
 - changed creative fluid tank recipe (from ifeu fluid_transfer to industrialforegoing fluid sieving) (thx to Edward)
 - added a recipe in the fire attuned multiblock for energized crystal dust
+- lowered polonium pellets from dynamic dungeon
+- changed densest neutron collector recipe (easier)
+- removed Tier 6 Blood Altar
+- removed all recipes for OmniSequence 
+- changed recipes for Woot upgrades
+- disabled Player Accessor from JDT
+- changed recipe for RFToolsDim Researcher and Inscriber
+- 
 ----------
 Mod changes and fixes:
 - 

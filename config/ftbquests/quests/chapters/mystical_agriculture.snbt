@@ -4629,9 +4629,9 @@
 			]
 			id: "2B7ACC7B3F0C13E4"
 			rewards: [{
-				id: "53357703DB0A0890"
-				item: "kubejs:ascended_coin"
-				type: "item"
+				id: "165F86E1726CDE32"
+				type: "xp"
+				xp: 100
 			}]
 			size: 4.0d
 			tasks: [{
